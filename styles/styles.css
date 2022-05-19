@@ -1,7 +1,11 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik:wght@300;400;600&display=swap");
 * {
   padding: 0;
   margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
@@ -11,6 +15,7 @@ body {
 
 .logo {
   padding: 20px;
+  background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
 }
 
 /* --------------Nav menu --------------- */
@@ -183,8 +188,79 @@ body {
     text-align: left;
   }
 }
-.lading-page-wave img {
+.lading-page {
+  background-image: linear-gradient(to top, rgba(187, 212, 240, 0.8078431373) 0%, rgba(231, 240, 253, 0.705) 100%), url("../gallery/carrussel_local_3.jpeg");
   width: 100%;
+  height: calc(100vh - 180px);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.lading-page-text {
+  font-family: "Rubik", sans-serif;
+  height: 340px;
+  color: #004643;
+  color: #2F3CA1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.lading-page-text h1 {
+  font-weight: 600;
+  font-size: 300%;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 0 10px 5px 10px;
+}
+.lading-page-text span {
+  font-weight: 400;
+  font-size: 140%;
+  text-align: center;
+  padding: 0 10px 5px 10px;
+}
+
+@media screen and (min-width: 630px) and (max-width: 749px) {
+  .lading-page-text h1 {
+    font-size: 250%;
+  }
+  .lading-page-text span {
+    font-size: 120%;
+  }
+}
+@media screen and (min-width: 490px) and (max-width: 629px) {
+  .lading-page {
+    height: calc(100vh - 250px);
+  }
+
+  .lading-page-text {
+    height: 250px;
+  }
+  .lading-page-text h1 {
+    font-size: 200%;
+  }
+  .lading-page-text span {
+    font-size: 100%;
+  }
+}
+@media screen and (max-width: 489px) {
+  .lading-page {
+    height: calc(100vh - 250px);
+  }
+
+  .lading-page-text {
+    height: 250px;
+  }
+  .lading-page-text h1 {
+    font-size: 180%;
+  }
+  .lading-page-text span {
+    font-size: 100%;
+    margin-bottom: 3px;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
