@@ -198,14 +198,12 @@ $galeria-serv:(
     .galeria__servicios--#{$img} {
         grid-area: $img;
         background-image: $url;
-        @if (($img==img1) or ($img==img5)){
+        @if (($img=="img1") or ($img=="img5")){
             @include bg-position(center);
-        }@else if (($img==img2) or ($img==img6)){
+        }@else if (($img=="img2") or ($img=="img6")){
             @include bg-position(top);
-        }@else if ($img==img4) {
+        }@else if ($img=="img4") {
             @include bg-position(right);
         }
     }
 }
-
-@import "stylesNovedadesTienda";
