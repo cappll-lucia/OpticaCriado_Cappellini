@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 * {
   padding: 0;
   margin: 0;
@@ -15,6 +16,8 @@ body {
 /* --------------Nav menu --------------- */
 .topnav {
   overflow: visible;
+  display: flex;
+  justify-content: space-around;
   background-color: #1F28A1;
   height: 50px;
   padding: 0;
@@ -25,11 +28,12 @@ body {
   display: block;
   color: #f5f5f5;
   text-align: center;
-  padding: 14px 16px;
+  padding: 14px 20px 14px 0px;
   text-decoration: none;
-  font-size: 18px;
+  font-size: 90%;
   font-weight: 400;
   letter-spacing: 1px;
+  margin-left: 3%;
 }
 .topnav .icon {
   display: none;
@@ -40,7 +44,7 @@ body {
   overflow: visible;
 }
 .dropdown .dropbtn {
-  font-size: 18px;
+  font-size: 90%;
   border: none;
   outline: none;
   color: #f5f5f5;
@@ -55,13 +59,13 @@ body {
   margin-top: 51px;
   left: 10px;
   background-color: #1F28A1;
-  width: max-content;
+  width: 180%;
   z-index: 1;
 }
 .dropdown-content a {
   float: none;
   color: #f5f5f5;
-  padding: 12px 16px;
+  padding: 12px 15px;
   text-decoration: none;
   display: block;
   text-align: left;
@@ -72,14 +76,21 @@ body {
   padding-bottom: 4px;
 }
 
-.topnav a:hover, .dropdown:hover .dropbtn {
+.fa-caret-down {
+  margin-left: 10px;
+}
+
+.topnav a:hover {
   background-color: #1F28A1;
   border-bottom: solid #51DB49 10px;
   padding-bottom: 4px;
 }
 
+.fa-caret-down:hover {
+  border-bottom: none;
+}
+
 .dropdown:hover .dropdown-content {
-  /* ACA HAY UN PROBLEMA--> NO SE MUESTRA EL DROPDOWN CONTENT */
   display: block;
   position: absolute;
   top: 0;
@@ -90,27 +101,42 @@ body {
   .topnav a {
     padding: 14px 10px;
     text-decoration: none;
-    font-size: 14px;
-  }
-
-  .dropdown .dropbtn {
-    font-size: 14px;
   }
 }
-@media screen and (min-width: 741px) and (max-width: 835px) {
+@media screen and (min-width: 831px) and (max-width: 977px) {
+  .topnav {
+    padding: 5px 0px;
+  }
+
   .topnav a {
-    padding: 14px 10px;
+    padding: 14px 5px;
     text-decoration: none;
-    font-size: 12px;
+    font-size: 75%;
   }
 
   .dropdown .dropbtn {
-    font-size: 12px;
+    font-size: 75%;
   }
 }
-@media screen and (max-width: 740px) {
+@media screen and (min-width: 768px) and (max-width: 830px) {
+  .topnav {
+    padding: 5px 0px;
+  }
+
+  .topnav a {
+    padding: 14px 5px;
+    text-decoration: none;
+    font-size: 70%;
+  }
+
+  .dropdown .dropbtn {
+    font-size: 70%;
+  }
+}
+@media screen and (max-width: 767px) {
   .topnav {
     height: max-content;
+    display: block;
   }
 
   .dropdown-content {
@@ -126,8 +152,7 @@ body {
     float: inherit;
     display: block;
   }
-}
-@media screen and (max-width: 740px) {
+
   .topnav.responsive {
     position: relative;
   }
@@ -157,6 +182,9 @@ body {
     width: 100%;
     text-align: left;
   }
+}
+.lading-page-wave img {
+  width: 100%;
 }
 
 /*# sourceMappingURL=styles.css.map */
