@@ -262,5 +262,111 @@ body {
     margin-bottom: 3px;
   }
 }
+.formulario-contact {
+  background-image: linear-gradient(-225deg, #74a7f3 0%, #B8DCFF 48%, #6BBBFF 100%);
+  padding: 5% 0;
+}
+
+.form-contact {
+  background-image: linear-gradient(-20deg, #e9defa 0%, #fbfcdb 100%);
+}
+
+.form-contact-img {
+  background-image: url(../gallery/Chat_Flatline.png);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.contact_forulario {
+  padding: 35px 20px;
+  color: #2F3CA1;
+  overflow: hidden;
+}
+.contact_forulario .subtitle {
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+.contact_forulario .form {
+  margin-top: 0;
+  padding-top: 0;
+  border: none;
+}
+.contact_forulario .form label {
+  text-align: center;
+  margin: 5% 0 0 0;
+}
+.contact_forulario .form input {
+  background-color: rgba(255, 255, 255, 0);
+  border: none;
+  border-bottom: solid #2F3CA1 2px;
+  width: 80%;
+  margin-left: 10%;
+}
+.contact_forulario .form textarea {
+  background-color: rgba(255, 255, 255, 0);
+  border: none;
+  border-bottom: solid #2F3CA1 2px;
+  margin-left: 10%;
+  height: 85px;
+  width: 80%;
+  resize: none;
+}
+.contact_forulario .form .div--domicilio {
+  padding: 5% 0 0 5%;
+  margin: 0;
+}
+.contact_forulario .form .div--domicilio .label--domicilio {
+  margin: 0;
+  padding: 0 0 2% 0;
+}
+.contact_forulario .form .div--domicilio .domicilio--alloptions {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 0;
+  padding-top: 0;
+}
+.contact_forulario .form .div--domicilio .domicilio--alloptions .one_option {
+  display: block;
+  width: max-content;
+}
+.contact_forulario .form .div--domicilio .domicilio--alloptions .one_option .input--option {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+}
+.contact_forulario .form .div--domicilio .domicilio--alloptions .one_option .input--option:hover {
+  transform: scale(1.5);
+}
+.contact_forulario .form .div--domicilio .domicilio--alloptions .one_option .label--option {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+}
+.contact_forulario .form .input--button {
+  margin: 25px 35% 0 35%;
+  width: 30%;
+  padding: 15px 32px;
+  border: none;
+  border-radius: 20px;
+  box-shadow: #13153f 1.5px 1.5px 5px;
+  color: #1a217c;
+  font-weight: 600;
+  background-image: linear-gradient(60deg, #83db49, rgb(17, 221, 187));
+}
+.contact_forulario .form .input--button:hover {
+  transform: scale(1.1);
+}
+
+/* formulario xs------- */
+/* formulario sm------- */
+/* formulario md------- */
+@media (min-width: 768px) and (max-width: 991px) {
+  .form-contact-img {
+    background-image: url(../gallery/Chat_Flatline_vertical.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+}
 
 /*# sourceMappingURL=styles.css.map */
