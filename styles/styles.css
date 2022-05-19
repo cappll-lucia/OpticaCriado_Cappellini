@@ -455,26 +455,26 @@ body {
   color: #1a217c;
   font-weight: 700;
 }
-.novedades_home .novedades__home--card {
+.novedades_home .novedades__home--card, .novedades_home .shop-section-recetados .shop-section-product .product--card, .shop-section-recetados .shop-section-product .novedades_home .product--card {
   margin: 15px;
   text-align: left;
   border: none;
   border-radius: 10px;
   box-shadow: rgb(105, 107, 105) 1px 1px 4px;
 }
-.novedades_home .novedades__home--card .card-body {
+.novedades_home .novedades__home--card .card-body, .novedades_home .shop-section-recetados .shop-section-product .product--card .card-body, .shop-section-recetados .shop-section-product .novedades_home .product--card .card-body {
   padding: 0;
 }
-.novedades_home .novedades__home--card .card-body .card-title {
+.novedades_home .novedades__home--card .card-body .card-title, .novedades_home .shop-section-recetados .shop-section-product .product--card .card-body .card-title, .shop-section-recetados .shop-section-product .novedades_home .product--card .card-body .card-title {
   padding: 0;
   margin-top: 20px;
 }
-.novedades_home .novedades__home--card .card-body .card-text {
+.novedades_home .novedades__home--card .card-body .card-text, .novedades_home .shop-section-recetados .shop-section-product .product--card .card-body .card-text, .shop-section-recetados .shop-section-product .novedades_home .product--card .card-body .card-text {
   padding: 0;
   margin-bottom: 0px;
   margin: 0;
 }
-.novedades_home .novedades__home--card .card-body .card-btn {
+.novedades_home .novedades__home--card .card-body .card-btn, .novedades_home .shop-section-recetados .shop-section-product .product--card .card-body .card-btn, .shop-section-recetados .shop-section-product .novedades_home .product--card .card-body .card-btn {
   padding: 8px 20px 5px 15px;
   font-family: "Poppins", sans-serif;
   color: #1a217c;
@@ -486,52 +486,187 @@ body {
   background-image: url(../gallery/background_3160622.jpg);
   border: none;
 }
-.novedades_home .novedades__home--card .card-body .card-btn i {
+.novedades_home .novedades__home--card .card-body .card-btn i, .novedades_home .shop-section-recetados .shop-section-product .product--card .card-body .card-btn i, .shop-section-recetados .shop-section-product .novedades_home .product--card .card-body .card-btn i {
   margin-left: 18px;
   padding: 0;
   font-size: 18px;
   color: #1a217c;
 }
-.novedades_home .novedades__home--card .card-body .card-btn:hover, .novedades_home .novedades__home--card .card-body .card-btn:hover i {
+.novedades_home .novedades__home--card .card-body .card-btn:hover, .novedades_home .shop-section-recetados .shop-section-product .product--card .card-body .card-btn:hover, .shop-section-recetados .shop-section-product .novedades_home .product--card .card-body .card-btn:hover, .novedades_home .novedades__home--card .card-body .card-btn:hover i, .novedades_home .shop-section-recetados .shop-section-product .product--card .card-body .card-btn:hover i, .shop-section-recetados .shop-section-product .novedades_home .product--card .card-body .card-btn:hover i {
   color: #8C1F28;
 }
-.novedades_home .novedades__home--card .card-body .card-btn:hover {
+.novedades_home .novedades__home--card .card-body .card-btn:hover, .novedades_home .shop-section-recetados .shop-section-product .product--card .card-body .card-btn:hover, .shop-section-recetados .shop-section-product .novedades_home .product--card .card-body .card-btn:hover {
   transform: scale(1.1);
 }
 
 /* novedades xs------- */
 @media (max-width: 575px) {
-  .novedades__home--card {
+  .novedades__home--card, .shop-section-recetados .shop-section-product .product--card {
     height: 300px;
   }
 }
 /* novedades sm------- */
 @media (min-width: 576px) {
-  .novedades__home--card {
+  .novedades__home--card, .shop-section-recetados .shop-section-product .product--card {
     height: 320px;
   }
 }
 /* novedades md------- */
 @media (min-width: 768px) {
-  .novedades__home--card {
+  .novedades__home--card, .shop-section-recetados .shop-section-product .product--card {
     height: 250px;
   }
 }
 @media (min-width: 768px) {
-  .novedades__home--card {
+  .novedades__home--card, .shop-section-recetados .shop-section-product .product--card {
     height: 400px;
   }
 }
 /* novedades lg------- */
 @media (min-width: 992px) {
-  .novedades__home--card {
+  .novedades__home--card, .shop-section-recetados .shop-section-product .product--card {
     height: 270px;
   }
 }
 /* novedades xl------- */
 @media (min-width: 1200px) {
-  .novedades__home--card {
+  .novedades__home--card, .shop-section-recetados .shop-section-product .product--card {
     height: 340px;
+  }
+}
+.shop-section-recetados {
+  background-image: linear-gradient(-225deg, rgba(167, 190, 241, 0.664) 0%, rgba(243, 222, 253, 0.76) 48%, rgba(167, 190, 241, 0.664) 100%);
+  padding: 50px;
+}
+.shop-section-recetados .shop-section-marcas {
+  color: #13153f;
+}
+.shop-section-recetados .shop-section-marcas span {
+  font-size: 35px;
+  font-weight: 600;
+}
+.shop-section-recetados .shop-section-marcas li {
+  padding: 5px;
+  font-size: 18px;
+  font-weight: 500;
+}
+.shop-section-recetados .shop-section-marcas li .input--option {
+  margin-right: 15px;
+}
+.shop-section-recetados .shop-section-product .product--card {
+  margin: 15px 30px;
+  text-align: left;
+  border-radius: 10px;
+  height: 300px;
+}
+.shop-section-recetados .shop-section-product .product--card .card-body {
+  padding: 0;
+  color: #13153f;
+}
+.shop-section-recetados .shop-section-product .product--card .card-body .card-title {
+  padding: 0;
+  margin-top: 20px;
+}
+.shop-section-recetados .shop-section-product .product--card .card-body .card-text {
+  padding: 0;
+  margin-bottom: 0px;
+  margin: 0;
+}
+.shop-section-recetados .shop-section-product .product--card .card-body .card-btn {
+  padding: 8px 15px 5px 15px;
+  font-family: "Poppins", sans-serif;
+  color: #13153f;
+  font-weight: 600;
+  font-size: 15px;
+  position: absolute;
+  bottom: 0;
+  margin: 0 0 10px 0;
+  border-radius: 15px;
+  background-image: url(../gallery/background_3160622.jpg);
+  background-image: linear-gradient(to bottom, #8af5f5 0%, #5bd6a7 100%);
+  border: none;
+}
+.shop-section-recetados .shop-section-product .product--card .card-body .card-btn i {
+  margin-left: 18px;
+  padding: 0;
+  font-size: 18px;
+  color: #13153f;
+}
+.shop-section-recetados .shop-section-product .product--card .card-body .card-btn:hover {
+  transform: scale(1.1);
+}
+.shop-section-recetados .shop-btn-marcas {
+  display: none;
+}
+
+@media (min-width: 992px) and (max-width: 1114px) {
+  .shop-section-recetados {
+    padding: 40px;
+  }
+  .shop-section-recetados .shop-section-marcas span {
+    font-size: 35px;
+  }
+  .shop-section-recetados .shop-section-marcas li {
+    font-size: 15px;
+  }
+  .shop-section-recetados .shop-section-marcas li .input--option {
+    margin-right: 10px;
+  }
+  .shop-section-recetados .shop-section-product .product--card {
+    margin: 15px 20px;
+  }
+}
+@media (min-width: 767px) and (max-width: 991px) {
+  .shop-section-recetados .shop-section-marcas span {
+    font-size: 35px;
+  }
+  .shop-section-recetados .shop-section-marcas li {
+    font-size: 15px;
+  }
+  .shop-section-recetados .shop-section-marcas li .input--option {
+    margin-right: 5px;
+  }
+  .shop-section-recetados .shop-section-product .product--card {
+    height: 350px;
+    margin: 15px 10px;
+  }
+}
+@media (max-width: 767px) {
+  .shop-section-recetados .shop-section-marcas {
+    display: none;
+  }
+  .shop-section-recetados .shop-btn-marcas {
+    display: block;
+  }
+  .shop-section-recetados .shop-btn-marcas .panel-heading a {
+    color: #13153f;
+    text-decoration: none;
+    font-size: 30px;
+  }
+  .shop-section-recetados .shop-btn-marcas .panel-body li {
+    list-style-type: none;
+    font-size: 18px;
+    padding: 5px;
+  }
+  .shop-section-recetados .shop-section-product .product--card {
+    height: 350px;
+    margin: 15px 10px;
+  }
+}
+@media (max-width: 575px) {
+  .shop-section-recetados {
+    padding: 20px;
+  }
+  .shop-section-recetados .shop-section-product .product--card {
+    height: 300px;
+    margin: 15px 5px;
+  }
+  .shop-section-recetados .shop-section-product .product--card .card-body .card-btn {
+    padding: 8px 10px 5px 10px;
+    font-size: 15px;
+  }
+  .shop-section-recetados .shop-section-product .product--card .card-body .card-btn i {
+    margin-left: 15px;
   }
 }
 footer {
