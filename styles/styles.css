@@ -401,6 +401,14 @@ footer .social .container__social i:hover {
   color: #28bb14;
   font-size: 315%;
 }
+footer .copyR {
+  font-size: 15px;
+  width: 90%;
+  color: rgb(88, 88, 88);
+  position: absolute;
+  bottom: 15px;
+  text-align: center;
+}
 footer .maps span {
   line-height: 60px;
 }
@@ -414,7 +422,7 @@ footer .atribuciones {
   font-size: 40%;
 }
 footer .atribuciones a {
-  color: darkgray;
+  color: rgba(169, 169, 169, 0.466);
 }
 
 /* ---------- footer pantallas lg------- */
