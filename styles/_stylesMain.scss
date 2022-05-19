@@ -145,7 +145,6 @@
     "img1 img2 img2 img3"
     "img4 img5 img6 img6";
     grid-gap:15px;
-
 }
 
 .galeria__servicios--img{
@@ -208,3 +207,5 @@ $galeria-serv:(
         }
     }
 }
+
+@import "stylesNovedadesTienda";
