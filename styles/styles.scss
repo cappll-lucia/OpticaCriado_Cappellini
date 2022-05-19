@@ -206,7 +206,7 @@ body{
         align-items: center;
         h1{
             font-weight: 600;
-            font-size: 300%;
+            font-size: 2rem;
             text-transform: uppercase;
             text-align: center;
             padding: 0 10px 5px 10px;
@@ -214,7 +214,7 @@ body{
         }
         span{
             font-weight: 400;
-            font-size: 140%;
+            font-size: 1rem;
             text-align: center;
             padding: 0 10px 5px 10px;
             animation-duration: 2s;
@@ -222,44 +222,19 @@ body{
     }
 }
 
-@media screen and (min-width:630px) and (max-width: 749px) {
-    .lading-page-text{
-        h1{
-            font-size: 250%;
-        }
-        span{
-            font-size: 120%;
-        }
-    }
-}
-@media screen and (min-width:490px) and (max-width:629px){
+@media (max-width:629px){
     .lading-page{
-        height: calc(100vh - 250px);
+        height: calc(100vh - 160px);
     }
     .lading-page-text{
         height: 250px;
-        h1{
-            font-size: 200%;
-        }
         span{
-            font-size: 100%;
-        }
-    }
-}
-@media screen and (max-width:489px){
-    .lading-page{
-        height: calc(100vh - 250px);
-    }
-    .lading-page-text{
-        height: 250px;
-        h1{
-            font-size: 180%;
-        }
-        span{
-            font-size: 100%;
             margin-bottom: 3px;
         }
     }
 }
 
+
 @import "stylesMain";
+
+@import "stylesFooter";
