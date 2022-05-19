@@ -16,7 +16,7 @@
 
 .contact_forulario{
     padding:35px 20px ;
-    color: #2F3CA1;
+    color: $blueC;
     overflow: hidden;
     .subtitle{
         margin-bottom: 0;
@@ -33,14 +33,14 @@
         input{
             background-color: #ffffff00;
             border:none;
-            border-bottom: solid #2F3CA1 2px;
+            border-bottom: solid $blueC 2px;
             width: 80%;
             margin-left: 10%;
         }
         textarea{
             background-color: #ffffff00;
             border:none;
-            border-bottom: solid #2F3CA1 2px;
+            border-bottom: solid $blueC 2px;
             margin-left: 10%;
             height: 85px;
             width: 80%;
@@ -84,7 +84,7 @@
             border: none;
             border-radius: 20px;
             box-shadow: #13153f 1.5px 1.5px 5px;
-            color: #1a217c;
+            color: $blueB;
             font-weight: 600;
             background-image: linear-gradient( 60deg, #83db49, rgb(17, 221, 187));
         }
@@ -96,22 +96,115 @@
     }
 } 
 
-  /* formulario xs------- */
-@media (max-width: 575px){
-
-}
-
-  /* formulario sm------- */
-@media (min-width: 576px)and (max-width: 767px){  
-
-}
-  
   /* formulario md------- */
-  @media (min-width: 768px)and (max-width: 991px){
+@media (min-width: 768px)and (max-width: 991px){
     .form-contact-img{
         background-image: url(../gallery/Chat_Flatline_vertical.png);
         background-position: center;
         background-repeat: no-repeat;
         background-size: contain;
+    }
+}
+
+//--------galeria servicios-----------
+.servicios-gallery{
+    padding: 30px 10px;
+    height: 500px;
+    background-image: url(/gallery/background_blob2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left;
+    .servicios_title{
+        font-size: 60px;
+        font-weight: 700;
+        font-family: 'Poppins', sans-serif;
+        color: #8bd9d1ce;
+        text-shadow:#0e072e 5px 5px 15px ;
+    }
+    .servicios_title_up, .servicios_title_down{
+        display: block;
+        text-align: right;
+        margin-right: 20px;
+        }
+    .servicios_title_up{
+        margin-top: 60px;
+        }
+    .servicios_title_lineal{
+        display:none;
+        font-size: 80px;
+    }
+}
+
+.galeria__servicios{
+    height: 400px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas: 
+    "img1 img2 img2 img3"
+    "img4 img5 img6 img6";
+    grid-gap:15px;
+
+}
+
+.galeria__servicios--img{
+    border-radius: 15px;
+    background-size: cover;
+    box-shadow: rgb(14, 7, 46) 5px 5px 15px;
+    .btn{
+        position: absolute;
+        display: block;
+        margin: 147px 10px;
+        // background-color: #D92525 ;
+        border: none;
+        border-radius: 10px;
+        background-color: $orange;
+    }
+    .btn a{
+        text-decoration: none;
+        color: $greenC;
+        font-family: 'Poppins', sans-serif;
+        font-size: 13px;
+        font-weight: 600;
+    }
+
+    .btn:hover{
+        background-color: #f09e64;
+        // transform: scale(1.01);
+        border: solid $orange 2px;
+        transition:none;
+    }
+
+    .btn:hover a{
+        color: $blueB;
+    }
+}
+
+@mixin bg-position($position){
+    background-position: $position;
+}
+
+
+$galeria-serv:( 
+    "img1": url(../gallery/galeria_recetados2_recortada.jpg),
+    "img2": url(../gallery/galeria_contactos_blue.jpg),
+    "img3": url(../gallery/galeria_audifono_blue_recorte2.jpg),
+    "img4": url(../gallery/galeria_sol.jpg),
+    "img5": url(../gallery/galeria_fotos_azul.jpg),
+    "img6": url(../gallery/galeria_industriales_blue.jpg),
+    );
+
+@each $img, $url in $galeria-serv {
+    .galeria__servicios--#{$img} {
+        grid-area: $img;
+        background-image: $url;
+        @if (($img==img1) or ($img==img5)){
+            @include bg-position(center);
+        }@else if (($img==img2) or ($img==img6)){
+            @include bg-position(top);
+        }@else if ($img==img4) {
+            @include bg-position(right);
+        }
     }
 }
