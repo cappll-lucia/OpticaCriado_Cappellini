@@ -195,29 +195,30 @@ body{
     background-position: center;
     position: relative;
     overflow: hidden;
-}
-
-.lading-page-text{
-    font-family: 'Rubik', sans-serif;
-    height: 340px;
-    color: $greenC;
-    color: $blueC;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    h1{
-        font-weight: 600;
-        font-size: 300%;
-        text-transform: uppercase;
-        text-align: center;
-        padding: 0 10px 5px 10px;
-    }
-    span{
-        font-weight: 400;
-        font-size: 140%;
-        text-align: center;
-        padding: 0 10px 5px 10px;
+    .lading-page-text{
+        font-family: 'Rubik', sans-serif;
+        height: 340px;
+        color: $greenC;
+        color: $blueC;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        h1{
+            font-weight: 600;
+            font-size: 300%;
+            text-transform: uppercase;
+            text-align: center;
+            padding: 0 10px 5px 10px;
+            animation-duration: 2s; 
+        }
+        span{
+            font-weight: 400;
+            font-size: 140%;
+            text-align: center;
+            padding: 0 10px 5px 10px;
+            animation-duration: 2s;
+        }
     }
 }
 
