@@ -140,6 +140,8 @@ body {
 }
 @media screen and (max-width: 767px) {
   .topnav {
+    height: -webkit-max-content;
+    height: -moz-max-content;
     height: max-content;
     display: block;
   }
@@ -214,14 +216,16 @@ body {
   text-transform: uppercase;
   text-align: center;
   padding: 0 10px 5px 10px;
-  animation-duration: 2s;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
 }
 .lading-page .lading-page-text span {
   font-weight: 400;
   font-size: 1rem;
   text-align: center;
   padding: 0 10px 5px 10px;
-  animation-duration: 2s;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
 }
 
 @media (max-width: 629px) {
@@ -301,6 +305,8 @@ body {
 }
 .contact_forulario .form .div--domicilio .domicilio--alloptions .one_option {
   display: block;
+  width: -webkit-max-content;
+  width: -moz-max-content;
   width: max-content;
 }
 .contact_forulario .form .div--domicilio .domicilio--alloptions .one_option .input--option {
@@ -441,20 +447,58 @@ body {
   background-position: top;
 }
 
-@media (max-width: 1149px) {
-  .servicios_title {
+@media screen and (max-width: 1149px) {
+  .servicios-gallery .servicios_title {
     font-size: 45px;
   }
-
-  .galeria__servicios--img .btn {
+  .servicios-gallery .galeria__servicios--img .btn {
     position: absolute;
     display: block;
     margin: 153px 10px;
     font-size: 10x;
   }
-
-  .galeria__servicios--img1 .btn {
+  .servicios-gallery .galeria__servicios--img1 .btn {
     font-size: 11px;
+  }
+}
+@media (max-width: 991px) {
+  .servicios-gallery {
+    height: 600px;
+  }
+  .servicios-gallery .servicios_title {
+    width: 100%;
+    text-align: center;
+    margin-left: 0;
+  }
+  .servicios-gallery .servicios_title_up, .servicios-gallery .servicios_title_down {
+    display: none;
+  }
+  .servicios-gallery .servicios_title_lineal {
+    display: block;
+  }
+  .servicios-gallery .galeria__servicios .btn {
+    padding: 5px 6px;
+  }
+}
+@media (max-width: 842px) {
+  .servicios-gallery {
+    height: 1200px;
+  }
+  .servicios-gallery .galeria__servicios {
+    height: 1000px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-areas: "img1 img4" "img2 img2" "img3 img5" "img6 img6";
+    grid-gap: 15px;
+  }
+  .servicios-gallery .galeria__servicios .galeria__servicios--img .btn {
+    margin: 200px 10px;
+  }
+}
+@media (max-width: 842px) {
+  .servicios-gallery .galeria__servicios .galeria__servicios--img .btn a {
+    font-size: 10px;
   }
 }
 .novedades_home {
@@ -848,6 +892,4 @@ footer .atribuciones a {
   .container__social {
     width: 60%;
   }
-}
-
-/*# sourceMappingURL=styles.css.map */
+}/*# sourceMappingURL=styles.css.map */

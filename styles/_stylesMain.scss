@@ -208,42 +208,77 @@ $galeria-serv:(
     }
 }
 
-@media (max-width: 1149px){
-    .servicios_title{
-        font-size: 45px;
-    }
+@media screen and (max-width: 1149px){
 
-    .galeria__servicios--img .btn{
-        position: absolute;
-        display: block;
-        margin: 153px 10px;
-        font-size: 10x;
-    }
-    
-    .galeria__servicios--img1 .btn{
-        font-size: 11px;
+    .servicios-gallery{
+        .servicios_title{
+            font-size: 45px;
+        }
+        
+        .galeria__servicios--img .btn{
+            position: absolute;
+            display: block;
+            margin: 153px 10px;
+            font-size: 10x;
+        }
+        
+        .galeria__servicios--img1 .btn{
+            font-size: 11px;
+        }
     }
 }
 
 @media (max-width: 991px){
+    .servicios-gallery{
+        height: 600px;
+        .servicios_title{
+            width: 100%;
+            text-align: center;
+            margin-left: 0;
+        }
+        
+        .servicios_title_up, .servicios_title_down{
+            display: none;
+        }
+        
+        .servicios_title_lineal{
+            display:block;
+        }
+        
+        .galeria__servicios .btn{
+            padding: 5px 6px;
+        }
+        }
 
-    .servicios_title{
-        width: 100%;
-        text-align: center;
-        margin-left: 0;
+}
+
+@media (max-width: 842px){
+    .servicios-gallery{
+        height: 1200px;
+        .galeria__servicios{
+            height: 1000px;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(4, 1fr);
+            grid-template-areas: 
+            "img1 img4"
+            "img2 img2"
+            "img3 img5"
+            "img6 img6";
+            grid-gap:15px;
+            .galeria__servicios--img .btn{
+                margin: 200px 10px;
+            }
+        }
     }
+}
 
-    .servicios_title_up, .servicios_title_down{
-        display: none;
+@media (max-width: 842px){
+    .servicios-gallery{
+        .galeria__servicios{
+            .galeria__servicios--img .btn a{
+                font-size: 10px;
+            }
+        }
     }
-    
-    .servicios_title_lineal{
-        display:block;
-    }
-
-
-    .galeria__servicios .btn{
-        padding: 5px 6px;
-    }
-
 }
