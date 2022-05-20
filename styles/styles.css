@@ -1015,10 +1015,9 @@ body {
   display: none;
 }
 .formulario-fotografia .custom-file-upload {
-  border: solid #2F3CA1 0.1px;
   border-bottom: solid #2F3CA1 2px;
   display: block;
-  padding: 15px 15px;
+  padding: 5px 15px 5px 15px;
   width: 50%;
   position: relative;
   left: 25%;
