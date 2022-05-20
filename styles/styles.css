@@ -343,16 +343,13 @@ body {
 .servicios-gallery {
   padding: 30px 10px;
   height: 500px;
-  background-image: url(/gallery/background_blob2.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: left;
+  background-color: #1F28A1;
 }
 .servicios-gallery .servicios_title {
   font-size: 60px;
   font-weight: 700;
   font-family: "Poppins", sans-serif;
-  color: rgba(139, 217, 209, 0.8078431373);
+  color: rgba(42, 214, 197, 0.8078431373);
   text-shadow: #0e072e 5px 5px 15px;
 }
 .servicios-gallery .servicios_title_up, .servicios-gallery .servicios_title_down {
@@ -389,18 +386,20 @@ body {
   margin: 147px 10px;
   border: none;
   border-radius: 10px;
-  background-color: #ec721b;
+  background-image: linear-gradient(to right, #ed6ea0 0%, #ec8c69 100%);
 }
 .galeria__servicios--img .btn a {
   text-decoration: none;
-  color: #004643;
+  color: #13153f;
   font-family: "Poppins", sans-serif;
   font-size: 13px;
   font-weight: 600;
 }
 .galeria__servicios--img .btn:hover {
-  background-color: #f09e64;
-  border: solid #ec721b 2px;
+  background-color: #837b75;
+  background-image: linear-gradient(-20deg, rgb(133, 130, 130) 0%, #9bc5c3 100%);
+  transform: scale(1.02);
+  border: solid #1a217c 2px;
   transition: none;
 }
 .galeria__servicios--img .btn:hover a {
@@ -408,40 +407,56 @@ body {
 }
 
 .galeria__servicios--img1 {
-  grid-area: "img1";
+  grid-area: img1;
   background-image: url(../gallery/galeria_recetados2_recortada.jpg);
   background-position: center;
 }
 
 .galeria__servicios--img2 {
-  grid-area: "img2";
+  grid-area: img2;
   background-image: url(../gallery/galeria_contactos_blue.jpg);
   background-position: top;
 }
 
 .galeria__servicios--img3 {
-  grid-area: "img3";
+  grid-area: img3;
   background-image: url(../gallery/galeria_audifono_blue_recorte2.jpg);
 }
 
 .galeria__servicios--img4 {
-  grid-area: "img4";
+  grid-area: img4;
   background-image: url(../gallery/galeria_sol.jpg);
   background-position: right;
 }
 
 .galeria__servicios--img5 {
-  grid-area: "img5";
+  grid-area: img5;
   background-image: url(../gallery/galeria_fotos_azul.jpg);
   background-position: center;
 }
 
 .galeria__servicios--img6 {
-  grid-area: "img6";
+  grid-area: img6;
   background-image: url(../gallery/galeria_industriales_blue.jpg);
   background-position: top;
 }
 
+@media (max-width: 1149px) {
+  .servicios_title {
+    font-size: 45px;
+  }
+
+  .galeria__servicios--img .btn {
+    position: absolute;
+    display: block;
+    margin: 153px 10px;
+    font-size: 10x;
+  }
+
+  .galeria__servicios--img1 .btn {
+    font-size: 11px;
+  }
+}
 .novedades_home {
   background-color: #a1ff6a;
   background-image: url("data:image/svg+xml,%3Csvg width='52' height='26' viewBox='0 0 52 26' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%2315c5b5' fill-opacity='0.42'%3E%3Cpath d='M10 10c0-2.21-1.79-4-4-4-3.314 0-6-2.686-6-6h2c0 2.21 1.79 4 4 4 3.314 0 6 2.686 6 6 0 2.21 1.79 4 4 4 3.314 0 6 2.686 6 6 0 2.21 1.79 4 4 4v2c-3.314 0-6-2.686-6-6 0-2.21-1.79-4-4-4-3.314 0-6-2.686-6-6zm25.464-1.95l8.486 8.486-1.414 1.414-8.486-8.486 1.414-1.414z' /%3E%3C/g%3E%3C/g%3E%3C/svg%3E");

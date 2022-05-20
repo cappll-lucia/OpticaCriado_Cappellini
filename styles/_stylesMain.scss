@@ -110,15 +110,15 @@
 .servicios-gallery{
     padding: 30px 10px;
     height: 500px;
-    background-image: url(/gallery/background_blob2.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: left;
+    background-color: $blueA;
+    // background-repeat:repeat-x;
+    // background-size: contain;
+    // background-position: left;
     .servicios_title{
         font-size: 60px;
         font-weight: 700;
         font-family: 'Poppins', sans-serif;
-        color: #8bd9d1ce;
+        color: #2ad6c5ce;
         text-shadow:#0e072e 5px 5px 15px ;
     }
     .servicios_title_up, .servicios_title_down{
@@ -155,23 +155,23 @@
         position: absolute;
         display: block;
         margin: 147px 10px;
-        // background-color: #D92525 ;
         border: none;
         border-radius: 10px;
-        background-color: $orange;
+        background-image: linear-gradient(to right, #ed6ea0 0%, #ec8c69 100%);
     }
     .btn a{
         text-decoration: none;
-        color: $greenC;
+        color: $sombra;
         font-family: 'Poppins', sans-serif;
         font-size: 13px;
         font-weight: 600;
     }
 
     .btn:hover{
-        background-color: #f09e64;
-        // transform: scale(1.01);
-        border: solid $orange 2px;
+        background-color: #837b75;
+        background-image: linear-gradient(-20deg, rgb(133, 130, 130) 0%, #9bc5c3 100%);
+        transform: scale(1.02);
+        border: solid $blueB 2px;
         transition:none;
     }
 
@@ -186,24 +186,64 @@
 
 
 $galeria-serv:( 
-    "img1": url(../gallery/galeria_recetados2_recortada.jpg),
-    "img2": url(../gallery/galeria_contactos_blue.jpg),
-    "img3": url(../gallery/galeria_audifono_blue_recorte2.jpg),
-    "img4": url(../gallery/galeria_sol.jpg),
-    "img5": url(../gallery/galeria_fotos_azul.jpg),
-    "img6": url(../gallery/galeria_industriales_blue.jpg),
+    img1: url(../gallery/galeria_recetados2_recortada.jpg),
+    img2: url(../gallery/galeria_contactos_blue.jpg),
+    img3: url(../gallery/galeria_audifono_blue_recorte2.jpg),
+    img4: url(../gallery/galeria_sol.jpg),
+    img5: url(../gallery/galeria_fotos_azul.jpg),
+    img6: url(../gallery/galeria_industriales_blue.jpg),
     );
 
 @each $img, $url in $galeria-serv {
     .galeria__servicios--#{$img} {
         grid-area: $img;
         background-image: $url;
-        @if (($img=="img1") or ($img=="img5")){
+        @if (($img==img1) or ($img==img5)){
             @include bg-position(center);
-        }@else if (($img=="img2") or ($img=="img6")){
+        }@else if (($img==img2) or ($img==img6)){
             @include bg-position(top);
-        }@else if ($img=="img4") {
+        }@else if ($img==img4) {
             @include bg-position(right);
         }
     }
+}
+
+@media (max-width: 1149px){
+    .servicios_title{
+        font-size: 45px;
+    }
+
+    .galeria__servicios--img .btn{
+        position: absolute;
+        display: block;
+        margin: 153px 10px;
+        font-size: 10x;
+    }
+    
+    .galeria__servicios--img1 .btn{
+        font-size: 11px;
+    }
+}
+
+@media (max-width: 991px){
+
+    .servicios_title{
+        width: 100%;
+        text-align: center;
+        margin-left: 0;
+    }
+
+    .servicios_title_up, .servicios_title_down{
+        display: none;
+    }
+    
+    .servicios_title_lineal{
+        display:block;
+    }
+
+
+    .galeria__servicios .btn{
+        padding: 5px 6px;
+    }
+
 }
