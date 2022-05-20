@@ -240,47 +240,47 @@ body {
     margin-bottom: 3px;
   }
 }
-.formulario-contact {
+.formulario-contacto, .formulario-fotografia {
   background-image: linear-gradient(-225deg, #74a7f3 0%, #B8DCFF 48%, #6BBBFF 100%);
   padding: 4% 0;
 }
 
-.form-contact {
+.form-square {
   background-image: linear-gradient(-20deg, #e9defa 0%, #fbfcdb 100%);
 }
 
-.form-contact-img {
+.form-square-img {
   background-image: url(../gallery/Chat_Flatline.png);
   background-position: center;
   background-repeat: no-repeat;
 }
 
-.contact_forulario {
+.square_forulario {
   padding: 35px 20px;
   color: #2F3CA1;
   overflow: hidden;
 }
-.contact_forulario .subtitle {
+.square_forulario .subtitle {
   margin-bottom: 0;
   padding-bottom: 0;
 }
-.contact_forulario .form {
+.square_forulario .form {
   margin-top: 0;
   padding-top: 0;
   border: none;
 }
-.contact_forulario .form label {
+.square_forulario .form label {
   text-align: center;
   margin: 5% 0 0 0;
 }
-.contact_forulario .form input {
+.square_forulario .form input {
   background-color: rgba(255, 255, 255, 0);
   border: none;
   border-bottom: solid #2F3CA1 2px;
   width: 80%;
   margin-left: 10%;
 }
-.contact_forulario .form textarea {
+.square_forulario .form textarea {
   background-color: rgba(255, 255, 255, 0);
   border: none;
   border-bottom: solid #2F3CA1 2px;
@@ -289,40 +289,42 @@ body {
   width: 80%;
   resize: none;
 }
-.contact_forulario .form .div--domicilio {
+.square_forulario .form .div--selection {
+  display: flex;
+  flex-wrap: wrap;
   padding: 5% 0 0 5%;
   margin: 0;
 }
-.contact_forulario .form .div--domicilio .label--domicilio {
+.square_forulario .form .div--selection .label--selection {
   margin: 0;
   padding: 0 0 2% 0;
 }
-.contact_forulario .form .div--domicilio .domicilio--alloptions {
+.square_forulario .form .div--selection .selection--alloptions {
   display: flex;
   justify-content: space-around;
   margin-top: 0;
   padding-top: 0;
 }
-.contact_forulario .form .div--domicilio .domicilio--alloptions .one_option {
+.square_forulario .form .div--selection .selection--alloptions .one_option {
   display: block;
   width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
 }
-.contact_forulario .form .div--domicilio .domicilio--alloptions .one_option .input--option {
+.square_forulario .form .div--selection .selection--alloptions .one_option .input--option {
   display: inline-block;
   margin: 0;
   padding: 0;
 }
-.contact_forulario .form .div--domicilio .domicilio--alloptions .one_option .input--option:hover {
+.square_forulario .form .div--selection .selection--alloptions .one_option .input--option:hover {
   transform: scale(1.5);
 }
-.contact_forulario .form .div--domicilio .domicilio--alloptions .one_option .label--option {
+.square_forulario .form .div--selection .selection--alloptions .one_option .label--option {
   display: inline-block;
   margin: 0;
   padding: 0;
 }
-.contact_forulario .form .input--button {
+.square_forulario .form .input--button {
   margin: 25px 35% 0 35%;
   width: 30%;
   padding: 15px 32px;
@@ -333,13 +335,13 @@ body {
   font-weight: 600;
   background-image: linear-gradient(60deg, #83db49, rgb(17, 221, 187));
 }
-.contact_forulario .form .input--button:hover {
+.square_forulario .form .input--button:hover {
   transform: scale(1.1);
 }
 
 /* formulario md------- */
 @media (min-width: 768px) and (max-width: 991px) {
-  .form-contact-img {
+  .form-square-img {
     background-image: url(../gallery/Chat_Flatline_vertical.png);
     background-position: center;
     background-repeat: no-repeat;
@@ -740,6 +742,324 @@ body {
 }
 .shop-section-sol {
   background-image: linear-gradient(to top, rgba(238, 162, 162, 0.862745098) 0% rgba(187, 193, 191, 0.747) bf 19%, rgba(87, 197, 225, 0.7137254902) 42%, rgba(180, 159, 218, 0.6117647059) 79%, #7ac5d8 100%);
+}
+
+.formulario-contacto, .formulario-fotografia {
+  background-image: linear-gradient(-225deg, #74a7f3 0%, #B8DCFF 48%, #6BBBFF 100%);
+  padding: 4% 0;
+}
+
+.form-square {
+  background-image: linear-gradient(-20deg, #e9defa 0%, #fbfcdb 100%);
+}
+
+.form-square-img {
+  background-image: url(../gallery/Chat_Flatline.png);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.square_forulario {
+  padding: 35px 20px;
+  color: #2F3CA1;
+  overflow: hidden;
+}
+.square_forulario .subtitle {
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+.square_forulario .form {
+  margin-top: 0;
+  padding-top: 0;
+  border: none;
+}
+.square_forulario .form label {
+  text-align: center;
+  margin: 5% 0 0 0;
+}
+.square_forulario .form input {
+  background-color: rgba(255, 255, 255, 0);
+  border: none;
+  border-bottom: solid #2F3CA1 2px;
+  width: 80%;
+  margin-left: 10%;
+}
+.square_forulario .form textarea {
+  background-color: rgba(255, 255, 255, 0);
+  border: none;
+  border-bottom: solid #2F3CA1 2px;
+  margin-left: 10%;
+  height: 85px;
+  width: 80%;
+  resize: none;
+}
+.square_forulario .form .div--selection {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 5% 0 0 5%;
+  margin: 0;
+}
+.square_forulario .form .div--selection .label--selection {
+  margin: 0;
+  padding: 0 0 2% 0;
+}
+.square_forulario .form .div--selection .selection--alloptions {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 0;
+  padding-top: 0;
+}
+.square_forulario .form .div--selection .selection--alloptions .one_option {
+  display: block;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+}
+.square_forulario .form .div--selection .selection--alloptions .one_option .input--option {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+}
+.square_forulario .form .div--selection .selection--alloptions .one_option .input--option:hover {
+  transform: scale(1.5);
+}
+.square_forulario .form .div--selection .selection--alloptions .one_option .label--option {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+}
+.square_forulario .form .input--button {
+  margin: 25px 35% 0 35%;
+  width: 30%;
+  padding: 15px 32px;
+  border: none;
+  border-radius: 20px;
+  box-shadow: #13153f 1.5px 1.5px 5px;
+  color: #1a217c;
+  font-weight: 600;
+  background-image: linear-gradient(60deg, #83db49, rgb(17, 221, 187));
+}
+.square_forulario .form .input--button:hover {
+  transform: scale(1.1);
+}
+
+/* formulario md------- */
+@media (min-width: 768px) and (max-width: 991px) {
+  .form-square-img {
+    background-image: url(../gallery/Chat_Flatline_vertical.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+}
+.servicios-gallery {
+  padding: 30px 10px;
+  height: 500px;
+  background-color: #1F28A1;
+}
+.servicios-gallery .servicios_title {
+  font-size: 60px;
+  font-weight: 700;
+  font-family: "Poppins", sans-serif;
+  color: rgba(42, 214, 197, 0.8078431373);
+  text-shadow: #0e072e 5px 5px 15px;
+}
+.servicios-gallery .servicios_title_up, .servicios-gallery .servicios_title_down {
+  display: block;
+  text-align: right;
+  margin-right: 20px;
+}
+.servicios-gallery .servicios_title_up {
+  margin-top: 60px;
+}
+.servicios-gallery .servicios_title_lineal {
+  display: none;
+  font-size: 80px;
+}
+
+.galeria__servicios {
+  height: 400px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-areas: "img1 img2 img2 img3" "img4 img5 img6 img6";
+  grid-gap: 15px;
+}
+
+.galeria__servicios--img {
+  border-radius: 15px;
+  background-size: cover;
+  box-shadow: rgb(14, 7, 46) 5px 5px 15px;
+}
+.galeria__servicios--img .btn {
+  position: absolute;
+  display: block;
+  margin: 147px 10px;
+  border: none;
+  border-radius: 10px;
+  background-image: linear-gradient(to right, #ed6ea0 0%, #ec8c69 100%);
+}
+.galeria__servicios--img .btn a {
+  text-decoration: none;
+  color: #13153f;
+  font-family: "Poppins", sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+}
+.galeria__servicios--img .btn:hover {
+  background-color: #837b75;
+  background-image: linear-gradient(-20deg, rgb(133, 130, 130) 0%, #9bc5c3 100%);
+  transform: scale(1.02);
+  border: solid #1a217c 2px;
+  transition: none;
+}
+.galeria__servicios--img .btn:hover a {
+  color: #1a217c;
+}
+
+.galeria__servicios--img1 {
+  grid-area: img1;
+  background-image: url(../gallery/galeria_recetados2_recortada.jpg);
+  background-position: center;
+}
+
+.galeria__servicios--img2 {
+  grid-area: img2;
+  background-image: url(../gallery/galeria_contactos_blue.jpg);
+  background-position: top;
+}
+
+.galeria__servicios--img3 {
+  grid-area: img3;
+  background-image: url(../gallery/galeria_audifono_blue_recorte2.jpg);
+}
+
+.galeria__servicios--img4 {
+  grid-area: img4;
+  background-image: url(../gallery/galeria_sol.jpg);
+  background-position: right;
+}
+
+.galeria__servicios--img5 {
+  grid-area: img5;
+  background-image: url(../gallery/galeria_fotos_azul.jpg);
+  background-position: center;
+}
+
+.galeria__servicios--img6 {
+  grid-area: img6;
+  background-image: url(../gallery/galeria_industriales_blue.jpg);
+  background-position: top;
+}
+
+@media screen and (max-width: 1149px) {
+  .servicios-gallery .servicios_title {
+    font-size: 45px;
+  }
+  .servicios-gallery .galeria__servicios--img .btn {
+    position: absolute;
+    display: block;
+    margin: 153px 10px;
+    font-size: 10x;
+  }
+  .servicios-gallery .galeria__servicios--img1 .btn {
+    font-size: 11px;
+  }
+}
+@media (max-width: 991px) {
+  .servicios-gallery {
+    height: 600px;
+  }
+  .servicios-gallery .servicios_title {
+    width: 100%;
+    text-align: center;
+    margin-left: 0;
+  }
+  .servicios-gallery .servicios_title_up, .servicios-gallery .servicios_title_down {
+    display: none;
+  }
+  .servicios-gallery .servicios_title_lineal {
+    display: block;
+  }
+  .servicios-gallery .galeria__servicios .btn {
+    padding: 5px 6px;
+  }
+}
+@media (max-width: 842px) {
+  .servicios-gallery {
+    height: 1200px;
+  }
+  .servicios-gallery .galeria__servicios {
+    height: 1000px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-areas: "img1 img4" "img2 img2" "img3 img5" "img6 img6";
+    grid-gap: 15px;
+  }
+  .servicios-gallery .galeria__servicios .galeria__servicios--img .btn {
+    margin: 200px 10px;
+  }
+}
+@media (max-width: 842px) {
+  .servicios-gallery .galeria__servicios .galeria__servicios--img .btn a {
+    font-size: 10px;
+  }
+}
+.formulario-fotografia {
+  padding: 2% 0;
+  background-image: linear-gradient(to right, #43e97b 0%, #38f9d7 100%);
+}
+.formulario-fotografia input[type=file] {
+  display: none;
+}
+.formulario-fotografia .custom-file-upload {
+  border: solid #2F3CA1 0.1px;
+  border-bottom: solid #2F3CA1 2px;
+  display: block;
+  padding: 15px 15px;
+  width: 50%;
+  position: relative;
+  left: 25%;
+  cursor: pointer;
+}
+.formulario-fotografia .custom-file-upload:hover {
+  transform: scale(1.1);
+}
+.formulario-fotografia .form-square-img {
+  background-image: url(../gallery/flame-photographing.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.formulario-fotografia .form-square {
+  background-image: radial-gradient(73% 147%, #EADFDF 59%, #ECE2DF 100%), radial-gradient(91% 146%, rgba(255, 255, 255, 0.5) 47%, rgba(0, 0, 0, 0.5) 100%);
+  background-blend-mode: screen;
+}
+.formulario-fotografia .form .div--selection {
+  padding: 5% 0 0 5%;
+}
+.formulario-fotografia .form .div--selection .label--selection {
+  padding: 0 0 0 0;
+  font-size: 15px;
+}
+.formulario-fotografia .form .div--selection2 {
+  padding: 3% 0 0 0%;
+}
+.formulario-fotografia .form .div--selection2 .label--selection2 {
+  padding: 3% 0 0 0;
+}
+.formulario-fotografia .form .input--button {
+  margin: 25px 35% 0 35%;
+  width: 30%;
+  padding: 10px 52px;
+  border: none;
+  border-radius: 20px;
+  box-shadow: #13153f 1.5px 1.5px 5px;
+  color: #1a217c;
+  font-weight: 600;
+  background-image: linear-gradient(to right, #faa770 0%, #fee140 100%);
 }
 
 footer {

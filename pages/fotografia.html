@@ -52,12 +52,67 @@ rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/
     </header>
 
     <main>
-        <div class="bgimg">
-            <div class="middle">
-                <h1>Proximamente...</h1>
-                <p>Fotografía en nuestro SitioWeb</p>
+        <section class="formulario-fotografia">
+            <div class="container form-square w-75">
+                <div class="row">
+                    <div class="form-square-img col"> </div>
+                    <div class="square_forulario container-fluid col-xl-7 col-lg-7 col-md-8" id="square">
+                            <div class="row">
+                            <h2 class="title col-xl-12 col-lg-12 text-center"><em>Imprimi tus recuerdos!</em></h2>
+                            <p class="subtitle col-xl-12 col-lg-12 text-center">Adjunta tus imagenes y retiralas en nuestro local.</p>
+                            <form action="" class="form col-xl-12 col-lg-12">
+                                <label for="nombre" class="label label__nombre col-xl-12 col-lg-12">Nombre y Apellido</label>
+                                <input type="text" name="nombre" id="nombre" class="form__input col-xl-12 col-lg-12"> <br>
+                                <div class="div--selection col-xl-12 col-lg-12">
+                                    <label class="label--selection col-lg-12 col-xl-12">Estilo de impresion</label>
+                                    <div class="selection--alloptions col-lg-12 text-center col-xl-12">
+                                        <div class="one_option">
+                                            <input type="radio" class="input--option" name="election">
+                                            <label for="" class="label--option">Simple</label>
+                                        </div>
+                                        <div class="one_option">
+                                            <input type="radio" class="input--option" name="selection">
+                                            <label for="" class="label--option">Collage</label>
+                                        </div>
+                                        <div class="one_option">
+                                            <input type="radio" class="input--option" name="selection">
+                                            <label for="" class="label--option">Calendario</label>
+                                        </div>
+                                        <div class="one_option">
+                                            <input type="radio" class="input--option" name="selection">
+                                            <label for="" class="label--option">Tipo Polaroid</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="div--selection div--selection2 col-xl-12 col-lg-12">
+                                    <label class="label--selection label--selection2 col-lg-12 col-xl-12">Tamaño</label>
+                                    <div class="selection--alloptions col-lg-12 text-center col-xl-12">
+                                        <div class="one_option">
+                                            <input type="radio" class="input--option" name="election">
+                                            <label for="" class="label--option">10 x 15</label>
+                                        </div>
+                                        <div class="one_option">
+                                            <input type="radio" class="input--option" name="selection2">
+                                            <label for="" class="label--option">13 x 18</label>
+                                        </div>
+                                        <div class="one_option">
+                                            <input type="radio" class="input--option" name="selection2">
+                                            <label for="" class="label--option">20 x 30</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <label for="tel" class="label label--tel col-xl-12 col-lg-12">Numero de telefono</label>
+                                <input type="tel" name="tel" id="tel" class="form__input form__input--correo col-xl-12 col-lg-12">
+                                <label for="file-upload" class="custom-file-upload">
+                                    <i class="fa fa-cloud-upload"></i> Subir imagenes
+                                </label>
+                                <input id="file-upload" type="file" >
+                                <input type="submit" value="Enviar" class="input--button col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                            </form>
+                    </div>
+                </div>
             </div>
-        </div>
+        </section>
     </main>
 
     <footer>

@@ -1,20 +1,20 @@
 @import "variables";
 
 //--------formulario-contacto--------
-.formulario-contact{
+.formulario-contacto{
     background-image: linear-gradient(-225deg, #74a7f3 0%, #B8DCFF 48%, #6BBBFF 100%);
     padding: 4% 0;
 }
-.form-contact{
+.form-square{
     background-image: linear-gradient(-20deg, #e9defa 0%, #fbfcdb 100%);
 }
-.form-contact-img{
+.form-square-img{
     background-image: url(../gallery/Chat_Flatline.png);
     background-position: center;
     background-repeat: no-repeat;
 }
 
-.contact_forulario{
+.square_forulario{
     padding:35px 20px ;
     color: $blueC;
     overflow: hidden;
@@ -46,14 +46,16 @@
             width: 80%;
             resize: none;
         }
-        .div--domicilio{
+        .div--selection{
+            display: flex;
+            flex-wrap: wrap;
             padding: 5% 0 0 5%;
             margin: 0;
-            .label--domicilio {
+            .label--selection {
                 margin: 0;
                 padding: 0 0 2% 0;
             }
-            .domicilio--alloptions{
+            .selection--alloptions{
                 display: flex;
                 justify-content: space-around;
                 margin-top: 0;
@@ -98,7 +100,7 @@
 
   /* formulario md------- */
 @media (min-width: 768px)and (max-width: 991px){
-    .form-contact-img{
+    .form-square-img{
         background-image: url(../gallery/Chat_Flatline_vertical.png);
         background-position: center;
         background-repeat: no-repeat;

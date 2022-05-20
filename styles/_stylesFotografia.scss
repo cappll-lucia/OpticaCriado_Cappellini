@@ -1,0 +1,61 @@
+@import "variables";
+
+@import "stylesMain";
+
+.formulario-fotografia{
+    @extend .formulario-contacto;
+    padding: 2% 0;
+    background-image: linear-gradient(to right, #43e97b 0%, #38f9d7 100%);
+    input[type="file"] {
+        display: none;
+    }
+    .custom-file-upload {
+        border: solid $blueC 0.1px;;
+        border-bottom: solid $blueC 2px;
+        display:block;
+        padding: 15px 15px;
+        width: 50%;
+        position: relative;
+        left: 25%;  
+        cursor: pointer;
+    }
+    .custom-file-upload:hover{
+        transform: scale(1.1);
+    }
+    .form-square-img{
+        background-image: url(../gallery/flame-photographing.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+    .form-square{
+        background-image: radial-gradient(73% 147%, #EADFDF 59%, #ECE2DF 100%), radial-gradient(91% 146%, rgba(255,255,255,0.50) 47%, rgba(0,0,0,0.50) 100%);
+        background-blend-mode: screen;
+    }
+    .form{
+        .div--selection{
+            padding: 5% 0 0 5%;
+            .label--selection{
+                padding: 0 0 0 0;
+                font-size: 15px;
+            }
+        }
+        .div--selection2{
+            padding: 3% 0 0 0%;
+            .label--selection2{
+                padding: 3% 0 0 0;
+            }
+        }
+        .input--button{
+            margin: 25px 35% 0 35%;
+            width: 30%;
+            padding:10px 52px;
+            border: none;
+            border-radius: 20px;
+            box-shadow: #13153f 1.5px 1.5px 5px;
+            color: $blueB;
+            font-weight: 600;
+            background-image: linear-gradient(to right, #faa770 0%, #fee140 100%);
+        }
+    }
+}
