@@ -243,4 +243,22 @@ body{
 
 @import "stylesFooter";
 
+.bgimg {
+    background-image: url('../gallery/3160622.jpg');
+    height: 70vh;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    color: #1a217c;
+    font-size: 25px;
+}
+
+
+.middle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
 
