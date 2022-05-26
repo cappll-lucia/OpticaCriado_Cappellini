@@ -51,31 +51,17 @@
             flex-wrap: wrap;
             padding: 5% 0 0 5%;
             margin: 0;
-            .label--selection {
-                margin: 0;
-                padding: 0 0 2% 0;
-            }
-            .selection--alloptions{
-                display: flex;
-                justify-content: space-around;
-                margin-top: 0;
-                padding-top: 0;
-                .one_option{
-                    display: block;
-                    width: max-content;
-                    .input--option{
-                        display: inline-block;
-                        margin: 0;
-                        padding: 0;
-                    }
-                    .input--option:hover{
-                        transform: scale(1.5);
-                    }
-                    .label--option{
-                        display: inline-block;
-                        margin: 0;
-                        padding: 0;
-                    }
+            justify-content: space-around;
+            .form-select{
+                display: inline-block;
+                background-color: #837b7500;
+                color: $blueC;
+                border: none;
+                border-bottom: solid $blueC 2px;
+                padding: 30px 0px 10px 0px;
+                margin: 0 5px 10px 5px;
+                option{
+                    background-color: #e7e6e4;
                 }
             }
         }

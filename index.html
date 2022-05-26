@@ -194,25 +194,13 @@ rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/
                                 <label for="nombre" class="label label__nombre col-xl-12 col-lg-12">Nombre y Apellido</label>
                                 <input type="text" name="nombre" id="nombre" class="form__input col-xl-12 col-lg-12"> <br>
                                 <div class="div--selection col-xl-12 col-lg-12">
-                                    <label class="label--selection col-lg-12 col-xl-12">selection</label>
-                                    <div class="selection--alloptions col-lg-12 text-center col-xl-12">
-                                        <div class="one_option">
-                                            <input type="radio" class="input--option" name="Perez">
-                                            <label for="" class="label--option">Pérez</label>
-                                        </div>
-                                        <div class="one_option">
-                                            <input type="radio" class="input--option" name="Zavalla">
-                                            <label for="" class="label--option">Zavalla</label>
-                                        </div>
-                                        <div class="one_option">
-                                            <input type="radio" class="input--option" name="Rosario">
-                                            <label for="" class="label--option">Rosario</label>
-                                        </div>
-                                        <div class="one_option">
-                                            <input type="radio" class="input--option" name="Otro">
-                                            <label for="" class="label--option">Otro</label>
-                                        </div>
-                                    </div>
+                                    <select class="form-select">
+                                        <option selected="">Seleccione su domicilio</option>
+                                        <option value="perez">Pérez</option>
+                                        <option value="Rosario">Rosario</option>
+                                        <option value="zavalla">Zavalla</option>
+                                        <option value="Otro">Otro</option>
+                                    </select>
                                 </div>
                                 <label for="mail" class="label label--mail col-xl-12 col-lg-12">Correo electrónico</label>
                                 <input type="mail" name="mail" id="mail" class="form__input form__input--correo col-xl-12 col-lg-12">
