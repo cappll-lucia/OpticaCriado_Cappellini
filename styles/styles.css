@@ -114,13 +114,11 @@ body {
   .topnav {
     padding: 5px 0px;
   }
-
   .topnav a {
     padding: 14px 5px;
     text-decoration: none;
     font-size: 75%;
   }
-
   .dropdown .dropbtn {
     font-size: 75%;
   }
@@ -129,13 +127,11 @@ body {
   .topnav {
     padding: 5px 0px;
   }
-
   .topnav a {
     padding: 14px 5px;
     text-decoration: none;
     font-size: 70%;
   }
-
   .dropdown .dropbtn {
     font-size: 70%;
   }
@@ -145,45 +141,36 @@ body {
     height: max-content;
     display: block;
   }
-
   .dropdown-content {
     margin-top: 2px;
     width: 100%;
   }
-
   .topnav a:not(:first-child), .dropdown .dropbtn {
     display: none;
   }
-
   .topnav a.icon {
     float: inherit;
     display: block;
   }
-
   .topnav.responsive {
     position: relative;
   }
-
   .topnav.responsive .icon {
     position: absolute;
     right: 0;
     top: 0;
   }
-
   .topnav.responsive a {
     float: none;
     display: block;
     text-align: left;
   }
-
   .topnav.responsive .dropdown {
     float: none;
   }
-
   .topnav.responsive .dropdown-content {
     position: relative;
   }
-
   .topnav.responsive .dropdown .dropbtn {
     display: block;
     width: 100%;
@@ -230,7 +217,6 @@ body {
   .lading-page {
     height: calc(100vh - 160px);
   }
-
   .lading-page-text {
     height: 250px;
   }
@@ -1138,15 +1124,12 @@ footer .atribuciones a {
   .social hr {
     width: 100% s;
   }
-
   .maps {
     margin-top: 40px;
   }
-
   footer span {
     font-size: 20px;
   }
-
   .menu {
     padding-left: 38px;
   }
@@ -1169,18 +1152,16 @@ footer .atribuciones a {
   .maps iframe {
     width: 100%;
   }
-
   .menu {
     margin-top: 40px;
   }
-
   .container__social {
     width: 60%;
   }
 }
 .container-glass {
   position: absolute;
-  top: 200px;
+  top: 210px;
   left: 0;
   height: 70vh;
   background-color: rgba(255, 255, 255, 0);
@@ -1257,7 +1238,6 @@ footer .atribuciones a {
     height: 15vh;
     top: 160px;
   }
-
   .antes-despues-Lcontacto .container1 {
     height: 15vh;
   }
@@ -1298,7 +1278,6 @@ footer .atribuciones a {
   .container-glass {
     height: 10vh;
   }
-
   .antes-despues-Lcontacto .container1 {
     height: 10vh;
   }
