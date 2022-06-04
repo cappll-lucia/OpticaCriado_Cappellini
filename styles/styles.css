@@ -476,7 +476,7 @@ body {
   background-image: url("data:image/svg+xml,%3Csvg width='52' height='26' viewBox='0 0 52 26' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%2315c5b5' fill-opacity='0.42'%3E%3Cpath d='M10 10c0-2.21-1.79-4-4-4-3.314 0-6-2.686-6-6h2c0 2.21 1.79 4 4 4 3.314 0 6 2.686 6 6 0 2.21 1.79 4 4 4 3.314 0 6 2.686 6 6 0 2.21 1.79 4 4 4v2c-3.314 0-6-2.686-6-6 0-2.21-1.79-4-4-4-3.314 0-6-2.686-6-6zm25.464-1.95l8.486 8.486-1.414 1.414-8.486-8.486 1.414-1.414z' /%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
   background-size: contain;
   width: 100%;
-  padding: 50px 0px 50px 4%;
+  padding: 50px 0px 50px 3%;
   margin-top: 0px;
 }
 .novedades_home h1 {
@@ -485,7 +485,7 @@ body {
   font-weight: 700;
 }
 .novedades_home .novedades__home--card, .novedades_home .shop-section-recetados .shop-section-product .product--card, .novedades_home .shop-section-sol .shop-section-product .product--card, .shop-section-recetados .shop-section-product .novedades_home .product--card, .shop-section-sol .shop-section-product .novedades_home .product--card {
-  margin: 15px;
+  margin: 15px 0px;
   text-align: left;
   border: none;
   border-radius: 10px;
@@ -530,42 +530,47 @@ body {
 
 /* novedades xs------- */
 @media (max-width: 575px) {
-  .novedades__home--card, .shop-section-recetados .shop-section-product .product--card, .shop-section-sol .shop-section-product .product--card {
-    height: 300px;
+  .novedades_home {
+    padding: 0px;
+  }
+  .novedades_home .novedades__home--card, .novedades_home .shop-section-recetados .shop-section-product .product--card, .novedades_home .shop-section-sol .shop-section-product .product--card, .shop-section-recetados .shop-section-product .novedades_home .product--card, .shop-section-sol .shop-section-product .novedades_home .product--card {
+    height: 80vh;
   }
 }
 /* novedades sm------- */
 @media (min-width: 576px) {
-  .novedades__home--card, .shop-section-recetados .shop-section-product .product--card, .shop-section-sol .shop-section-product .product--card {
-    height: 320px;
+  .novedades_home {
+    padding: 0px;
+  }
+  .novedades_home .novedades__home--card, .novedades_home .shop-section-recetados .shop-section-product .product--card, .novedades_home .shop-section-sol .shop-section-product .product--card, .shop-section-recetados .shop-section-product .novedades_home .product--card, .shop-section-sol .shop-section-product .novedades_home .product--card {
+    height: 65vh;
+    margin: 15px 15px;
   }
 }
 /* novedades md------- */
 @media (min-width: 768px) {
   .novedades__home--card, .shop-section-recetados .shop-section-product .product--card, .shop-section-sol .shop-section-product .product--card {
-    height: 250px;
-  }
-}
-@media (min-width: 768px) {
-  .novedades__home--card, .shop-section-recetados .shop-section-product .product--card, .shop-section-sol .shop-section-product .product--card {
-    height: 400px;
+    height: 65vh;
   }
 }
 /* novedades lg------- */
 @media (min-width: 992px) {
   .novedades__home--card, .shop-section-recetados .shop-section-product .product--card, .shop-section-sol .shop-section-product .product--card {
-    height: 270px;
+    height: 20vh;
   }
 }
 /* novedades xl------- */
 @media (min-width: 1200px) {
   .novedades__home--card, .shop-section-recetados .shop-section-product .product--card, .shop-section-sol .shop-section-product .product--card {
-    height: 340px;
+    height: 10vh;
   }
 }
 .shop-section-recetados, .shop-section-sol {
   background-image: linear-gradient(-225deg, rgba(167, 190, 241, 0.664) 0%, rgba(243, 222, 253, 0.76) 48%, rgba(167, 190, 241, 0.664) 100%);
   padding: 50px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
 .shop-section-recetados h1, .shop-section-sol h1 {
   font-weight: 800;
@@ -593,7 +598,7 @@ body {
   margin: 15px 30px;
   text-align: left;
   border-radius: 10px;
-  height: 300px;
+  height: 50vh;
 }
 .shop-section-recetados .shop-section-product .product--card .card-body, .shop-section-sol .shop-section-product .product--card .card-body {
   padding: 0;
@@ -650,6 +655,7 @@ body {
   }
   .shop-section-recetados .shop-section-product .product--card, .shop-section-sol .shop-section-product .product--card {
     margin: 15px 20px;
+    height: 50vh;
   }
 }
 @media (min-width: 767px) and (max-width: 991px) {
@@ -663,8 +669,8 @@ body {
     margin-right: 5px;
   }
   .shop-section-recetados .shop-section-product .product--card, .shop-section-sol .shop-section-product .product--card {
-    height: 350px;
-    margin: 15px 10px;
+    margin: 30px 10px;
+    height: 60vh;
   }
 }
 @media (max-width: 767px) {
@@ -685,8 +691,11 @@ body {
     padding: 5px;
   }
   .shop-section-recetados .shop-section-product .product--card, .shop-section-sol .shop-section-product .product--card {
-    height: 350px;
+    height: 63vh;
     margin: 15px 10px;
+  }
+  .shop-section-recetados .shop-section-product .product--card .card-body, .shop-section-sol .shop-section-product .product--card .card-body {
+    padding: 5px 0px 60px 0px;
   }
 }
 @media (max-width: 575px) {
@@ -697,8 +706,10 @@ body {
     font-size: 40px;
   }
   .shop-section-recetados .shop-section-product .product--card, .shop-section-sol .shop-section-product .product--card {
-    height: 300px;
-    margin: 15px 5px;
+    height: 75vh;
+  }
+  .shop-section-recetados .shop-section-product .product--card .card-body, .shop-section-sol .shop-section-product .product--card .card-body {
+    padding: 5px 0px 60px 0px;
   }
   .shop-section-recetados .shop-section-product .product--card .card-body .card-btn, .shop-section-sol .shop-section-product .product--card .card-body .card-btn {
     padding: 8px 10px 5px 10px;
