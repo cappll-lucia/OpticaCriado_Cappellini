@@ -7,53 +7,61 @@
     background-image: url("data:image/svg+xml,%3Csvg width='52' height='26' viewBox='0 0 52 26' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%2315c5b5' fill-opacity='0.42'%3E%3Cpath d='M10 10c0-2.21-1.79-4-4-4-3.314 0-6-2.686-6-6h2c0 2.21 1.79 4 4 4 3.314 0 6 2.686 6 6 0 2.21 1.79 4 4 4 3.314 0 6 2.686 6 6 0 2.21 1.79 4 4 4v2c-3.314 0-6-2.686-6-6 0-2.21-1.79-4-4-4-3.314 0-6-2.686-6-6zm25.464-1.95l8.486 8.486-1.414 1.414-8.486-8.486 1.414-1.414z' /%3E%3C/g%3E%3C/g%3E%3C/svg%3E");    // background-repeat: no-repeat;
     background-size: contain;
     width: 100%;
-    padding: 50px 0px 50px 3%;
     margin-top: 0px;
     h1{
-        font-size: 60px;
+        padding: 3rem 0  1rem 0;
+        font-size: 4rem;
         color:#1a217c;
         font-weight: 700;
     }
-    .novedades__home--card{
-        margin: 15px 0px;
-        text-align: left;
-        border:none;
-        border-radius: 10px;
-        box-shadow: rgb(105, 107, 105) 1px 1px 4px;
-        .card-body{
-            padding: 0;
-            .card-title{
+    .container .row{
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        margin: 0;
+        .novedades__home--card{
+            width: 100%;
+            display: block;
+            // margin: 1rem;
+            text-align: left;
+            border:none;
+            border-radius: 10px;
+            box-shadow: rgb(81, 114, 81) 0.5px 0.5px 8px;
+            .card-body{
                 padding: 0;
-                margin-top: 20px;
-            }
-            .card-text{
-                padding: 0;
-                margin-bottom: 0px;
-                margin: 0;
-            }
-            .card-btn{
-                padding: 8px 20px 5px 15px;
-                font-family: 'Poppins', sans-serif;
-                color: #1a217c;
-                font-size: 15px;
-                position: absolute;
-                bottom: 0;
-                margin: 0 0 10px 0;
-                border-radius: 15px;
-                background-image: url(../gallery/background_3160622.jpg);
-                border: none;
-                i{
-                    margin-left: 18px;
+                .card-title{
                     padding: 0;
-                    font-size: 18px;
-                    color: #1a217c;
+                    margin-top: 20px;
                 }
-            }
-            .card-btn:hover, .card-btn:hover i{
-                color: #8C1F28;
-            }
-            .card-btn:hover{
-                transform: scale(1.1);
+                .card-text{
+                    padding: 0;
+                    margin-bottom: 0px;
+                    margin: 0;
+                }
+                .card-btn{
+                    padding: 1rem;
+                    font-family: 'Poppins', sans-serif;
+                    color: #1a217c;
+                    font-size: 1rem;
+                    position: absolute;
+                    bottom: 0;
+                    margin: 0 5% 1rem ;
+                    border-radius: 15px;
+                    background-image: url(../gallery/background_3160622.jpg);
+                    border: none;
+                    i{
+                        margin-left: 1rem;
+                        padding: 0;
+                        font-size: 1rem;
+                        color: #1a217c;
+                    }
+                }
+                .card-btn:hover, .card-btn:hover i{
+                    color: #8C1F28;
+                }
+                .card-btn:hover{
+                    transform: scale(1.1);
+                }
             }
         }
     }
@@ -61,46 +69,57 @@
 
   /* novedades xs------- */
 @media (max-width: 575px){
-
     .novedades_home{
-        padding: 0px;
+        h1{
+            padding: 3rem 0  1rem 0;
+            font-size: 2.5rem;
+            color:#1a217c;
+            font-weight: 700;
+        }
+        .container .row{
         .novedades__home--card{
-        height: 80vh;
+            height: 60vh;
+            margin-bottom: 5%;
+        }
     }
 }
 }
-
   /* novedades sm------- */
 @media (min-width: 576px){
-    .novedades_home{
-        padding: 0px;
+    .container .row{
         .novedades__home--card{
-        height: 65vh;
-        margin: 15px 15px;
+            height: 62vh;
+            margin-bottom: 5%;
+        }
     }
 }
-}
+
   /* novedades md------- */
 @media (min-width: 768px){
-
-    .novedades__home--card{
-        height: 65vh;
+    .container .row{
+        .novedades__home--card{
+            height: 60vh;
+            margin:0 0.5% 5% 0 ;
+        }
     }
 }
 
   /* novedades lg------- */
 @media (min-width: 992px){
 
-    .novedades__home--card{
-    height: 20vh;
+    .container .row{
+        .novedades__home--card{
+            height: 55vh;
+        }
     }
 }
 
   /* novedades xl------- */
 @media (min-width: 1200px){
-
-    .novedades__home--card{
-        height: 10vh;
+    .container .row{
+        .novedades__home--card{
+            height: 50vh;
+        }
     }
 }
 
@@ -110,9 +129,6 @@
 .shop-section-recetados{
     background-image: linear-gradient(-225deg, rgba(167, 190, 241, 0.664)0%, rgba(243, 222, 253, 0.76) 48%, rgba(167, 190, 241, 0.664) 100%);
     padding: 50px;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
     h1{
         font-weight: 800;
         display: block;
@@ -135,21 +151,23 @@
             }
         }
     }
-    .shop-section-product{
-        // padding-left: 80px;
+    .shop-section-product .container-fluid .row{
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
         .product--card{
             @extend .novedades__home--card;
-            margin: 15px 30px;
+            margin: 1rem 2rem;
             text-align: left;
             border-radius: 10px;
             height: 50vh;
-            // box-shadow: rgb(105, 107, 105) 1px 1px 4px;
+            box-shadow: rgb(157, 163, 157) 0.5px 0.5px 4px;
             .card-body{
                 padding: 0;
                 color: $sombra;
                 .card-title{
                     padding: 0;
-                    margin-top: 20px;
+                    margin-top: 1rem;
                 }
                 .card-text{
                     padding: 0;
@@ -157,17 +175,16 @@
                     margin: 0;
                 }
                 .card-btn{
-                    padding: 8px 15px 5px 15px;
+                    padding: 0.7rem 1rem;
                     font-family: 'Poppins', sans-serif;
                     color: $sombra;
                     font-weight: 600;
-                    font-size: 15px;
+                    font-size: 1rem;
                     position: absolute;
                     bottom: 0;
                     margin: 0 0 10px 0;
                     border-radius: 15px;
-                    background-image: url(../gallery/background_3160622.jpg);
-                    background-image: linear-gradient(to bottom, #8af5f5 0%, #5bd6a7 100%);
+                    background-image: linear-gradient(to bottom, #8af5f5 5%, #7cd4b2 95%);
                     border: none;
                     i{
                         margin-left: 18px;
@@ -189,7 +206,7 @@
 
 @media (min-width: 992px) and (max-width: 1114px){
     .shop-section-recetados{
-        padding: 40px;
+        // padding: 40px;
         .shop-section-marcas{
             span{
             font-size: 35px;
@@ -203,7 +220,7 @@
         }
         .shop-section-product{
             .product--card{
-                margin: 15px 20px;
+                // margin: 15px 20px;
                 height: 50vh;
             }
         }
@@ -224,9 +241,16 @@
             }
         }
         .shop-section-product{
-            .product--card{
-                margin: 30px 10px;
+            .product--card  .container-fluid .row{
+                margin: 0;
                 height: 60vh;
+                .card-body{
+                    .card-btn{
+                        padding: 0.5rem;
+                        font-size: 0.5rem;
+                        background-color: #8C1F28;
+                    }
+                }
             }
         }
     }
@@ -255,7 +279,7 @@
                 height: 63vh;
                 margin: 15px 10px;
                 .card-body{
-                    padding: 5px 0px 60px 0px;
+                    padding: 1rem;
                 }
             }
         }
@@ -274,7 +298,6 @@
                 .card-body{
                         padding: 5px 0px 60px 0px;
                     .card-btn{
-                        padding: 8px 10px 5px 10px;
                         font-size: 15px;
                         i{
                             margin-left: 15px;
