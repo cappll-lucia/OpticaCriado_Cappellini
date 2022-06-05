@@ -78,7 +78,7 @@
         }
         .container .row{
         .novedades__home--card{
-            height: 80vh;
+            // height: 80vh;
             margin-bottom: 5%;
         }
     }
@@ -98,7 +98,7 @@
 @media (min-width: 768px){
     .container .row{
         .novedades__home--card{
-            height: 60vh;
+            // height: 60vh;
             margin:0 0.5% 5% 0 ;
         }
     }
@@ -110,15 +110,6 @@
     .container .row{
         .novedades__home--card{
             height: 60vh;
-        }
-    }
-}
-
-  /* novedades xl------- */
-@media (min-width: 1200px){
-    .container .row{
-        .novedades__home--card{
-            height: 50vh;
         }
     }
 }
@@ -157,10 +148,10 @@
         flex-wrap: wrap;
         .product--card{
             @extend .novedades__home--card;
-            margin: 1rem 2rem;
+            margin: 1rem;
             text-align: left;
             border-radius: 10px;
-            height: 50vh;
+            height: 40vh;
             box-shadow: rgb(157, 163, 157) 0.5px 0.5px 4px;
             .card-body{
                 padding: 0;
@@ -204,9 +195,8 @@
     }
 }
 
-@media (min-width: 992px) and (max-width: 1114px){
+@media (min-width: 992px) and (max-width: 1999px){
     .shop-section-recetados{
-        // padding: 40px;
         .shop-section-marcas{
             span{
             font-size: 35px;
@@ -218,10 +208,9 @@
                 }
             }
         }
-        .shop-section-product{
+        .shop-section-product .container-fluid .row{
             .product--card{
-                // margin: 15px 20px;
-                height: 50vh;
+                height: 55vh;
             }
         }
     }
@@ -241,14 +230,11 @@
             }
         }
         .shop-section-product{
-            .product--card  .container-fluid .row{
-                margin: 0;
+            .container-fluid .row .product--card  {
                 height: 60vh;
                 .card-body{
                     .card-btn{
-                        padding: 0.5rem;
-                        font-size: 0.5rem;
-                        background-color: #8C1F28;
+                        font-size: 0.8rem;
                     }
                 }
             }
@@ -275,11 +261,12 @@
             }
         }
         .shop-section-product{
-            .product--card{
-                height: 63vh;
-                margin: 15px 10px;
+            .container-fluid .row .product--card{
+                height: 55vh;
                 .card-body{
-                    padding: 1rem;
+                    .card-btn{
+                        font-size: 0.8rem;
+                    }
                 }
             }
         }
@@ -293,15 +280,11 @@
             font-size: 40px;
         }
         .shop-section-product{
-            .product--card{
-                height: 80vh;
+            .container-fluid .row .product--card{
+                height: 86vh;
                 .card-body{
-                        padding: 5px 0px 60px 0px;
                     .card-btn{
-                        font-size: 15px;
-                        i{
-                            margin-left: 15px;
-                        }
+                        font-size: 0.8rem;
                     }
                 }
             }
@@ -314,4 +297,49 @@
 .shop-section-sol{
     @extend .shop-section-recetados;
     background-image: linear-gradient(to top, #eea2a2dc 0%rgba(187, 193, 191, 0.747)bf 19%, #57c5e1b6 42%, #b49fda9c 79%, #7ac5d8 100%);
+    .shop-section-product{
+        .container-fluid .row .product--card{
+            height: 35vh;
+        }
+    }
 }
+
+@media (min-width: 992px) and (max-width: 1999px){
+    .shop-section-sol{
+        .shop-section-product {
+            .container-fluid .row .product--card{
+                height: 30vh;
+            }
+        }
+    }
+}
+
+@media (min-width: 767px) and (max-width: 991px){
+    .shop-section-sol{
+        .shop-section-product{
+            .container-fluid .row .product--card  {
+                height: 45vh;
+                }
+            }
+        }
+}
+
+@media (max-width: 767px){
+    .shop-section-sol{
+        .shop-section-product{
+            .container-fluid .row .product--card{
+                height: 48vh;
+                }
+            }
+        }
+}
+
+@media (max-width: 575px){
+    .shop-section-sol{
+        .shop-section-product{
+            .container-fluid .row .product--card{
+                height: 61vh;
+                }
+            }
+        }
+    }
