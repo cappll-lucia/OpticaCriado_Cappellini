@@ -536,6 +536,23 @@ body {
     font-weight: 700;
   }
   .novedades_home .container .row .novedades__home--card, .novedades_home .container .shop-section-recetados .shop-section-product .container-fluid .row .product--card, .novedades_home .container .shop-section-sol .shop-section-product .container-fluid .row .product--card, .shop-section-recetados .shop-section-product .container-fluid .novedades_home .container .row .product--card, .shop-section-sol .shop-section-product .container-fluid .novedades_home .container .row .product--card {
+    height: 80vh;
+    margin-bottom: 5%;
+  }
+  .novedades_home .container .row .novedades__home--card .card-body .card-btn, .novedades_home .container .shop-section-recetados .shop-section-product .container-fluid .row .product--card .card-body .card-btn, .novedades_home .container .shop-section-sol .shop-section-product .container-fluid .row .product--card .card-body .card-btn, .shop-section-recetados .shop-section-product .container-fluid .novedades_home .container .row .product--card .card-body .card-btn, .shop-section-sol .shop-section-product .container-fluid .novedades_home .container .row .product--card .card-body .card-btn {
+    font-size: 1rem;
+    padding: 0.7rem 1rem;
+  }
+}
+@media (max-width: 420px) {
+  .novedades_home h1 {
+    padding: 3rem 0 1rem 0;
+    font-size: 2.5rem;
+    color: #1a217c;
+    font-weight: 700;
+  }
+  .novedades_home .container .row .novedades__home--card, .novedades_home .container .shop-section-recetados .shop-section-product .container-fluid .row .product--card, .novedades_home .container .shop-section-sol .shop-section-product .container-fluid .row .product--card, .shop-section-recetados .shop-section-product .container-fluid .novedades_home .container .row .product--card, .shop-section-sol .shop-section-product .container-fluid .novedades_home .container .row .product--card {
+    height: 63vh;
     margin-bottom: 5%;
   }
 }
@@ -549,6 +566,7 @@ body {
 /* novedades md------- */
 @media (min-width: 768px) {
   .container .row .novedades__home--card, .container .shop-section-recetados .shop-section-product .container-fluid .row .product--card, .container .shop-section-sol .shop-section-product .container-fluid .row .product--card, .shop-section-recetados .shop-section-product .container-fluid .container .row .product--card, .shop-section-sol .shop-section-product .container-fluid .container .row .product--card {
+    height: 60vh;
     margin: 0 0.5% 5% 0;
   }
 }

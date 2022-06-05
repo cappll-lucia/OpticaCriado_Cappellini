@@ -78,7 +78,30 @@
         }
         .container .row{
         .novedades__home--card{
-            // height: 80vh;
+            height: 80vh;
+            margin-bottom: 5%;
+            .card-body{
+                .card-btn{
+                    font-size: 1rem;
+                    padding: 0.7rem 1rem;
+
+                }
+            }
+        }
+    }
+}
+}
+@media (max-width: 420px){
+    .novedades_home{
+        h1{
+            padding: 3rem 0  1rem 0;
+            font-size: 2.5rem;
+            color:#1a217c;
+            font-weight: 700;
+        }
+        .container .row{
+        .novedades__home--card{
+            height: 63vh;
             margin-bottom: 5%;
         }
     }
@@ -98,7 +121,7 @@
 @media (min-width: 768px){
     .container .row{
         .novedades__home--card{
-            // height: 60vh;
+            height: 60vh;
             margin:0 0.5% 5% 0 ;
         }
     }
