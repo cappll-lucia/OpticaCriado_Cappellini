@@ -99,11 +99,9 @@
     padding: 30px 10px;
     height: 500px;
     background-color: $blueA;
-    // background-repeat:repeat-x;
-    // background-size: contain;
-    // background-position: left;
+    z-index: 5000;
     .servicios_title{
-        font-size: 60px;
+        font-size: 4rem;
         font-weight: 700;
         font-family: 'Poppins', sans-serif;
         color: #2ad6c5ce;
@@ -200,7 +198,7 @@ $galeria-serv:(
 
     .servicios-gallery{
         .servicios_title{
-            font-size: 45px;
+            font-size: 3rem;
         }
         
         .galeria__servicios--img .btn{
@@ -218,7 +216,7 @@ $galeria-serv:(
 
 @media (max-width: 991px){
     .servicios-gallery{
-        height: 600px;
+        height: 3rem;
         .servicios_title{
             width: 100%;
             text-align: center;
