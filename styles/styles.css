@@ -277,19 +277,19 @@ body {
   color: #2F3CA1;
   border: none;
   border-bottom: solid #2F3CA1 2px;
-  padding: 30px 0px 10px 0px;
+  padding: 10px 0px 10px 0px;
   margin: 0 5px 10px 5px;
 }
 .square_forulario .form .div--selection .form-select option {
   background-color: #e7e6e4;
 }
 .square_forulario .form .input--button {
-  margin: 25px 35% 0 35%;
-  width: 30%;
-  padding: 15px 32px;
+  margin: 1rem 1rem 1rem 25%;
+  width: 50%;
+  padding: 1rem 1rem;
   border: none;
   border-radius: 20px;
-  box-shadow: #13153f 1.5px 1.5px 5px;
+  box-shadow: #9ea1df 1.5px 1.5px 10px;
   color: #1a217c;
   font-weight: 600;
   background-image: linear-gradient(60deg, #83db49, rgb(17, 221, 187));
@@ -811,19 +811,19 @@ body {
   color: #2F3CA1;
   border: none;
   border-bottom: solid #2F3CA1 2px;
-  padding: 30px 0px 10px 0px;
+  padding: 10px 0px 10px 0px;
   margin: 0 5px 10px 5px;
 }
 .square_forulario .form .div--selection .form-select option {
   background-color: #e7e6e4;
 }
 .square_forulario .form .input--button {
-  margin: 25px 35% 0 35%;
-  width: 30%;
-  padding: 15px 32px;
+  margin: 1rem 1rem 1rem 25%;
+  width: 50%;
+  padding: 1rem 1rem;
   border: none;
   border-radius: 20px;
-  box-shadow: #13153f 1.5px 1.5px 5px;
+  box-shadow: #9ea1df 1.5px 1.5px 10px;
   color: #1a217c;
   font-weight: 600;
   background-image: linear-gradient(60deg, #83db49, rgb(17, 221, 187));
@@ -1008,9 +1008,9 @@ body {
   border-bottom: solid #2F3CA1 2px;
   display: block;
   padding: 5px 15px 5px 15px;
-  width: 50%;
+  width: 60%;
   position: relative;
-  left: 25%;
+  left: 20%;
   cursor: pointer;
 }
 .formulario-fotografia .custom-file-upload:hover {
@@ -1040,12 +1040,12 @@ body {
   padding: 3% 0 0 0;
 }
 .formulario-fotografia .form .input--button {
-  margin: 25px 35% 0 35%;
-  width: 30%;
-  padding: 10px 52px;
+  margin: 2rem 1rem 1rem 25%;
+  width: 50%;
+  padding: 1rem 1rem;
   border: none;
   border-radius: 20px;
-  box-shadow: #13153f 1.5px 1.5px 5px;
+  box-shadow: #dfc59e 1.5px 1.5px 10px;
   color: #1a217c;
   font-weight: 600;
   background-image: linear-gradient(to right, #faa770 0%, #fee140 100%);
