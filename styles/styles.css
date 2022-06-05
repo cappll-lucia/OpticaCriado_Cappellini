@@ -191,7 +191,7 @@ body {
 }
 .lading-page .lading-page-text {
   font-family: "Rubik", sans-serif;
-  height: 65vh;
+  height: 60vh;
   color: #004643;
   color: #2F3CA1;
   display: flex;
@@ -215,17 +215,6 @@ body {
   animation-duration: 2s;
 }
 
-@media (max-width: 629px) {
-  .lading-page {
-    height: calc(100vh - 160px);
-  }
-  .lading-page-text {
-    height: 250px;
-  }
-  .lading-page-text span {
-    margin-bottom: 3px;
-  }
-}
 .formulario-contacto, .formulario-fotografia {
   background-image: linear-gradient(-225deg, #74a7f3 0%, #B8DCFF 48%, #6BBBFF 100%);
   padding: 4% 0;

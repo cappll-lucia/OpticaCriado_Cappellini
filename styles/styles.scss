@@ -202,7 +202,7 @@ body{
     z-index: 0;
     .lading-page-text{
         font-family: 'Rubik', sans-serif;
-        height: 65vh;
+        height: 60vh;
         color: $greenC;
         color: $blueC;
         display: flex;
@@ -227,17 +227,17 @@ body{
     }
 }
 
-@media (max-width:629px){
-    .lading-page{
-        height: calc(100vh - 160px);
-    }
-    .lading-page-text{
-        height: 250px;
-        span{
-            margin-bottom: 3px;
-        }
-    }
-}
+// @media (max-width:629px){
+//     .lading-page{
+//         height: calc(100vh - 160px);
+//     }
+//     .lading-page-text{
+//         // height: 250px;
+//         span{
+//             margin-bottom: 3px;
+//         }
+//     }
+// }
 
 
 @import "stylesMain";
