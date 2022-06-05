@@ -99,11 +99,11 @@
     padding: 30px 10px;
     height: 500px;
     background-color: $blueA;
-    // background-repeat:repeat-x;
-    // background-size: contain;
-    // background-position: left;
+    border: none;
+    margin-top: 0;
+    z-index: 200;
     .servicios_title{
-        font-size: 60px;
+        font-size: 3.5rem;
         font-weight: 700;
         font-family: 'Poppins', sans-serif;
         color: #2ad6c5ce;
@@ -119,7 +119,7 @@
         }
     .servicios_title_lineal{
         display:none;
-        font-size: 80px;
+        font-size: 3rem;
     }
 }
 
@@ -151,20 +151,14 @@
         text-decoration: none;
         color: $sombra;
         font-family: 'Poppins', sans-serif;
-        font-size: 13px;
+        font-size: 0.8rem;
         font-weight: 600;
     }
-
     .btn:hover{
-        background-color: #837b75;
-        background-image: linear-gradient(-20deg, rgb(133, 130, 130) 0%, #9bc5c3 100%);
-        transform: scale(1.02);
-        border: solid $blueB 2px;
-        transition:none;
-    }
-
-    .btn:hover a{
-        color: $blueB;
+        background-image: linear-gradient(-20deg, rgb(48, 18, 155) 0%, #251763 100%);
+        a{
+            color: #ed6ea0;
+        }
     }
 }
 
@@ -200,18 +194,19 @@ $galeria-serv:(
 
     .servicios-gallery{
         .servicios_title{
-            font-size: 45px;
+            font-size: 3rem;
         }
         
         .galeria__servicios--img .btn{
             position: absolute;
             display: block;
             margin: 153px 10px;
-            font-size: 10x;
         }
-        
-        .galeria__servicios--img1 .btn{
-            font-size: 11px;
+        .galeria__servicios--img1 .btn{ 
+            margin-left: 5px;
+            a{
+                font-size: 0.7rem;
+            }
         }
     }
 }
@@ -264,9 +259,11 @@ $galeria-serv:(
 @media (max-width: 842px){
     .servicios-gallery{
         .galeria__servicios{
-            .galeria__servicios--img .btn a{
-                font-size: 10px;
-            }
+            .galeria__servicios--img{
+                .btn a{
+                    font-size: 10px;
+                }
         }
     }
+}
 }

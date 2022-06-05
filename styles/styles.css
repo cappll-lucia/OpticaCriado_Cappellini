@@ -114,13 +114,11 @@ body {
   .topnav {
     padding: 5px 0px;
   }
-
   .topnav a {
     padding: 14px 5px;
     text-decoration: none;
     font-size: 75%;
   }
-
   .dropdown .dropbtn {
     font-size: 75%;
   }
@@ -129,63 +127,50 @@ body {
   .topnav {
     padding: 5px 0px;
   }
-
   .topnav a {
     padding: 14px 5px;
     text-decoration: none;
     font-size: 70%;
   }
-
   .dropdown .dropbtn {
     font-size: 70%;
   }
 }
 @media screen and (max-width: 767px) {
   .topnav {
-    height: -webkit-max-content;
-    height: -moz-max-content;
     height: max-content;
     display: block;
   }
-
   .dropdown-content {
     margin-top: 2px;
     width: 100%;
   }
-
   .topnav a:not(:first-child), .dropdown .dropbtn {
     display: none;
   }
-
   .topnav a.icon {
     float: inherit;
     display: block;
   }
-
   .topnav.responsive {
     position: relative;
   }
-
   .topnav.responsive .icon {
     position: absolute;
     right: 0;
     top: 0;
   }
-
   .topnav.responsive a {
     float: none;
     display: block;
     text-align: left;
   }
-
   .topnav.responsive .dropdown {
     float: none;
   }
-
   .topnav.responsive .dropdown-content {
     position: relative;
   }
-
   .topnav.responsive .dropdown .dropbtn {
     display: block;
     width: 100%;
@@ -195,16 +180,18 @@ body {
 .lading-page {
   background-image: linear-gradient(to top, rgba(187, 212, 240, 0.8078431373) 0%, rgba(231, 240, 253, 0.705) 100%), url("../gallery/carrussel_local_3.jpeg");
   width: 100%;
-  height: calc(100vh - 180px);
+  height: 75vh;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   position: relative;
   overflow: hidden;
+  margin-bottom: 0;
+  z-index: 0;
 }
 .lading-page .lading-page-text {
   font-family: "Rubik", sans-serif;
-  height: 340px;
+  height: 65vh;
   color: #004643;
   color: #2F3CA1;
   display: flex;
@@ -218,23 +205,20 @@ body {
   text-transform: uppercase;
   text-align: center;
   padding: 0 10px 5px 10px;
-  -webkit-animation-duration: 2s;
-          animation-duration: 2s;
+  animation-duration: 2s;
 }
 .lading-page .lading-page-text span {
   font-weight: 400;
   font-size: 1rem;
   text-align: center;
   padding: 0 10px 5px 10px;
-  -webkit-animation-duration: 2s;
-          animation-duration: 2s;
+  animation-duration: 2s;
 }
 
 @media (max-width: 629px) {
   .lading-page {
     height: calc(100vh - 160px);
   }
-
   .lading-page-text {
     height: 250px;
   }
@@ -338,9 +322,12 @@ body {
   padding: 30px 10px;
   height: 500px;
   background-color: #1F28A1;
+  border: none;
+  margin-top: 0;
+  z-index: 200;
 }
 .servicios-gallery .servicios_title {
-  font-size: 60px;
+  font-size: 3.5rem;
   font-weight: 700;
   font-family: "Poppins", sans-serif;
   color: rgba(42, 214, 197, 0.8078431373);
@@ -356,7 +343,7 @@ body {
 }
 .servicios-gallery .servicios_title_lineal {
   display: none;
-  font-size: 80px;
+  font-size: 3rem;
 }
 
 .galeria__servicios {
@@ -386,18 +373,14 @@ body {
   text-decoration: none;
   color: #13153f;
   font-family: "Poppins", sans-serif;
-  font-size: 13px;
+  font-size: 0.8rem;
   font-weight: 600;
 }
 .galeria__servicios--img .btn:hover {
-  background-color: #837b75;
-  background-image: linear-gradient(-20deg, rgb(133, 130, 130) 0%, #9bc5c3 100%);
-  transform: scale(1.02);
-  border: solid #1a217c 2px;
-  transition: none;
+  background-image: linear-gradient(-20deg, rgb(48, 18, 155) 0%, #251763 100%);
 }
 .galeria__servicios--img .btn:hover a {
-  color: #1a217c;
+  color: #ed6ea0;
 }
 
 .galeria__servicios--img1 {
@@ -437,16 +420,18 @@ body {
 
 @media screen and (max-width: 1149px) {
   .servicios-gallery .servicios_title {
-    font-size: 45px;
+    font-size: 3rem;
   }
   .servicios-gallery .galeria__servicios--img .btn {
     position: absolute;
     display: block;
     margin: 153px 10px;
-    font-size: 10x;
   }
   .servicios-gallery .galeria__servicios--img1 .btn {
-    font-size: 11px;
+    margin-left: 5px;
+  }
+  .servicios-gallery .galeria__servicios--img1 .btn a {
+    font-size: 0.7rem;
   }
 }
 @media (max-width: 991px) {
@@ -562,7 +547,7 @@ body {
     font-weight: 700;
   }
   .novedades_home .container .row .novedades__home--card, .novedades_home .container .shop-section-recetados .shop-section-product .container-fluid .row .product--card, .novedades_home .container .shop-section-sol .shop-section-product .container-fluid .row .product--card, .shop-section-recetados .shop-section-product .container-fluid .novedades_home .container .row .product--card, .shop-section-sol .shop-section-product .container-fluid .novedades_home .container .row .product--card {
-    height: 60vh;
+    height: 80vh;
     margin-bottom: 5%;
   }
 }
@@ -583,7 +568,7 @@ body {
 /* novedades lg------- */
 @media (min-width: 992px) {
   .container .row .novedades__home--card, .container .shop-section-recetados .shop-section-product .container-fluid .row .product--card, .container .shop-section-sol .shop-section-product .container-fluid .row .product--card, .shop-section-recetados .shop-section-product .container-fluid .container .row .product--card, .shop-section-sol .shop-section-product .container-fluid .container .row .product--card {
-    height: 55vh;
+    height: 60vh;
   }
 }
 /* novedades xl------- */
@@ -736,7 +721,7 @@ body {
     font-size: 40px;
   }
   .shop-section-recetados .shop-section-product .product--card, .shop-section-sol .shop-section-product .product--card {
-    height: 75vh;
+    height: 80vh;
   }
   .shop-section-recetados .shop-section-product .product--card .card-body, .shop-section-sol .shop-section-product .product--card .card-body {
     padding: 5px 0px 60px 0px;
@@ -848,9 +833,12 @@ body {
   padding: 30px 10px;
   height: 500px;
   background-color: #1F28A1;
+  border: none;
+  margin-top: 0;
+  z-index: 200;
 }
 .servicios-gallery .servicios_title {
-  font-size: 60px;
+  font-size: 3.5rem;
   font-weight: 700;
   font-family: "Poppins", sans-serif;
   color: rgba(42, 214, 197, 0.8078431373);
@@ -866,7 +854,7 @@ body {
 }
 .servicios-gallery .servicios_title_lineal {
   display: none;
-  font-size: 80px;
+  font-size: 3rem;
 }
 
 .galeria__servicios {
@@ -896,18 +884,14 @@ body {
   text-decoration: none;
   color: #13153f;
   font-family: "Poppins", sans-serif;
-  font-size: 13px;
+  font-size: 0.8rem;
   font-weight: 600;
 }
 .galeria__servicios--img .btn:hover {
-  background-color: #837b75;
-  background-image: linear-gradient(-20deg, rgb(133, 130, 130) 0%, #9bc5c3 100%);
-  transform: scale(1.02);
-  border: solid #1a217c 2px;
-  transition: none;
+  background-image: linear-gradient(-20deg, rgb(48, 18, 155) 0%, #251763 100%);
 }
 .galeria__servicios--img .btn:hover a {
-  color: #1a217c;
+  color: #ed6ea0;
 }
 
 .galeria__servicios--img1 {
@@ -947,16 +931,18 @@ body {
 
 @media screen and (max-width: 1149px) {
   .servicios-gallery .servicios_title {
-    font-size: 45px;
+    font-size: 3rem;
   }
   .servicios-gallery .galeria__servicios--img .btn {
     position: absolute;
     display: block;
     margin: 153px 10px;
-    font-size: 10x;
   }
   .servicios-gallery .galeria__servicios--img1 .btn {
-    font-size: 11px;
+    margin-left: 5px;
+  }
+  .servicios-gallery .galeria__servicios--img1 .btn a {
+    font-size: 0.7rem;
   }
 }
 @media (max-width: 991px) {
@@ -1164,15 +1150,12 @@ footer .atribuciones a {
   .social hr {
     width: 100% s;
   }
-
   .maps {
     margin-top: 40px;
   }
-
   footer span {
     font-size: 20px;
   }
-
   .menu {
     padding-left: 38px;
   }
@@ -1195,11 +1178,9 @@ footer .atribuciones a {
   .maps iframe {
     width: 100%;
   }
-
   .menu {
     margin-top: 40px;
   }
-
   .container__social {
     width: 60%;
   }
@@ -1210,8 +1191,7 @@ footer .atribuciones a {
   left: 0;
   height: 70vh;
   background-color: rgba(255, 255, 255, 0);
-  -webkit-backdrop-filter: blur(2px);
-          backdrop-filter: blur(2px);
+  backdrop-filter: blur(2px);
   border: none;
   z-index: 0;
 }
@@ -1284,7 +1264,6 @@ footer .atribuciones a {
     height: 15vh;
     top: 160px;
   }
-
   .antes-despues-Lcontacto .container1 {
     height: 15vh;
   }
@@ -1325,7 +1304,6 @@ footer .atribuciones a {
   .container-glass {
     height: 10vh;
   }
-
   .antes-despues-Lcontacto .container1 {
     height: 10vh;
   }
@@ -1361,4 +1339,6 @@ footer .atribuciones a {
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
-}/*# sourceMappingURL=styles.css.map */
+}
+
+/*# sourceMappingURL=styles.css.map */

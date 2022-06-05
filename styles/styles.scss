@@ -191,15 +191,18 @@ body{
 .lading-page{
     background-image: linear-gradient(to top, #bbd4f0ce 0%, rgba(231, 240, 253, 0.705) 100%), url("../gallery/carrussel_local_3.jpeg");
     width: 100%;
-    height: calc(100vh - 180px);
+    // height: calc(100vh - 180px);
+    height: 75vh;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     position: relative;
-    overflow: hidden;
+    overflow:hidden;
+    margin-bottom: 0;
+    z-index: 0;
     .lading-page-text{
         font-family: 'Rubik', sans-serif;
-        height: 340px;
+        height: 65vh;
         color: $greenC;
         color: $blueC;
         display: flex;
