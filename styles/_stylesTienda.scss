@@ -320,19 +320,10 @@
 .shop-section-sol{
     @extend .shop-section-recetados;
     background-image: linear-gradient(to top, #eea2a2dc 0%rgba(187, 193, 191, 0.747)bf 19%, #57c5e1b6 42%, #b49fda9c 79%, #7ac5d8 100%);
-    .shop-section-product{
-        .container-fluid .row .product--card{
-            height: 35vh;
-        }
-    }
-}
-
-@media (min-width: 992px) and (max-width: 1999px){
-    .shop-section-sol{
-        .shop-section-product {
-            .container-fluid .row .product--card{
-                height: 30vh;
-            }
+    .shop-section-product .container-fluid .row{
+        .product--card{
+            @extend .novedades__home--card;
+            height: 40vh;
         }
     }
 }
