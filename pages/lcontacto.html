@@ -32,7 +32,7 @@ rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/
             <a href="../index.html"><img src="/gallery/logotipoOptica.png" alt="" class="logoImg col-md-6 col-lg-6 col-xl-6 col-sm-10 col-12"></a>
         </div>
         <!-- inicio navBar -->
-        <div class="topnav" id="myTopnav">
+        <div class="topnav justify-content-center" id="myTopnav">
             <div class="dropdown">
                 <button class="dropbtn">ANTEOJOS 
                     <i class="fa fa-caret-down"></i>
@@ -51,15 +51,16 @@ rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/
         <!-- fin navBar -->
     </header>
 
-    <main>
-        <div class="container-fluid antes-despues-Lcontacto">
+    <main class="lcontactoMain">
+        <section class="ladding-Lcontacto">
+                    <div class="container-fluid antes-despues-Lcontacto">
             <div class="row">
                 <div class="container1 col-sm-4">
                     <span>Sin lentes de contacto</span>
                 </div>
                 <div class="container2 col-sm-4">
                     <img src="../gallery/iconoLcontacto.png" alt="">
-                    <span>Más info</span>
+                    <a href="#infoLC">Más info</a>
                 </div>  
                 <div class="container3 col-sm-4">
                     <span>Con lentes de contacto</span>
@@ -67,6 +68,59 @@ rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/
             </div>
         </div>
         <div class="container-glass col-sm-4"></div>
+        </section>
+
+
+        <section class="infoLcontacto" id="infoLC">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="infoLC-txt col-xl-9 col-lg-9 col-md-8 col-sm-12 col-12">
+                        <h2>¿Qué son los lentes de contacto?</h2>
+                        <p>Los lentes de contacto son discos delgados y transparentes, que se ubican sobre la película lagrimal que cubre la córnea y  auidan a mejorar la visión de las personas que tienen miopía, hipermetropía, Astigmatismo y/o Presbicia..</p>
+                        <p>Los lentes de contacto cumplen la misma funcion que los anteojos y corrgigen problemas de vision causados por errores refractivos, los cuales se traducen en una imagen borrosa provocada por una mala refractacion de la luz dentro del ojo.</p>
+                    </div>
+                    <div class="infoLC-img col-xl-3 col-lg-3 col-md-2 col-sm-12 col-12">
+                        <img src="../gallery/Lcontactox4.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <br class="separationLine">
+        <section class="cuidadosLC container-fluid">
+            <div class="collapseBtn">            
+                <h2>Precauciones para su correcto uso</h2>
+                <button class="btn btn-mna col-xl-10 col-lg-10 col-md-10 col-sm-10 col-10" data-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">Cuidados por la mañana
+                </button>
+                <div class="">
+                    <div class="collapse multi-collapse" id="multiCollapseExample1">
+                        <div class="card card-body card-body-mna">
+                            <ul>
+                                <li>Lavar las manos y secarlas con una toalla que no suelte pelusa.</li>
+                                <li>Extraer la lente de contacto del ojo derecho del estuche. Colocar la lente en la palma de la mano y enjuagarla con Solución Salina.</li>
+                                <li>Poner la lente de contacto en el ojo derecho. Repetir el procedimiento para el ojo izquierdo.</li>
+                                <li>Quitar el liquido del estuche y enjuagarlo junto a sus tapas con Solución Salina para eliminar restos.</li>
+                                <li>Dejar que el estuche y las tapas secar por separado.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <button class="btn btn-nch col-xl-10 col-lg-10 col-md-10 col-sm-10 col-10" type="button" data-toggle="collapse" data-target="#multiCollapseExample2" aria-expanded="false" aria-controls="multiCollapseExample2">Cuidados por la noche</button>
+                <div class="">
+                    <div class="collapse multi-collapse" id="multiCollapseExample2">
+                        <div class="card card-body card-body-nch">
+                            <ul>
+                                <li>Lavar las manos y secarlas con una toalla que no suelte pelusa.</li>
+                                <li>Llenar el estuche de las lentes con la Solución Salina hasta el borde. </li>
+                                <li>Extraer la lente de ojo derecho. Poner la lente en la palma de la mano y añadir unas gotas de Solución salina.</li>
+                                <li>Frotar suavemente cada cara de la lente de contacto durante 10segundos. Enjuagar la lente con Solución para eliminar toda suciedad. Insertar lalente en el compartimiento del estuche correspondiente al ojo derecho, asegurando que esté totalmente sumergida en la Solución.</li>
+                                <li>Cerrar la tapa. Repetir procedimiento para el ojo Izquierdo. Dejar las lentes de contacto sumergidas en la solución durante al menos 6 horas.</li>                                
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </section>
     </main>
 
     <footer>

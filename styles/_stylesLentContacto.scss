@@ -1,8 +1,12 @@
+.lcontactoMain{
+    background-image: linear-gradient(-20deg, #e9defa 0%, #fbfcdb 100%);
+}
+
 .container-glass{
     position: absolute;
-    top: 210px;
+    top: 270px;
     left: 0;
-    height: 70vh;
+    height: 50vh;
     background-color:rgba(255, 255, 255, 0);
     backdrop-filter: blur(2px);
     border: none;
@@ -25,6 +29,7 @@
         span{
             color: blue;
             font-size: 2rem;
+            text-shadow: #0c631f 1px 1px 5px;
             font-weight: 600;
             margin-bottom: 100px;
             margin-right: 10%;
@@ -46,12 +51,19 @@
             width: 130%;
             display: block;
         }
-        span{
+        a{  
             display: block;
             margin-top: 5%;
             padding: 2% 10%;
             border-radius: 30px;
+            font-weight: 600;
             background-color: #00b8d6;
+            text-decoration: none;
+            color: $blueB;
+            box-shadow: #282f57 1px 1px 5px;
+            }
+        a:hover{
+            transform: scale(1.05);
         }
     }
     .container3{
@@ -66,6 +78,7 @@
             color: blue;
             font-size: 2rem;
             font-weight: 600;
+            text-shadow: #0c631f 1px 1px 5px;
             margin-bottom: 100px;
             margin-left: 10%;
             margin-right: 5%;
@@ -144,5 +157,117 @@
             
             }
         }
+    }
+}
+
+// ----------articulo------
+
+.infoLcontacto{
+    margin: 0;
+    padding: 50px;  
+    color: $blueB;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    .infoLC-txt{
+        align-self: center;
+        h2{
+        font-weight: 600;
+        font-size: 2rem;
+        text-shadow: #3a447e 1px 1px 3px;
+        }
+        div{
+            font-size: 1rem;
+            margin-top: 2rem;
+        }
+    }
+    .infoLC-img{
+        align-self: center;
+        text-align: center;
+        margin: 1rem 0;
+    }
+}
+
+@media (max-width:575px) {
+    .infoLcontacto{
+        .infoLC-txt{
+            h2{
+                font-weight: 600;
+                font-size: 2rem;
+                }
+            div{
+                font-size: 1rem;
+                margin-top: 2rem;
+            }
+        }
+        .infoLC-img{
+
+        }
+    }
+}
+// -----cuidados-----
+.cuidadosLC{
+    padding: 0 50px 50px 50px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    h2{
+        font-weight: 600;
+        font-size: 2rem;
+        color: $blueB;
+        margin: 1rem 0 1rem 0;
+        text-shadow: #3a447e 1px 1px 3px;
+    }
+    .collapseBtn{ 
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+        .btn{
+            height: 2000px;
+            margin-top:3rem;
+            display: block;
+            justify-content: center;
+            border: none;
+            border-radius: 1rem;
+            box-shadow: #8a90b3 1px 1px 8px;
+            font-size: 2rem;
+            font-weight: 700;
+            }
+        }
+        .btn-mna{
+            background-image: linear-gradient(to top, #47bef5c4 0%, #b7d5e2c4 100%), url("../gallery/Summer-pattern1.jpg");
+            color: $blueB;
+            // margin-bottom: 3rem;
+        }
+        .btn-nch{
+            background-image: linear-gradient(to top, #03162ce7 0%, #0e0f55ec 100%), url("../gallery/crescent-moon-night-sky-art-background-pattern.jpg");
+            color: #e1fefd;
+        }
+    }
+    .card-body-mna{
+        font-size: 1rem;
+        color: $sombra;
+        background-color: #fbfcdb00;
+        border: none;
+        li{
+            margin: 1rem;
+        }
+    }
+    .card-body-nch{
+        @extend .card-body-mna;
+    }
+
+@media (max-width: 767px){
+    .cuidadosLC{
+        h2{
+            margin: 2rem 0 2rem 0;
+        }
+        p{ 
+            .btn{
+                margin-bottom:  2rem;
+            }
+        }
+        .multi-collapse{}
     }
 }
