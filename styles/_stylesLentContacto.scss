@@ -4,7 +4,7 @@
 
 .container-glass{
     position: absolute;
-    top: 270px;
+    top: 260px;
     left: 0;
     height: 50vh;
     background-color:rgba(255, 255, 255, 0);
@@ -14,10 +14,8 @@
 }
 
 .antes-despues-Lcontacto{
-    background-color: #e1fefd;
-    background-color: #e1fefd;
-    background-color: #e1fefd;
-    background-image: url("data:image/svg+xml,%3Csvg width='120' height='120' viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M9 0h2v20H9V0zm25.134.84l1.732 1-10 17.32-1.732-1 10-17.32zm-20 20l1.732 1-10 17.32-1.732-1 10-17.32zM58.16 4.134l1 1.732-17.32 10-1-1.732 17.32-10zm-40 40l1 1.732-17.32 10-1-1.732 17.32-10zM80 9v2H60V9h20zM20 69v2H0v-2h20zm79.32-55l-1 1.732-17.32-10L82 4l17.32 10zm-80 80l-1 1.732-17.32-10L2 84l17.32 10zm96.546-75.84l-1.732 1-10-17.32 1.732-1 10 17.32zm-100 100l-1.732 1-10-17.32 1.732-1 10 17.32zM38.16 24.134l1 1.732-17.32 10-1-1.732 17.32-10zM60 29v2H40v-2h20zm19.32 5l-1 1.732-17.32-10L62 24l17.32 10zm16.546 4.16l-1.732 1-10-17.32 1.732-1 10 17.32zM111 40h-2V20h2v20zm3.134.84l1.732 1-10 17.32-1.732-1 10-17.32zM40 49v2H20v-2h20zm19.32 5l-1 1.732-17.32-10L42 44l17.32 10zm16.546 4.16l-1.732 1-10-17.32 1.732-1 10 17.32zM91 60h-2V40h2v20zm3.134.84l1.732 1-10 17.32-1.732-1 10-17.32zm24.026 3.294l1 1.732-17.32 10-1-1.732 17.32-10zM39.32 74l-1 1.732-17.32-10L22 64l17.32 10zm16.546 4.16l-1.732 1-10-17.32 1.732-1 10 17.32zM71 80h-2V60h2v20zm3.134.84l1.732 1-10 17.32-1.732-1 10-17.32zm24.026 3.294l1 1.732-17.32 10-1-1.732 17.32-10zM120 89v2h-20v-2h20zm-84.134 9.16l-1.732 1-10-17.32 1.732-1 10 17.32zM51 100h-2V80h2v20zm3.134.84l1.732 1-10 17.32-1.732-1 10-17.32zm24.026 3.294l1 1.732-17.32 10-1-1.732 17.32-10zM100 109v2H80v-2h20zm19.32 5l-1 1.732-17.32-10 1-1.732 17.32 10zM31 120h-2v-20h2v20z' fill='%2334d921' fill-opacity='0.09' fill-rule='evenodd'/%3E%3C/svg%3E");
+    // background-color: #e1fefd;
+    // background-image: url("data:image/svg+xml,%3Csvg width='120' height='120' viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M9 0h2v20H9V0zm25.134.84l1.732 1-10 17.32-1.732-1 10-17.32zm-20 20l1.732 1-10 17.32-1.732-1 10-17.32zM58.16 4.134l1 1.732-17.32 10-1-1.732 17.32-10zm-40 40l1 1.732-17.32 10-1-1.732 17.32-10zM80 9v2H60V9h20zM20 69v2H0v-2h20zm79.32-55l-1 1.732-17.32-10L82 4l17.32 10zm-80 80l-1 1.732-17.32-10L2 84l17.32 10zm96.546-75.84l-1.732 1-10-17.32 1.732-1 10 17.32zm-100 100l-1.732 1-10-17.32 1.732-1 10 17.32zM38.16 24.134l1 1.732-17.32 10-1-1.732 17.32-10zM60 29v2H40v-2h20zm19.32 5l-1 1.732-17.32-10L62 24l17.32 10zm16.546 4.16l-1.732 1-10-17.32 1.732-1 10 17.32zM111 40h-2V20h2v20zm3.134.84l1.732 1-10 17.32-1.732-1 10-17.32zM40 49v2H20v-2h20zm19.32 5l-1 1.732-17.32-10L42 44l17.32 10zm16.546 4.16l-1.732 1-10-17.32 1.732-1 10 17.32zM91 60h-2V40h2v20zm3.134.84l1.732 1-10 17.32-1.732-1 10-17.32zm24.026 3.294l1 1.732-17.32 10-1-1.732 17.32-10zM39.32 74l-1 1.732-17.32-10L22 64l17.32 10zm16.546 4.16l-1.732 1-10-17.32 1.732-1 10 17.32zM71 80h-2V60h2v20zm3.134.84l1.732 1-10 17.32-1.732-1 10-17.32zm24.026 3.294l1 1.732-17.32 10-1-1.732 17.32-10zM120 89v2h-20v-2h20zm-84.134 9.16l-1.732 1-10-17.32 1.732-1 10 17.32zM51 100h-2V80h2v20zm3.134.84l1.732 1-10 17.32-1.732-1 10-17.32zm24.026 3.294l1 1.732-17.32 10-1-1.732 17.32-10zM100 109v2H80v-2h20zm19.32 5l-1 1.732-17.32-10 1-1.732 17.32 10zM31 120h-2v-20h2v20z' fill='%2334d921' fill-opacity='0.09' fill-rule='evenodd'/%3E%3C/svg%3E");
     .container1{
         height: 70vh;
         // background-color: rgb(171, 241, 220);
@@ -29,7 +27,7 @@
         span{
             color: blue;
             font-size: 2rem;
-            text-shadow: #0c631f 1px 1px 5px;
+            text-shadow: #0c631f 1px 1px 2px;
             font-weight: 600;
             margin-bottom: 100px;
             margin-right: 10%;
@@ -78,12 +76,82 @@
             color: blue;
             font-size: 2rem;
             font-weight: 600;
-            text-shadow: #0c631f 1px 1px 5px;
+            text-shadow: #0c631f 1px 1px 2px;
             margin-bottom: 100px;
             margin-left: 10%;
             margin-right: 5%;
             text-align: left;
             width: 100%;
+        }
+    }
+}
+
+@media (max-width:768px) {
+    .container-glass{
+        top: 250px;
+    }
+    .antes-despues-Lcontacto{
+        .container1{
+            span{
+                font-size: 1.6rem;
+            }
+        }
+        .container2{
+            img{
+                margin-bottom: 1rem;
+            }
+            a{
+                font-size: 1rem;
+            }
+        }
+        .container3{
+            span{
+                font-size: 1.7rem;
+            }
+        }
+    }
+}
+
+@media (max-width:575px) {
+    .container-glass{
+        height: 15vh;
+        top: 160px;
+    }
+    .antes-despues-Lcontacto{
+        .container1{
+            height: 15vh;
+            span{
+                margin-bottom: 0px;
+                text-align: center;
+                width: 100%;
+                margin-left: 5%;
+                margin-right: 5%;
+            }
+        }
+        .container2{
+            height: 45vh;
+            img{
+                height: 60%;
+                width: auto;
+                display: block;
+                margin-bottom: 0;
+            }
+            span{
+                display: block;
+                margin-bottom: 5%;
+                padding: 2% 10%;
+                border-radius: 30px;
+                z-index: 100;
+            }
+        }
+        .container3{
+            height: 15vh;
+            span{
+                margin-bottom: 0px;
+                text-align: center;
+                margin-left: 5%;
+                margin-right: 5%;
+            }
         }
     }
 }
@@ -164,7 +232,7 @@
 
 .infoLcontacto{
     margin: 0;
-    padding: 50px;  
+    padding: 10%;  
     color: $blueB;
     display: flex;
     flex-wrap: wrap;
@@ -208,24 +276,24 @@
 // -----cuidados-----
 .cuidadosLC{
     padding: 0 50px 50px 50px;
-    background-size: cover;
-    background-repeat: no-repeat;
+    height: auto;
+    display: flex;
     h2{
         font-weight: 600;
         font-size: 2rem;
         color: $blueB;
-        margin: 1rem 0 1rem 0;
+        margin: 2rem 0 2rem 0;
+        text-align: center;
         text-shadow: #3a447e 1px 1px 3px;
     }
-    .collapseBtn{ 
+    .collapseBtn{
         display: flex;
-        justify-content: space-between;
-        flex-direction: column;
-        width: 100%;
+        align-items: center;
         height: auto;
+        width: 100%;
         .btn{
-            height: 2000px;
-            margin-top:3rem;
+            margin-left: 10%;
+            height: 10rem;
             display: block;
             justify-content: center;
             border: none;
@@ -236,9 +304,10 @@
             }
         }
         .btn-mna{
-            background-image: linear-gradient(to top, #47bef5c4 0%, #b7d5e2c4 100%), url("../gallery/Summer-pattern1.jpg");
+            background-image: linear-gradient(to top, #68bfe7c4 0%, #e3eef3c4 100%), url("../gallery/Summer-pattern1.jpg");
             color: $blueB;
-            // margin-bottom: 3rem;
+            margin-bottom: 2rem;
+            margin-top: 1rem;
         }
         .btn-nch{
             background-image: linear-gradient(to top, #03162ce7 0%, #0e0f55ec 100%), url("../gallery/crescent-moon-night-sky-art-background-pattern.jpg");
@@ -250,6 +319,7 @@
         color: $sombra;
         background-color: #fbfcdb00;
         border: none;
+        margin-left: 10%;
         li{
             margin: 1rem;
         }
@@ -261,13 +331,40 @@
 @media (max-width: 767px){
     .cuidadosLC{
         h2{
-            margin: 2rem 0 2rem 0;
+            margin: 2rem 0 2rem 2rem;
         }
-        p{ 
+        .collapseBtn{
             .btn{
-                margin-bottom:  2rem;
+                font-size: 1.8rem;
+                }
             }
         }
-        .multi-collapse{}
-    }
+}
+
+@media (max-width: 575px){
+    .cuidadosLC{
+        padding: 0 20px 50px 20px;
+        h2{
+            font-size: 1.8rem;
+            margin: 2rem 0 1rem 5%;
+
+        }
+        .collapseBtn{
+            .btn{
+                font-size: 1.5rem;
+                margin-left: 8%;
+                }
+            }
+        }
+        .card-body-mna{
+            margin-left: 5%;
+            font-size: 0.8rem;
+            width: 100%;
+            li{
+                margin: 1rem;
+            }
+        }
+        .card-body-nch{
+            @extend .card-body-mna;
+        }
 }
