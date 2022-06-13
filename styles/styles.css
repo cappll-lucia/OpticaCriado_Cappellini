@@ -215,7 +215,7 @@ body {
   animation-duration: 2s;
 }
 
-.formulario-contacto, .formulario-fotografia {
+.formulario-contacto, .formulario-turnos, .formulario-fotografia {
   background-image: linear-gradient(-225deg, #74a7f3 0%, #B8DCFF 48%, #6BBBFF 100%);
   padding: 4% 0;
 }
@@ -744,7 +744,7 @@ body {
     height: 61vh;
   }
 }
-.formulario-contacto, .formulario-fotografia {
+.formulario-contacto, .formulario-turnos, .formulario-fotografia {
   background-image: linear-gradient(-225deg, #74a7f3 0%, #B8DCFF 48%, #6BBBFF 100%);
   padding: 4% 0;
 }
@@ -1512,6 +1512,254 @@ footer .atribuciones a {
     margin: 1rem;
   }
 }
+.formulario-contacto, .formulario-turnos, .formulario-fotografia {
+  background-image: linear-gradient(-225deg, #74a7f3 0%, #B8DCFF 48%, #6BBBFF 100%);
+  padding: 4% 0;
+}
+
+.form-square {
+  background-image: linear-gradient(-20deg, #e9defa 0%, #fbfcdb 100%);
+}
+
+.form-square-img {
+  background-image: url(../gallery/Chat_Flatline.png);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.square_forulario {
+  padding: 35px 20px;
+  color: #2F3CA1;
+  overflow: hidden;
+}
+.square_forulario .subtitle {
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+.square_forulario .form {
+  margin-top: 0;
+  padding-top: 0;
+  border: none;
+}
+.square_forulario .form label {
+  text-align: center;
+  margin: 5% 0 0 0;
+}
+.square_forulario .form input {
+  background-color: rgba(255, 255, 255, 0);
+  border: none;
+  border-bottom: solid #2F3CA1 2px;
+  width: 80%;
+  margin-left: 10%;
+}
+.square_forulario .form textarea {
+  background-color: rgba(255, 255, 255, 0);
+  border: none;
+  border-bottom: solid #2F3CA1 2px;
+  margin-left: 10%;
+  height: 85px;
+  width: 80%;
+  resize: none;
+}
+.square_forulario .form .div--selection {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 5% 0 0 5%;
+  margin: 0;
+  justify-content: space-around;
+}
+.square_forulario .form .div--selection .form-select {
+  display: inline-block;
+  background-color: rgba(131, 123, 117, 0);
+  color: #2F3CA1;
+  border: none;
+  border-bottom: solid #2F3CA1 2px;
+  padding: 10px 0px 10px 0px;
+  margin: 0 5px 10px 5px;
+}
+.square_forulario .form .div--selection .form-select option {
+  background-color: #e7e6e4;
+}
+.square_forulario .form .input--button {
+  margin: 1rem 1rem 1rem 25%;
+  width: 50%;
+  padding: 1rem 1rem;
+  border: none;
+  border-radius: 20px;
+  box-shadow: #9ea1df 1.5px 1.5px 10px;
+  color: #1a217c;
+  font-weight: 600;
+  background-image: linear-gradient(60deg, #83db49, rgb(17, 221, 187));
+}
+.square_forulario .form .input--button:hover {
+  transform: scale(1.1);
+}
+
+/* formulario md------- */
+@media (min-width: 768px) and (max-width: 991px) {
+  .form-square-img {
+    background-image: url(../gallery/Chat_Flatline_vertical.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+}
+.servicios-gallery {
+  padding: 30px 10px;
+  height: 500px;
+  background-color: #1F28A1;
+  border: none;
+  margin-top: 0;
+  z-index: 200;
+}
+.servicios-gallery .servicios_title {
+  font-size: 3.5rem;
+  font-weight: 700;
+  font-family: "Poppins", sans-serif;
+  color: rgba(42, 214, 197, 0.8078431373);
+  text-shadow: #0e072e 5px 5px 15px;
+}
+.servicios-gallery .servicios_title_up, .servicios-gallery .servicios_title_down {
+  display: block;
+  text-align: right;
+  margin-right: 20px;
+}
+.servicios-gallery .servicios_title_up {
+  margin-top: 60px;
+}
+.servicios-gallery .servicios_title_lineal {
+  display: none;
+  font-size: 3rem;
+}
+
+.galeria__servicios {
+  height: 400px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-areas: "img1 img2 img2 img3" "img4 img5 img6 img6";
+  grid-gap: 15px;
+}
+
+.galeria__servicios--img {
+  border-radius: 15px;
+  background-size: cover;
+  box-shadow: rgb(14, 7, 46) 5px 5px 15px;
+}
+.galeria__servicios--img .btn {
+  position: absolute;
+  display: block;
+  margin: 147px 10px;
+  border: none;
+  border-radius: 10px;
+  background-image: linear-gradient(to right, #ed6ea0 0%, #ec8c69 100%);
+}
+.galeria__servicios--img .btn a {
+  text-decoration: none;
+  color: #13153f;
+  font-family: "Poppins", sans-serif;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+.galeria__servicios--img .btn:hover {
+  background-image: linear-gradient(-20deg, rgb(48, 18, 155) 0%, #251763 100%);
+}
+.galeria__servicios--img .btn:hover a {
+  color: #ed6ea0;
+}
+
+.galeria__servicios--img1 {
+  grid-area: img1;
+  background-image: url(../gallery/galeria_recetados2_recortada.jpg);
+  background-position: center;
+}
+
+.galeria__servicios--img2 {
+  grid-area: img2;
+  background-image: url(../gallery/galeria_contactos_blue.jpg);
+  background-position: top;
+}
+
+.galeria__servicios--img3 {
+  grid-area: img3;
+  background-image: url(../gallery/galeria_audifono_blue_recorte2.jpg);
+}
+
+.galeria__servicios--img4 {
+  grid-area: img4;
+  background-image: url(../gallery/galeria_sol.jpg);
+  background-position: right;
+}
+
+.galeria__servicios--img5 {
+  grid-area: img5;
+  background-image: url(../gallery/galeria_fotos_azul.jpg);
+  background-position: center;
+}
+
+.galeria__servicios--img6 {
+  grid-area: img6;
+  background-image: url(../gallery/galeria_industriales_blue.jpg);
+  background-position: top;
+}
+
+@media screen and (max-width: 1149px) {
+  .servicios-gallery .servicios_title {
+    font-size: 3rem;
+  }
+  .servicios-gallery .galeria__servicios--img .btn {
+    position: absolute;
+    display: block;
+    margin: 153px 10px;
+  }
+  .servicios-gallery .galeria__servicios--img1 .btn {
+    margin-left: 5px;
+  }
+  .servicios-gallery .galeria__servicios--img1 .btn a {
+    font-size: 0.7rem;
+  }
+}
+@media (max-width: 991px) {
+  .servicios-gallery {
+    height: 600px;
+  }
+  .servicios-gallery .servicios_title {
+    width: 100%;
+    text-align: center;
+    margin-left: 0;
+  }
+  .servicios-gallery .servicios_title_up, .servicios-gallery .servicios_title_down {
+    display: none;
+  }
+  .servicios-gallery .servicios_title_lineal {
+    display: block;
+  }
+  .servicios-gallery .galeria__servicios .btn {
+    padding: 5px 6px;
+  }
+}
+@media (max-width: 842px) {
+  .servicios-gallery {
+    height: 1200px;
+  }
+  .servicios-gallery .galeria__servicios {
+    height: 1000px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-areas: "img1 img4" "img2 img2" "img3 img5" "img6 img6";
+    grid-gap: 15px;
+  }
+  .servicios-gallery .galeria__servicios .galeria__servicios--img .btn {
+    margin: 200px 10px;
+  }
+}
+@media (max-width: 842px) {
+  .servicios-gallery .galeria__servicios .galeria__servicios--img .btn a {
+    font-size: 10px;
+  }
+}
 .bodyAudifonos {
   background-color: #fff;
 }
@@ -1647,14 +1895,14 @@ footer .atribuciones a {
 }
 
 .modelosAudifono {
-  padding: 4rem;
-  margin-top: 5rem;
+  padding: 0 4rem 4rem 4rem;
+  margin-top: 3rem;
 }
 .modelosAudifono h1 {
   text-align: center;
   font-weight: 600;
   color: #1a217c;
-  margin-bottom: 2rem;
+  margin-bottom: 4rem;
   text-shadow: #13153f 0.5px 0.5px 3px;
 }
 .modelosAudifono .product--card {
@@ -1753,6 +2001,64 @@ footer .atribuciones a {
   .modelosAudifono .product--card .btn {
     padding: 0.7rem 3rem;
     bottom: 2rem;
+  }
+}
+.formulario-turnos {
+  background-image: none;
+  margin-top: 5rem;
+}
+
+.form-square {
+  background-image: linear-gradient(-225deg, rgba(129, 169, 228, 0.5254901961) 0%, rgba(184, 220, 255, 0.5568627451) 48%, rgba(147, 169, 189, 0.4745098039) 100%);
+}
+
+.form-square-img {
+  background-image: url(../gallery/hugeEar.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.square_forulario .form .labelCalendario {
+  text-align: right;
+  line-height: 2rem;
+}
+.square_forulario .form .calendario {
+  background-color: rgba(255, 255, 255, 0);
+  border: none;
+  border-bottom: solid #2F3CA1 2px;
+  display: block;
+  width: 40%;
+  margin-left: 0%;
+  color: #2F3CA1;
+}
+.square_forulario .form .div--selection {
+  padding: 5% 0 0 0%;
+  justify-content: space-around;
+}
+.square_forulario .form .input--button {
+  color: rgb(192, 223, 250);
+  background-image: linear-gradient(-225deg, #3D4E81 0%, #3a35c7 48%, #22308a 100%);
+}
+
+/* formulario md------- */
+@media (min-width: 768px) and (max-width: 991px) {
+  .form-square-img {
+    background-image: url(../gallery/hugeEar.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+}
+@media (max-width: 550px) {
+  .div--selection {
+    padding: 0;
+    flex-direction: column;
+    align-items: center;
+  }
+  .calendario {
+    margin: 1rem 0;
+    width: 100%;
   }
 }
 .bgimg {
