@@ -80,9 +80,32 @@ rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/
             </div>
         </section>
 
-        <section id="turnosA" class="turnosA">
-            <div class="container">
-                <h1>Agendá tu turno</h1>
+        <!-- ------------formulario turnos-------------- -->
+        <section class="formulario-turnos">
+            <div class="container form-square w-75">
+                <div class="row">
+                    <div class="form-square-img imgTurno col"> </div>
+                    <div class="square_forulario container-fluid col-xl-7 col-lg-7 col-md-8" id="square">
+                            <div class="row">
+                            <h2 class="title col-xl-12 col-lg-12 text-center"><em>Agendá tu turno!</em></h2>
+                            <form action="" class="form col-xl-12 col-lg-12" netlify>
+                                <label for="nombre" class="label label__nombre col-xl-12 col-lg-12">Nombre y Apellido</label>
+                                <input type="text" name="nombre" id="nombre" class="form__input col-xl-12 col-lg-12"> <br>
+                                <div class="div--selection col-xl-12 col-lg-12">
+                                    <label class="label" for="start">Seleccione fecha</label>
+                                    <input class="calendario" type="date" id="start" name="trip-start" value="2018-07-22" min="2018-01-01" max="2018-12-31">
+                                </div>
+                                <label for="tel" class="label label--mail col-xl-12 col-lg-12">Teléfono celular</label>
+                                <input type="tel" name="tel" id="tel" class="form__input form__input--correo col-xl-12 col-lg-12">
+                                <label for="mail" class="label label--mail col-xl-12 col-lg-12">Correo electrónico</label>
+                                <input type="mail" name="mail" id="mail" class="form__input form__input--correo col-xl-12 col-lg-12">
+                                <input type="submit" value="Enviar" class="input--button col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                            </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
             </div>
         </section>
 
