@@ -1,0 +1,231 @@
+@import "variables";
+
+
+.bodyAudifonos{
+    background-color: #fff;
+}
+
+.laddingAudif{
+    background-color: #fff;
+    .jumbotron{
+        background-color: #fff;
+        background-image: url(../gallery/audifonosLadding.jpg);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: left;
+        height: 70vh;
+        padding: 10rem 3rem  0 0;
+        display: flex;
+        justify-content: flex-end;
+        .jumbotron-text{
+            width: 60%;
+            text-align: right;
+            color: $blueB;
+            h1{
+                font-family: 'Poppins', sans-serif;
+                font-weight: 600;
+                font-size: 2.5rem;
+            }
+            span{
+                font-family: 'Poppins', sans-serif;
+                font-weight: 600;
+            }
+        }
+    }
+}
+
+@media (max-width: 992px){
+    .laddingAudif{
+        .jumbotron{
+            padding: 7rem 2rem  0 0;
+            .jumbotron-text{
+                width: 50%;
+                text-align: right;
+            }
+        }
+    }
+}
+
+@media (max-width: 767px){
+    .laddingAudif{
+        .jumbotron{
+            padding: 6rem 2rem  0 0;
+            .jumbotron-text{
+                width: 40%;
+                h1{
+                    font-size: 2rem;
+                }   
+                span{
+                    font-size: 0.8rem;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 670px){
+    .laddingAudif{
+        .jumbotron{
+            padding: 4rem 2rem  0 0;
+            .jumbotron-text{
+                width: 40%;
+                h1{
+                    font-size: 1.8rem;
+                }
+                span{
+                    font-size: 0.8rem;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 580px){
+    .laddingAudif{
+        .jumbotron{
+            background-image: url(../gallery/laddingAudifonoscopia.jpg);
+            background-position: bottom;
+            padding: 2.5rem 1rem 0 1rem;
+            height: 80vh;
+            background-position: bottom;
+            .jumbotron-text{
+                width: 100%;
+                text-align: center;
+                h1{
+                    font-size: 1.8rem;
+                }
+                span{
+                    font-size: 0.8rem;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 450px){
+    .laddingAudif{
+        .jumbotron{
+            background-image: url(../gallery/laddingAudifonoscopia.jpg);
+            background-position: bottom;
+            padding: 2.5rem 1rem 0 1rem;
+            height: 67vh;
+            background-position: bottom;
+            .jumbotron-text{
+                width: 100%;
+                text-align: center;
+                h1{
+                    font-size: 1.6rem;
+                }
+            }
+        }
+    }
+}
+
+.fichasAudifonos{
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 0;
+    background-color: #fff;
+    .fichaAu{
+        color: $blueB;
+        padding: 0 3rem 3rem 3rem;
+        height: auto;
+        .irA{
+            background-image: linear-gradient(to right, #43e97b 0%, #38f9d7 100%);
+            padding: 0.5rem 2rem;
+            border-radius: 2rem;
+            position: absolute;
+            bottom: 0;
+            text-decoration: 0;
+            color: $blueB;
+            font-weight: 500;
+        }
+        .irA:hover{
+            transform: scale(1.1);
+        }
+    }
+    .fichaAu1 , .fichaAu2{
+        border-right: solid $blueB 1px;
+    }
+}
+
+.modelosAudifono{
+    padding: 4rem;
+    .product--card{
+        border: none;
+        border-right: solid $blueC 1px;
+        border-radius: 0;
+        height: 350px;
+        .btn{
+            background-image: linear-gradient(to right, #43e97b 0%, #38f9d7 100%);
+            padding: 0.5rem 2rem;
+            border-radius: 2rem;
+            position: absolute;
+            bottom: 0;
+            text-decoration: 0;
+            color: $blueB;
+            font-weight: 500;
+            border: none;
+        }
+    }
+    .product--card4{
+        border-right:none;
+    }
+}
+
+@media (max-width: 991px){
+    .modelosAudifono{
+        padding: 2rem;
+        .product--card{
+            height: 300px;
+            h4{
+                font-size: 1.2rem;
+            }
+            .btn{
+                padding: 0.5rem 1rem;
+            }
+        }
+        .product--card4{
+            border-right:none;
+        }
+    }
+}
+@media (max-width: 767px){
+    .modelosAudifono{
+        padding: 3rem;
+        .product--card{
+            height: 370px;
+            h4{
+                font-size: 1.2rem;
+            }
+            .btn{
+                padding: 0.5rem 1rem;
+            }
+        }
+        .product--card4 , .product--card2{
+            border-right:none;
+        }
+        .product--card1, .product--card2{
+            margin-bottom: 5rem;
+        }
+    }
+}
+@media (max-width: 575px){
+    .modelosAudifono{
+        padding: 3rem;
+        .product--card{
+            height: 482px;
+            margin-bottom: 6rem;
+            border: none;
+            border-bottom:solid $blueB 1px;
+            h4{
+                font-size: 1.5rem;
+            }
+            .btn{
+                padding: 0.7rem 3rem;
+                bottom:2rem;
+            }
+        }
+    }
+}

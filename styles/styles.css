@@ -1512,6 +1512,219 @@ footer .atribuciones a {
     margin: 1rem;
   }
 }
+.bodyAudifonos {
+  background-color: #fff;
+}
+
+.laddingAudif {
+  background-color: #fff;
+}
+.laddingAudif .jumbotron {
+  background-color: #fff;
+  background-image: url(../gallery/audifonosLadding.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: left;
+  height: 70vh;
+  padding: 10rem 3rem 0 0;
+  display: flex;
+  justify-content: flex-end;
+}
+.laddingAudif .jumbotron .jumbotron-text {
+  width: 60%;
+  text-align: right;
+  color: #1a217c;
+}
+.laddingAudif .jumbotron .jumbotron-text h1 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 2.5rem;
+}
+.laddingAudif .jumbotron .jumbotron-text span {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+}
+
+@media (max-width: 992px) {
+  .laddingAudif .jumbotron {
+    padding: 7rem 2rem 0 0;
+  }
+  .laddingAudif .jumbotron .jumbotron-text {
+    width: 50%;
+    text-align: right;
+  }
+}
+@media (max-width: 767px) {
+  .laddingAudif .jumbotron {
+    padding: 6rem 2rem 0 0;
+  }
+  .laddingAudif .jumbotron .jumbotron-text {
+    width: 40%;
+  }
+  .laddingAudif .jumbotron .jumbotron-text h1 {
+    font-size: 2rem;
+  }
+  .laddingAudif .jumbotron .jumbotron-text span {
+    font-size: 0.8rem;
+  }
+}
+@media (max-width: 670px) {
+  .laddingAudif .jumbotron {
+    padding: 4rem 2rem 0 0;
+  }
+  .laddingAudif .jumbotron .jumbotron-text {
+    width: 40%;
+  }
+  .laddingAudif .jumbotron .jumbotron-text h1 {
+    font-size: 1.8rem;
+  }
+  .laddingAudif .jumbotron .jumbotron-text span {
+    font-size: 0.8rem;
+  }
+}
+@media (max-width: 580px) {
+  .laddingAudif .jumbotron {
+    background-image: url(../gallery/laddingAudifonoscopia.jpg);
+    background-position: bottom;
+    padding: 2.5rem 1rem 0 1rem;
+    height: 80vh;
+    background-position: bottom;
+  }
+  .laddingAudif .jumbotron .jumbotron-text {
+    width: 100%;
+    text-align: center;
+  }
+  .laddingAudif .jumbotron .jumbotron-text h1 {
+    font-size: 1.8rem;
+  }
+  .laddingAudif .jumbotron .jumbotron-text span {
+    font-size: 0.8rem;
+  }
+}
+@media (max-width: 450px) {
+  .laddingAudif .jumbotron {
+    background-image: url(../gallery/laddingAudifonoscopia.jpg);
+    background-position: bottom;
+    padding: 2.5rem 1rem 0 1rem;
+    height: 67vh;
+    background-position: bottom;
+  }
+  .laddingAudif .jumbotron .jumbotron-text {
+    width: 100%;
+    text-align: center;
+  }
+  .laddingAudif .jumbotron .jumbotron-text h1 {
+    font-size: 1.6rem;
+  }
+}
+.fichasAudifonos {
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem 0;
+  background-color: #fff;
+}
+.fichasAudifonos .fichaAu {
+  color: #1a217c;
+  padding: 0 3rem 3rem 3rem;
+  height: auto;
+}
+.fichasAudifonos .fichaAu .irA {
+  background-image: linear-gradient(to right, #43e97b 0%, #38f9d7 100%);
+  padding: 0.5rem 2rem;
+  border-radius: 2rem;
+  position: absolute;
+  bottom: 0;
+  text-decoration: 0;
+  color: #1a217c;
+  font-weight: 500;
+}
+.fichasAudifonos .fichaAu .irA:hover {
+  transform: scale(1.1);
+}
+.fichasAudifonos .fichaAu1, .fichasAudifonos .fichaAu2 {
+  border-right: solid #1a217c 1px;
+}
+
+.modelosAudifono {
+  padding: 4rem;
+}
+.modelosAudifono .product--card {
+  border: none;
+  border-right: solid #2F3CA1 1px;
+  border-radius: 0;
+  height: 350px;
+}
+.modelosAudifono .product--card .btn {
+  background-image: linear-gradient(to right, #43e97b 0%, #38f9d7 100%);
+  padding: 0.5rem 2rem;
+  border-radius: 2rem;
+  position: absolute;
+  bottom: 0;
+  text-decoration: 0;
+  color: #1a217c;
+  font-weight: 500;
+  border: none;
+}
+.modelosAudifono .product--card4 {
+  border-right: none;
+}
+
+@media (max-width: 991px) {
+  .modelosAudifono {
+    padding: 2rem;
+  }
+  .modelosAudifono .product--card {
+    height: 300px;
+  }
+  .modelosAudifono .product--card h4 {
+    font-size: 1.2rem;
+  }
+  .modelosAudifono .product--card .btn {
+    padding: 0.5rem 1rem;
+  }
+  .modelosAudifono .product--card4 {
+    border-right: none;
+  }
+}
+@media (max-width: 767px) {
+  .modelosAudifono {
+    padding: 3rem;
+  }
+  .modelosAudifono .product--card {
+    height: 370px;
+  }
+  .modelosAudifono .product--card h4 {
+    font-size: 1.2rem;
+  }
+  .modelosAudifono .product--card .btn {
+    padding: 0.5rem 1rem;
+  }
+  .modelosAudifono .product--card4, .modelosAudifono .product--card2 {
+    border-right: none;
+  }
+  .modelosAudifono .product--card1, .modelosAudifono .product--card2 {
+    margin-bottom: 5rem;
+  }
+}
+@media (max-width: 575px) {
+  .modelosAudifono {
+    padding: 3rem;
+  }
+  .modelosAudifono .product--card {
+    height: 482px;
+    margin-bottom: 6rem;
+    border: none;
+    border-bottom: solid #1a217c 1px;
+  }
+  .modelosAudifono .product--card h4 {
+    font-size: 1.5rem;
+  }
+  .modelosAudifono .product--card .btn {
+    padding: 0.7rem 3rem;
+    bottom: 2rem;
+  }
+}
 .bgimg {
   background-image: url("../gallery/3160622.jpg");
   height: 70vh;
