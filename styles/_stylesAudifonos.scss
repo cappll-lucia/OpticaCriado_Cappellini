@@ -152,21 +152,32 @@
 
 .modelosAudifono{
     padding: 4rem;
+    margin-top: 5rem;
+    h1{
+        text-align: center;
+        font-weight: 600;
+        color: $blueB;
+        margin-bottom: 2rem;
+        text-shadow: $sombra 0.5px 0.5px 3px;
+    }
     .product--card{
         border: none;
         border-right: solid $blueC 1px;
         border-radius: 0;
         height: 350px;
         .btn{
-            background-image: linear-gradient(to right, #43e97b 0%, #38f9d7 100%);
+            background-image: linear-gradient(15deg, #1780bd 0%, #4fc0b3 100%);
             padding: 0.5rem 2rem;
             border-radius: 2rem;
             position: absolute;
             bottom: 0;
             text-decoration: 0;
-            color: $blueB;
+            color: #fff;
             font-weight: 500;
             border: none;
+        }
+        .btn:hover{
+            transform: scale(1.1);
         }
     }
     .product--card4{
@@ -175,6 +186,7 @@
 }
 
 @media (max-width: 991px){
+
     .modelosAudifono{
         padding: 2rem;
         .product--card{
@@ -191,7 +203,29 @@
         }
     }
 }
+
 @media (max-width: 767px){
+
+    .fichasAudifonos{
+        padding: 2rem;
+    .fichaAu{
+        color: $blueB;
+        padding: 2rem 0 3rem 0;
+        height: auto;
+        border-bottom: solid $blueB 1px;
+        .irA{
+            bottom: 1rem;
+            text-decoration: 0;
+        }
+    }
+    .fichaAu1 , .fichaAu2{
+        border-right:none;
+    }
+    .fichaAu3{
+        border:none;
+    }
+    }
+
     .modelosAudifono{
         padding: 3rem;
         .product--card{
@@ -215,7 +249,7 @@
     .modelosAudifono{
         padding: 3rem;
         .product--card{
-            height: 482px;
+            height: 490px;
             margin-bottom: 6rem;
             border: none;
             border-bottom:solid $blueB 1px;
