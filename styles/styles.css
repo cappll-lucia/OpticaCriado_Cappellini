@@ -612,7 +612,7 @@ body {
   text-align: left;
   border-radius: 10px;
   height: 40vh;
-  box-shadow: rgb(157, 163, 157) 0.5px 0.5px 4px;
+  box-shadow: rgb(211, 212, 211) 0.5px 0.5px 5px;
 }
 .shop-section-recetados .shop-section-product .container-fluid .row .product--card .card-body, .shop-section-sol .shop-section-product .container-fluid .row .product--card .card-body {
   padding: 0;
@@ -2059,6 +2059,110 @@ footer .atribuciones a {
   .calendario {
     margin: 1rem 0;
     width: 100%;
+  }
+}
+.scrollspy-example {
+  position: relative;
+  height: 200px;
+  overflow: auto;
+}
+
+.infoRecetados h1 {
+  color: #1a217c;
+  font-weight: 700;
+  padding: 2rem;
+  font-size: 3rem;
+}
+.infoRecetados .row {
+  margin: 2rem 0;
+}
+.infoRecetados .row .nav-pills {
+  display: flex;
+  flex-direction: column;
+}
+.infoRecetados .row .nav-pills a {
+  color: #1a217c;
+  font-weight: 500;
+  margin-top: 1rem;
+  margin-right: 1rem;
+  border-bottom: solid rgb(163, 154, 204) 0.05px;
+  border-radius: 0;
+}
+.infoRecetados .row .scrollspy-example {
+  color: #1a217c;
+  height: 20rem;
+  border-bottom: solid rgb(163, 154, 204) 0.05px;
+}
+.infoRecetados .row .scrollspy-example h6 {
+  font-size: 1rem;
+  font-weight: 700;
+}
+.infoRecetados .row .scrollspy-example p {
+  margin-bottom: 5rem;
+}
+.infoRecetados .title-infoRecetados {
+  color: #1a217c;
+  padding: 2rem;
+}
+.infoRecetados .title-infoRecetados h4 {
+  font-size: 1.8rem;
+  padding: 2rem;
+  text-align: right;
+}
+
+@media (max-width: 991px) {
+  .infoRecetados .title-infoRecetados {
+    color: #1a217c;
+    padding: 0;
+  }
+  .infoRecetados .title-infoRecetados h4 {
+    font-size: 1.8rem;
+    padding: 0 0 0 2rem;
+    text-align: left;
+  }
+  .infoRecetados .title-formas {
+    margin-top: 2rem;
+  }
+}
+@media (max-width: 575px) {
+  .infoRecetados h1 {
+    color: #1a217c;
+    font-weight: 700;
+    padding: 2rem;
+    font-size: 3rem;
+  }
+  .infoRecetados .row {
+    margin: 2rem 0;
+  }
+  .infoRecetados .row .nav-pills {
+    flex-direction: row;
+  }
+  .infoRecetados .row .nav-pills .nav-item {
+    display: inline-block;
+  }
+  .infoRecetados .row .scrollspy-example {
+    color: #1a217c;
+    height: 20rem;
+    border-bottom: solid rgb(163, 154, 204) 0.05px;
+  }
+  .infoRecetados .row .scrollspy-example h6 {
+    font-size: 1rem;
+    font-weight: 700;
+  }
+  .infoRecetados .row .scrollspy-example p {
+    margin-bottom: 5rem;
+  }
+  .infoRecetados .title-infoRecetados {
+    color: #1a217c;
+    padding: 0;
+  }
+  .infoRecetados .title-infoRecetados h4 {
+    font-size: 1.8rem;
+    padding: 0 0 0 2rem;
+    text-align: left;
+  }
+  .infoRecetados .title-formas {
+    margin-top: 2rem;
   }
 }
 .bgimg {
