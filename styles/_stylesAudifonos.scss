@@ -267,12 +267,12 @@
 
 // formulario-----------
 .formulario-turnos{
-    @extend .formulario-contacto;
     background-image: none;
+    background-color: #fff;
     margin-top: 5rem;
 }
     
-.form-square{    
+.form-squareAudif{    
     background-image: linear-gradient(-225deg, #81a9e486 0%, #b8dcff8e 48%, #93a9bd79 100%);
 }
 .form-square-img{
@@ -301,9 +301,10 @@
             padding: 5% 0 0 0%;
             justify-content: space-around;
         }
-        .input--button{
+        .input--buttonAudif{
+            @extend .input--button;
             color: rgb(192, 223, 250);
-            background-image: linear-gradient(-225deg, #3D4E81 0%, #3a35c7 48%, #22308a 100%);
+            background-image: linear-gradient(-225deg, #3D4E81 0%, #22308a 100%);
         }
     }
 } 

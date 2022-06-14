@@ -215,7 +215,7 @@ body {
   animation-duration: 2s;
 }
 
-.formulario-contacto, .formulario-turnos, .formulario-fotografia {
+.formulario-contacto, .formulario-fotografia {
   background-image: linear-gradient(-225deg, #74a7f3 0%, #B8DCFF 48%, #6BBBFF 100%);
   padding: 4% 0;
 }
@@ -224,7 +224,7 @@ body {
   background-image: linear-gradient(-20deg, #e9defa 0%, #fbfcdb 100%);
 }
 
-.form-square-img {
+.form-square-imgContacto {
   background-image: url(../gallery/Chat_Flatline.png);
   background-position: center;
   background-repeat: no-repeat;
@@ -283,7 +283,7 @@ body {
 .square_forulario .form .div--selection .form-select option {
   background-color: #e7e6e4;
 }
-.square_forulario .form .input--button {
+.square_forulario .form .input--button, .square_forulario .form .input--buttonAudif {
   margin: 1rem 1rem 1rem 25%;
   width: 50%;
   padding: 1rem 1rem;
@@ -294,13 +294,563 @@ body {
   font-weight: 600;
   background-image: linear-gradient(60deg, #83db49, rgb(17, 221, 187));
 }
-.square_forulario .form .input--button:hover {
+.square_forulario .form .input--button:hover, .square_forulario .form .input--buttonAudif:hover {
   transform: scale(1.1);
 }
 
 /* formulario md------- */
 @media (min-width: 768px) and (max-width: 991px) {
+  .form-square-imgContacto {
+    background-image: url(../gallery/Chat_Flatline_vertical.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+}
+.servicios-gallery {
+  padding: 30px 10px;
+  height: 500px;
+  background-color: #1F28A1;
+  border: none;
+  margin-top: 0;
+  z-index: 200;
+}
+.servicios-gallery .servicios_title {
+  font-size: 3.5rem;
+  font-weight: 700;
+  font-family: "Poppins", sans-serif;
+  color: rgba(42, 214, 197, 0.8078431373);
+  text-shadow: #0e072e 5px 5px 15px;
+}
+.servicios-gallery .servicios_title_up, .servicios-gallery .servicios_title_down {
+  display: block;
+  text-align: right;
+  margin-right: 20px;
+}
+.servicios-gallery .servicios_title_up {
+  margin-top: 60px;
+}
+.servicios-gallery .servicios_title_lineal {
+  display: none;
+  font-size: 3rem;
+}
+
+.galeria__servicios {
+  height: 400px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-areas: "img1 img2 img2 img3" "img4 img5 img6 img6";
+  grid-gap: 15px;
+}
+
+.galeria__servicios--img {
+  border-radius: 15px;
+  background-size: cover;
+  box-shadow: rgb(14, 7, 46) 5px 5px 15px;
+}
+.galeria__servicios--img .btn {
+  position: absolute;
+  display: block;
+  margin: 147px 10px;
+  border: none;
+  border-radius: 10px;
+  background-image: linear-gradient(to right, #ed6ea0 0%, #ec8c69 100%);
+}
+.galeria__servicios--img .btn a {
+  text-decoration: none;
+  color: #13153f;
+  font-family: "Poppins", sans-serif;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+.galeria__servicios--img .btn:hover {
+  background-image: linear-gradient(-20deg, rgb(48, 18, 155) 0%, #251763 100%);
+}
+.galeria__servicios--img .btn:hover a {
+  color: #ed6ea0;
+}
+
+.galeria__servicios--img1 {
+  grid-area: img1;
+  background-image: url(../gallery/galeria_recetados2_recortada.jpg);
+  background-position: center;
+}
+
+.galeria__servicios--img2 {
+  grid-area: img2;
+  background-image: url(../gallery/galeria_contactos_blue.jpg);
+  background-position: top;
+}
+
+.galeria__servicios--img3 {
+  grid-area: img3;
+  background-image: url(../gallery/galeria_audifono_blue_recorte2.jpg);
+}
+
+.galeria__servicios--img4 {
+  grid-area: img4;
+  background-image: url(../gallery/galeria_sol.jpg);
+  background-position: right;
+}
+
+.galeria__servicios--img5 {
+  grid-area: img5;
+  background-image: url(../gallery/galeria_fotos_azul.jpg);
+  background-position: center;
+}
+
+.galeria__servicios--img6 {
+  grid-area: img6;
+  background-image: url(../gallery/galeria_industriales_blue.jpg);
+  background-position: top;
+}
+
+@media screen and (max-width: 1149px) {
+  .servicios-gallery .servicios_title {
+    font-size: 3rem;
+  }
+  .servicios-gallery .galeria__servicios--img .btn {
+    position: absolute;
+    display: block;
+    margin: 153px 10px;
+  }
+  .servicios-gallery .galeria__servicios--img1 .btn {
+    margin-left: 5px;
+  }
+  .servicios-gallery .galeria__servicios--img1 .btn a {
+    font-size: 0.7rem;
+  }
+}
+@media (max-width: 991px) {
+  .servicios-gallery {
+    height: 600px;
+  }
+  .servicios-gallery .servicios_title {
+    width: 100%;
+    text-align: center;
+    margin-left: 0;
+  }
+  .servicios-gallery .servicios_title_up, .servicios-gallery .servicios_title_down {
+    display: none;
+  }
+  .servicios-gallery .servicios_title_lineal {
+    display: block;
+  }
+  .servicios-gallery .galeria__servicios .btn {
+    padding: 5px 6px;
+  }
+}
+@media (max-width: 842px) {
+  .servicios-gallery {
+    height: 1200px;
+  }
+  .servicios-gallery .galeria__servicios {
+    height: 1000px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-areas: "img1 img4" "img2 img2" "img3 img5" "img6 img6";
+    grid-gap: 15px;
+  }
+  .servicios-gallery .galeria__servicios .galeria__servicios--img .btn {
+    margin: 200px 10px;
+  }
+}
+@media (max-width: 842px) {
+  .servicios-gallery .galeria__servicios .galeria__servicios--img .btn a {
+    font-size: 10px;
+  }
+}
+.bodyAudifonos {
+  background-color: #fff;
+}
+
+.laddingAudif {
+  background-color: #fff;
+}
+.laddingAudif .jumbotron {
+  background-color: #fff;
+  background-image: url(../gallery/audifonosLadding.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: left;
+  height: 70vh;
+  padding: 10rem 3rem 0 0;
+  display: flex;
+  justify-content: flex-end;
+}
+.laddingAudif .jumbotron .jumbotron-text {
+  width: 60%;
+  text-align: right;
+  color: #1a217c;
+}
+.laddingAudif .jumbotron .jumbotron-text h1 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 2.5rem;
+}
+.laddingAudif .jumbotron .jumbotron-text span {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+}
+
+@media (max-width: 992px) {
+  .laddingAudif .jumbotron {
+    padding: 7rem 2rem 0 0;
+  }
+  .laddingAudif .jumbotron .jumbotron-text {
+    width: 50%;
+    text-align: right;
+  }
+}
+@media (max-width: 767px) {
+  .laddingAudif .jumbotron {
+    padding: 6rem 2rem 0 0;
+  }
+  .laddingAudif .jumbotron .jumbotron-text {
+    width: 40%;
+  }
+  .laddingAudif .jumbotron .jumbotron-text h1 {
+    font-size: 2rem;
+  }
+  .laddingAudif .jumbotron .jumbotron-text span {
+    font-size: 0.8rem;
+  }
+}
+@media (max-width: 670px) {
+  .laddingAudif .jumbotron {
+    padding: 4rem 2rem 0 0;
+  }
+  .laddingAudif .jumbotron .jumbotron-text {
+    width: 40%;
+  }
+  .laddingAudif .jumbotron .jumbotron-text h1 {
+    font-size: 1.8rem;
+  }
+  .laddingAudif .jumbotron .jumbotron-text span {
+    font-size: 0.8rem;
+  }
+}
+@media (max-width: 580px) {
+  .laddingAudif .jumbotron {
+    background-image: url(../gallery/laddingAudifonoscopia.jpg);
+    background-position: bottom;
+    padding: 2.5rem 1rem 0 1rem;
+    height: 80vh;
+    background-position: bottom;
+  }
+  .laddingAudif .jumbotron .jumbotron-text {
+    width: 100%;
+    text-align: center;
+  }
+  .laddingAudif .jumbotron .jumbotron-text h1 {
+    font-size: 1.8rem;
+  }
+  .laddingAudif .jumbotron .jumbotron-text span {
+    font-size: 0.8rem;
+  }
+}
+@media (max-width: 450px) {
+  .laddingAudif .jumbotron {
+    background-image: url(../gallery/laddingAudifonoscopia.jpg);
+    background-position: bottom;
+    padding: 2.5rem 1rem 0 1rem;
+    height: 67vh;
+    background-position: bottom;
+  }
+  .laddingAudif .jumbotron .jumbotron-text {
+    width: 100%;
+    text-align: center;
+  }
+  .laddingAudif .jumbotron .jumbotron-text h1 {
+    font-size: 1.6rem;
+  }
+}
+.fichasAudifonos {
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem 0;
+  background-color: #fff;
+}
+.fichasAudifonos .fichaAu {
+  color: #1a217c;
+  padding: 0 3rem 3rem 3rem;
+  height: auto;
+}
+.fichasAudifonos .fichaAu .irA {
+  background-image: linear-gradient(to right, #43e97b 0%, #38f9d7 100%);
+  padding: 0.5rem 2rem;
+  border-radius: 2rem;
+  position: absolute;
+  bottom: 0;
+  text-decoration: 0;
+  color: #1a217c;
+  font-weight: 500;
+}
+.fichasAudifonos .fichaAu .irA:hover {
+  transform: scale(1.1);
+}
+.fichasAudifonos .fichaAu1, .fichasAudifonos .fichaAu2 {
+  border-right: solid #1a217c 1px;
+}
+
+.modelosAudifono {
+  padding: 0 4rem 4rem 4rem;
+  margin-top: 3rem;
+}
+.modelosAudifono h1 {
+  text-align: center;
+  font-weight: 600;
+  color: #1a217c;
+  margin-bottom: 4rem;
+  text-shadow: #13153f 0.5px 0.5px 3px;
+}
+.modelosAudifono .product--card {
+  border: none;
+  border-right: solid #2F3CA1 1px;
+  border-radius: 0;
+  height: 350px;
+}
+.modelosAudifono .product--card .btn {
+  background-image: linear-gradient(15deg, #1780bd 0%, #4fc0b3 100%);
+  padding: 0.5rem 2rem;
+  border-radius: 2rem;
+  position: absolute;
+  bottom: 0;
+  text-decoration: 0;
+  color: #fff;
+  font-weight: 500;
+  border: none;
+}
+.modelosAudifono .product--card .btn:hover {
+  transform: scale(1.1);
+}
+.modelosAudifono .product--card4 {
+  border-right: none;
+}
+
+@media (max-width: 991px) {
+  .modelosAudifono {
+    padding: 2rem;
+  }
+  .modelosAudifono .product--card {
+    height: 300px;
+  }
+  .modelosAudifono .product--card h4 {
+    font-size: 1.2rem;
+  }
+  .modelosAudifono .product--card .btn {
+    padding: 0.5rem 1rem;
+  }
+  .modelosAudifono .product--card4 {
+    border-right: none;
+  }
+}
+@media (max-width: 767px) {
+  .fichasAudifonos {
+    padding: 2rem;
+  }
+  .fichasAudifonos .fichaAu {
+    color: #1a217c;
+    padding: 2rem 0 3rem 0;
+    height: auto;
+    border-bottom: solid #1a217c 1px;
+  }
+  .fichasAudifonos .fichaAu .irA {
+    bottom: 1rem;
+    text-decoration: 0;
+  }
+  .fichasAudifonos .fichaAu1, .fichasAudifonos .fichaAu2 {
+    border-right: none;
+  }
+  .fichasAudifonos .fichaAu3 {
+    border: none;
+  }
+  .modelosAudifono {
+    padding: 3rem;
+  }
+  .modelosAudifono .product--card {
+    height: 370px;
+  }
+  .modelosAudifono .product--card h4 {
+    font-size: 1.2rem;
+  }
+  .modelosAudifono .product--card .btn {
+    padding: 0.5rem 1rem;
+  }
+  .modelosAudifono .product--card4, .modelosAudifono .product--card2 {
+    border-right: none;
+  }
+  .modelosAudifono .product--card1, .modelosAudifono .product--card2 {
+    margin-bottom: 5rem;
+  }
+}
+@media (max-width: 575px) {
+  .modelosAudifono {
+    padding: 3rem;
+  }
+  .modelosAudifono .product--card {
+    height: 490px;
+    margin-bottom: 6rem;
+    border: none;
+    border-bottom: solid #1a217c 1px;
+  }
+  .modelosAudifono .product--card h4 {
+    font-size: 1.5rem;
+  }
+  .modelosAudifono .product--card .btn {
+    padding: 0.7rem 3rem;
+    bottom: 2rem;
+  }
+}
+.formulario-turnos {
+  background-image: none;
+  background-color: #fff;
+  margin-top: 5rem;
+}
+
+.form-squareAudif {
+  background-image: linear-gradient(-225deg, rgba(129, 169, 228, 0.5254901961) 0%, rgba(184, 220, 255, 0.5568627451) 48%, rgba(147, 169, 189, 0.4745098039) 100%);
+}
+
+.form-square-img {
+  background-image: url(../gallery/hugeEar.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.square_forulario .form .labelCalendario {
+  text-align: right;
+  line-height: 2rem;
+}
+.square_forulario .form .calendario {
+  background-color: rgba(255, 255, 255, 0);
+  border: none;
+  border-bottom: solid #2F3CA1 2px;
+  display: block;
+  width: 40%;
+  margin-left: 0%;
+  color: #2F3CA1;
+}
+.square_forulario .form .div--selection {
+  padding: 5% 0 0 0%;
+  justify-content: space-around;
+}
+.square_forulario .form .input--buttonAudif {
+  color: rgb(192, 223, 250);
+  background-image: linear-gradient(-225deg, #3D4E81 0%, #22308a 100%);
+}
+
+/* formulario md------- */
+@media (min-width: 768px) and (max-width: 991px) {
   .form-square-img {
+    background-image: url(../gallery/hugeEar.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+}
+@media (max-width: 550px) {
+  .div--selection {
+    padding: 0;
+    flex-direction: column;
+    align-items: center;
+  }
+  .calendario {
+    margin: 1rem 0;
+    width: 100%;
+  }
+}
+.formulario-contacto, .formulario-fotografia {
+  background-image: linear-gradient(-225deg, #74a7f3 0%, #B8DCFF 48%, #6BBBFF 100%);
+  padding: 4% 0;
+}
+
+.form-square {
+  background-image: linear-gradient(-20deg, #e9defa 0%, #fbfcdb 100%);
+}
+
+.form-square-imgContacto {
+  background-image: url(../gallery/Chat_Flatline.png);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.square_forulario {
+  padding: 35px 20px;
+  color: #2F3CA1;
+  overflow: hidden;
+}
+.square_forulario .subtitle {
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+.square_forulario .form {
+  margin-top: 0;
+  padding-top: 0;
+  border: none;
+}
+.square_forulario .form label {
+  text-align: center;
+  margin: 5% 0 0 0;
+}
+.square_forulario .form input {
+  background-color: rgba(255, 255, 255, 0);
+  border: none;
+  border-bottom: solid #2F3CA1 2px;
+  width: 80%;
+  margin-left: 10%;
+}
+.square_forulario .form textarea {
+  background-color: rgba(255, 255, 255, 0);
+  border: none;
+  border-bottom: solid #2F3CA1 2px;
+  margin-left: 10%;
+  height: 85px;
+  width: 80%;
+  resize: none;
+}
+.square_forulario .form .div--selection {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 5% 0 0 5%;
+  margin: 0;
+  justify-content: space-around;
+}
+.square_forulario .form .div--selection .form-select {
+  display: inline-block;
+  background-color: rgba(131, 123, 117, 0);
+  color: #2F3CA1;
+  border: none;
+  border-bottom: solid #2F3CA1 2px;
+  padding: 10px 0px 10px 0px;
+  margin: 0 5px 10px 5px;
+}
+.square_forulario .form .div--selection .form-select option {
+  background-color: #e7e6e4;
+}
+.square_forulario .form .input--button, .square_forulario .form .input--buttonAudif {
+  margin: 1rem 1rem 1rem 25%;
+  width: 50%;
+  padding: 1rem 1rem;
+  border: none;
+  border-radius: 20px;
+  box-shadow: #9ea1df 1.5px 1.5px 10px;
+  color: #1a217c;
+  font-weight: 600;
+  background-image: linear-gradient(60deg, #83db49, rgb(17, 221, 187));
+}
+.square_forulario .form .input--button:hover, .square_forulario .form .input--buttonAudif:hover {
+  transform: scale(1.1);
+}
+
+/* formulario md------- */
+@media (min-width: 768px) and (max-width: 991px) {
+  .form-square-imgContacto {
     background-image: url(../gallery/Chat_Flatline_vertical.png);
     background-position: center;
     background-repeat: no-repeat;
@@ -744,7 +1294,7 @@ body {
     height: 61vh;
   }
 }
-.formulario-contacto, .formulario-turnos, .formulario-fotografia {
+.formulario-contacto, .formulario-fotografia {
   background-image: linear-gradient(-225deg, #74a7f3 0%, #B8DCFF 48%, #6BBBFF 100%);
   padding: 4% 0;
 }
@@ -753,7 +1303,7 @@ body {
   background-image: linear-gradient(-20deg, #e9defa 0%, #fbfcdb 100%);
 }
 
-.form-square-img {
+.form-square-imgContacto {
   background-image: url(../gallery/Chat_Flatline.png);
   background-position: center;
   background-repeat: no-repeat;
@@ -812,7 +1362,7 @@ body {
 .square_forulario .form .div--selection .form-select option {
   background-color: #e7e6e4;
 }
-.square_forulario .form .input--button {
+.square_forulario .form .input--button, .square_forulario .form .input--buttonAudif {
   margin: 1rem 1rem 1rem 25%;
   width: 50%;
   padding: 1rem 1rem;
@@ -823,13 +1373,13 @@ body {
   font-weight: 600;
   background-image: linear-gradient(60deg, #83db49, rgb(17, 221, 187));
 }
-.square_forulario .form .input--button:hover {
+.square_forulario .form .input--button:hover, .square_forulario .form .input--buttonAudif:hover {
   transform: scale(1.1);
 }
 
 /* formulario md------- */
 @media (min-width: 768px) and (max-width: 991px) {
-  .form-square-img {
+  .form-square-imgContacto {
     background-image: url(../gallery/Chat_Flatline_vertical.png);
     background-position: center;
     background-repeat: no-repeat;
@@ -1034,7 +1584,7 @@ body {
 .formulario-fotografia .form .div--selection2 .label--selection2 {
   padding: 3% 0 0 0;
 }
-.formulario-fotografia .form .input--button {
+.formulario-fotografia .form .input--button, .formulario-fotografia .square_forulario .form .input--buttonAudif, .square_forulario .formulario-fotografia .form .input--buttonAudif {
   margin: 2rem 1rem 1rem 25%;
   width: 50%;
   padding: 1rem 1rem;
@@ -1510,555 +2060,6 @@ footer .atribuciones a {
   }
   .card-body-mna li, .card-body-nch li {
     margin: 1rem;
-  }
-}
-.formulario-contacto, .formulario-turnos, .formulario-fotografia {
-  background-image: linear-gradient(-225deg, #74a7f3 0%, #B8DCFF 48%, #6BBBFF 100%);
-  padding: 4% 0;
-}
-
-.form-square {
-  background-image: linear-gradient(-20deg, #e9defa 0%, #fbfcdb 100%);
-}
-
-.form-square-img {
-  background-image: url(../gallery/Chat_Flatline.png);
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
-.square_forulario {
-  padding: 35px 20px;
-  color: #2F3CA1;
-  overflow: hidden;
-}
-.square_forulario .subtitle {
-  margin-bottom: 0;
-  padding-bottom: 0;
-}
-.square_forulario .form {
-  margin-top: 0;
-  padding-top: 0;
-  border: none;
-}
-.square_forulario .form label {
-  text-align: center;
-  margin: 5% 0 0 0;
-}
-.square_forulario .form input {
-  background-color: rgba(255, 255, 255, 0);
-  border: none;
-  border-bottom: solid #2F3CA1 2px;
-  width: 80%;
-  margin-left: 10%;
-}
-.square_forulario .form textarea {
-  background-color: rgba(255, 255, 255, 0);
-  border: none;
-  border-bottom: solid #2F3CA1 2px;
-  margin-left: 10%;
-  height: 85px;
-  width: 80%;
-  resize: none;
-}
-.square_forulario .form .div--selection {
-  display: flex;
-  flex-wrap: wrap;
-  padding: 5% 0 0 5%;
-  margin: 0;
-  justify-content: space-around;
-}
-.square_forulario .form .div--selection .form-select {
-  display: inline-block;
-  background-color: rgba(131, 123, 117, 0);
-  color: #2F3CA1;
-  border: none;
-  border-bottom: solid #2F3CA1 2px;
-  padding: 10px 0px 10px 0px;
-  margin: 0 5px 10px 5px;
-}
-.square_forulario .form .div--selection .form-select option {
-  background-color: #e7e6e4;
-}
-.square_forulario .form .input--button {
-  margin: 1rem 1rem 1rem 25%;
-  width: 50%;
-  padding: 1rem 1rem;
-  border: none;
-  border-radius: 20px;
-  box-shadow: #9ea1df 1.5px 1.5px 10px;
-  color: #1a217c;
-  font-weight: 600;
-  background-image: linear-gradient(60deg, #83db49, rgb(17, 221, 187));
-}
-.square_forulario .form .input--button:hover {
-  transform: scale(1.1);
-}
-
-/* formulario md------- */
-@media (min-width: 768px) and (max-width: 991px) {
-  .form-square-img {
-    background-image: url(../gallery/Chat_Flatline_vertical.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
-  }
-}
-.servicios-gallery {
-  padding: 30px 10px;
-  height: 500px;
-  background-color: #1F28A1;
-  border: none;
-  margin-top: 0;
-  z-index: 200;
-}
-.servicios-gallery .servicios_title {
-  font-size: 3.5rem;
-  font-weight: 700;
-  font-family: "Poppins", sans-serif;
-  color: rgba(42, 214, 197, 0.8078431373);
-  text-shadow: #0e072e 5px 5px 15px;
-}
-.servicios-gallery .servicios_title_up, .servicios-gallery .servicios_title_down {
-  display: block;
-  text-align: right;
-  margin-right: 20px;
-}
-.servicios-gallery .servicios_title_up {
-  margin-top: 60px;
-}
-.servicios-gallery .servicios_title_lineal {
-  display: none;
-  font-size: 3rem;
-}
-
-.galeria__servicios {
-  height: 400px;
-  width: 100%;
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(2, 1fr);
-  grid-template-areas: "img1 img2 img2 img3" "img4 img5 img6 img6";
-  grid-gap: 15px;
-}
-
-.galeria__servicios--img {
-  border-radius: 15px;
-  background-size: cover;
-  box-shadow: rgb(14, 7, 46) 5px 5px 15px;
-}
-.galeria__servicios--img .btn {
-  position: absolute;
-  display: block;
-  margin: 147px 10px;
-  border: none;
-  border-radius: 10px;
-  background-image: linear-gradient(to right, #ed6ea0 0%, #ec8c69 100%);
-}
-.galeria__servicios--img .btn a {
-  text-decoration: none;
-  color: #13153f;
-  font-family: "Poppins", sans-serif;
-  font-size: 0.8rem;
-  font-weight: 600;
-}
-.galeria__servicios--img .btn:hover {
-  background-image: linear-gradient(-20deg, rgb(48, 18, 155) 0%, #251763 100%);
-}
-.galeria__servicios--img .btn:hover a {
-  color: #ed6ea0;
-}
-
-.galeria__servicios--img1 {
-  grid-area: img1;
-  background-image: url(../gallery/galeria_recetados2_recortada.jpg);
-  background-position: center;
-}
-
-.galeria__servicios--img2 {
-  grid-area: img2;
-  background-image: url(../gallery/galeria_contactos_blue.jpg);
-  background-position: top;
-}
-
-.galeria__servicios--img3 {
-  grid-area: img3;
-  background-image: url(../gallery/galeria_audifono_blue_recorte2.jpg);
-}
-
-.galeria__servicios--img4 {
-  grid-area: img4;
-  background-image: url(../gallery/galeria_sol.jpg);
-  background-position: right;
-}
-
-.galeria__servicios--img5 {
-  grid-area: img5;
-  background-image: url(../gallery/galeria_fotos_azul.jpg);
-  background-position: center;
-}
-
-.galeria__servicios--img6 {
-  grid-area: img6;
-  background-image: url(../gallery/galeria_industriales_blue.jpg);
-  background-position: top;
-}
-
-@media screen and (max-width: 1149px) {
-  .servicios-gallery .servicios_title {
-    font-size: 3rem;
-  }
-  .servicios-gallery .galeria__servicios--img .btn {
-    position: absolute;
-    display: block;
-    margin: 153px 10px;
-  }
-  .servicios-gallery .galeria__servicios--img1 .btn {
-    margin-left: 5px;
-  }
-  .servicios-gallery .galeria__servicios--img1 .btn a {
-    font-size: 0.7rem;
-  }
-}
-@media (max-width: 991px) {
-  .servicios-gallery {
-    height: 600px;
-  }
-  .servicios-gallery .servicios_title {
-    width: 100%;
-    text-align: center;
-    margin-left: 0;
-  }
-  .servicios-gallery .servicios_title_up, .servicios-gallery .servicios_title_down {
-    display: none;
-  }
-  .servicios-gallery .servicios_title_lineal {
-    display: block;
-  }
-  .servicios-gallery .galeria__servicios .btn {
-    padding: 5px 6px;
-  }
-}
-@media (max-width: 842px) {
-  .servicios-gallery {
-    height: 1200px;
-  }
-  .servicios-gallery .galeria__servicios {
-    height: 1000px;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(4, 1fr);
-    grid-template-areas: "img1 img4" "img2 img2" "img3 img5" "img6 img6";
-    grid-gap: 15px;
-  }
-  .servicios-gallery .galeria__servicios .galeria__servicios--img .btn {
-    margin: 200px 10px;
-  }
-}
-@media (max-width: 842px) {
-  .servicios-gallery .galeria__servicios .galeria__servicios--img .btn a {
-    font-size: 10px;
-  }
-}
-.bodyAudifonos {
-  background-color: #fff;
-}
-
-.laddingAudif {
-  background-color: #fff;
-}
-.laddingAudif .jumbotron {
-  background-color: #fff;
-  background-image: url(../gallery/audifonosLadding.jpg);
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: left;
-  height: 70vh;
-  padding: 10rem 3rem 0 0;
-  display: flex;
-  justify-content: flex-end;
-}
-.laddingAudif .jumbotron .jumbotron-text {
-  width: 60%;
-  text-align: right;
-  color: #1a217c;
-}
-.laddingAudif .jumbotron .jumbotron-text h1 {
-  font-family: "Poppins", sans-serif;
-  font-weight: 600;
-  font-size: 2.5rem;
-}
-.laddingAudif .jumbotron .jumbotron-text span {
-  font-family: "Poppins", sans-serif;
-  font-weight: 600;
-}
-
-@media (max-width: 992px) {
-  .laddingAudif .jumbotron {
-    padding: 7rem 2rem 0 0;
-  }
-  .laddingAudif .jumbotron .jumbotron-text {
-    width: 50%;
-    text-align: right;
-  }
-}
-@media (max-width: 767px) {
-  .laddingAudif .jumbotron {
-    padding: 6rem 2rem 0 0;
-  }
-  .laddingAudif .jumbotron .jumbotron-text {
-    width: 40%;
-  }
-  .laddingAudif .jumbotron .jumbotron-text h1 {
-    font-size: 2rem;
-  }
-  .laddingAudif .jumbotron .jumbotron-text span {
-    font-size: 0.8rem;
-  }
-}
-@media (max-width: 670px) {
-  .laddingAudif .jumbotron {
-    padding: 4rem 2rem 0 0;
-  }
-  .laddingAudif .jumbotron .jumbotron-text {
-    width: 40%;
-  }
-  .laddingAudif .jumbotron .jumbotron-text h1 {
-    font-size: 1.8rem;
-  }
-  .laddingAudif .jumbotron .jumbotron-text span {
-    font-size: 0.8rem;
-  }
-}
-@media (max-width: 580px) {
-  .laddingAudif .jumbotron {
-    background-image: url(../gallery/laddingAudifonoscopia.jpg);
-    background-position: bottom;
-    padding: 2.5rem 1rem 0 1rem;
-    height: 80vh;
-    background-position: bottom;
-  }
-  .laddingAudif .jumbotron .jumbotron-text {
-    width: 100%;
-    text-align: center;
-  }
-  .laddingAudif .jumbotron .jumbotron-text h1 {
-    font-size: 1.8rem;
-  }
-  .laddingAudif .jumbotron .jumbotron-text span {
-    font-size: 0.8rem;
-  }
-}
-@media (max-width: 450px) {
-  .laddingAudif .jumbotron {
-    background-image: url(../gallery/laddingAudifonoscopia.jpg);
-    background-position: bottom;
-    padding: 2.5rem 1rem 0 1rem;
-    height: 67vh;
-    background-position: bottom;
-  }
-  .laddingAudif .jumbotron .jumbotron-text {
-    width: 100%;
-    text-align: center;
-  }
-  .laddingAudif .jumbotron .jumbotron-text h1 {
-    font-size: 1.6rem;
-  }
-}
-.fichasAudifonos {
-  height: auto;
-  display: flex;
-  justify-content: space-between;
-  padding: 2rem 0;
-  background-color: #fff;
-}
-.fichasAudifonos .fichaAu {
-  color: #1a217c;
-  padding: 0 3rem 3rem 3rem;
-  height: auto;
-}
-.fichasAudifonos .fichaAu .irA {
-  background-image: linear-gradient(to right, #43e97b 0%, #38f9d7 100%);
-  padding: 0.5rem 2rem;
-  border-radius: 2rem;
-  position: absolute;
-  bottom: 0;
-  text-decoration: 0;
-  color: #1a217c;
-  font-weight: 500;
-}
-.fichasAudifonos .fichaAu .irA:hover {
-  transform: scale(1.1);
-}
-.fichasAudifonos .fichaAu1, .fichasAudifonos .fichaAu2 {
-  border-right: solid #1a217c 1px;
-}
-
-.modelosAudifono {
-  padding: 0 4rem 4rem 4rem;
-  margin-top: 3rem;
-}
-.modelosAudifono h1 {
-  text-align: center;
-  font-weight: 600;
-  color: #1a217c;
-  margin-bottom: 4rem;
-  text-shadow: #13153f 0.5px 0.5px 3px;
-}
-.modelosAudifono .product--card {
-  border: none;
-  border-right: solid #2F3CA1 1px;
-  border-radius: 0;
-  height: 350px;
-}
-.modelosAudifono .product--card .btn {
-  background-image: linear-gradient(15deg, #1780bd 0%, #4fc0b3 100%);
-  padding: 0.5rem 2rem;
-  border-radius: 2rem;
-  position: absolute;
-  bottom: 0;
-  text-decoration: 0;
-  color: #fff;
-  font-weight: 500;
-  border: none;
-}
-.modelosAudifono .product--card .btn:hover {
-  transform: scale(1.1);
-}
-.modelosAudifono .product--card4 {
-  border-right: none;
-}
-
-@media (max-width: 991px) {
-  .modelosAudifono {
-    padding: 2rem;
-  }
-  .modelosAudifono .product--card {
-    height: 300px;
-  }
-  .modelosAudifono .product--card h4 {
-    font-size: 1.2rem;
-  }
-  .modelosAudifono .product--card .btn {
-    padding: 0.5rem 1rem;
-  }
-  .modelosAudifono .product--card4 {
-    border-right: none;
-  }
-}
-@media (max-width: 767px) {
-  .fichasAudifonos {
-    padding: 2rem;
-  }
-  .fichasAudifonos .fichaAu {
-    color: #1a217c;
-    padding: 2rem 0 3rem 0;
-    height: auto;
-    border-bottom: solid #1a217c 1px;
-  }
-  .fichasAudifonos .fichaAu .irA {
-    bottom: 1rem;
-    text-decoration: 0;
-  }
-  .fichasAudifonos .fichaAu1, .fichasAudifonos .fichaAu2 {
-    border-right: none;
-  }
-  .fichasAudifonos .fichaAu3 {
-    border: none;
-  }
-  .modelosAudifono {
-    padding: 3rem;
-  }
-  .modelosAudifono .product--card {
-    height: 370px;
-  }
-  .modelosAudifono .product--card h4 {
-    font-size: 1.2rem;
-  }
-  .modelosAudifono .product--card .btn {
-    padding: 0.5rem 1rem;
-  }
-  .modelosAudifono .product--card4, .modelosAudifono .product--card2 {
-    border-right: none;
-  }
-  .modelosAudifono .product--card1, .modelosAudifono .product--card2 {
-    margin-bottom: 5rem;
-  }
-}
-@media (max-width: 575px) {
-  .modelosAudifono {
-    padding: 3rem;
-  }
-  .modelosAudifono .product--card {
-    height: 490px;
-    margin-bottom: 6rem;
-    border: none;
-    border-bottom: solid #1a217c 1px;
-  }
-  .modelosAudifono .product--card h4 {
-    font-size: 1.5rem;
-  }
-  .modelosAudifono .product--card .btn {
-    padding: 0.7rem 3rem;
-    bottom: 2rem;
-  }
-}
-.formulario-turnos {
-  background-image: none;
-  margin-top: 5rem;
-}
-
-.form-square {
-  background-image: linear-gradient(-225deg, rgba(129, 169, 228, 0.5254901961) 0%, rgba(184, 220, 255, 0.5568627451) 48%, rgba(147, 169, 189, 0.4745098039) 100%);
-}
-
-.form-square-img {
-  background-image: url(../gallery/hugeEar.png);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain;
-}
-
-.square_forulario .form .labelCalendario {
-  text-align: right;
-  line-height: 2rem;
-}
-.square_forulario .form .calendario {
-  background-color: rgba(255, 255, 255, 0);
-  border: none;
-  border-bottom: solid #2F3CA1 2px;
-  display: block;
-  width: 40%;
-  margin-left: 0%;
-  color: #2F3CA1;
-}
-.square_forulario .form .div--selection {
-  padding: 5% 0 0 0%;
-  justify-content: space-around;
-}
-.square_forulario .form .input--button {
-  color: rgb(192, 223, 250);
-  background-image: linear-gradient(-225deg, #3D4E81 0%, #3a35c7 48%, #22308a 100%);
-}
-
-/* formulario md------- */
-@media (min-width: 768px) and (max-width: 991px) {
-  .form-square-img {
-    background-image: url(../gallery/hugeEar.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
-  }
-}
-@media (max-width: 550px) {
-  .div--selection {
-    padding: 0;
-    flex-direction: column;
-    align-items: center;
-  }
-  .calendario {
-    margin: 1rem 0;
-    width: 100%;
   }
 }
 .scrollspy-example {

@@ -8,7 +8,7 @@
 .form-square{
     background-image: linear-gradient(-20deg, #e9defa 0%, #fbfcdb 100%);
 }
-.form-square-img{
+.form-square-imgContacto{
     background-image: url(../gallery/Chat_Flatline.png);
     background-position: center;
     background-repeat: no-repeat;
@@ -86,7 +86,7 @@
 
   /* formulario md------- */
 @media (min-width: 768px)and (max-width: 991px){
-    .form-square-img{
+    .form-square-imgContacto{
         background-image: url(../gallery/Chat_Flatline_vertical.png);
         background-position: center;
         background-repeat: no-repeat;
