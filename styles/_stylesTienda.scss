@@ -332,7 +332,7 @@
 .shop-section-sol{
     @extend .shop-section-recetados;
     background-image: linear-gradient(to top, #eea2a2dc 0%rgba(187, 193, 191, 0.747)bf 19%, #57c5e1b6 42%, #b49fda9c 79%, #7ac5d8 100%);
-    .shop-section-product .container-fluid .row{
+    .shop-section-content .shop-section-product .container-fluid .row{
         .product--card{
             @extend .novedades__home--card;
             height: 40vh;
@@ -342,7 +342,7 @@
 
 @media (min-width: 767px) and (max-width: 991px){
     .shop-section-sol{
-        .shop-section-product{
+        .shop-section-content .shop-section-product{
             .container-fluid .row .product--card  {
                 height: 45vh;
                 }
@@ -352,7 +352,7 @@
 
 @media (max-width: 767px){
     .shop-section-sol{
-        .shop-section-product{
+        .shop-section-content .shop-section-product{
             .container-fluid .row .product--card{
                 height: 48vh;
                 }
@@ -362,7 +362,7 @@
 
 @media (max-width: 575px){
     .shop-section-sol{
-        .shop-section-product{
+        .shop-section-content .shop-section-product{
             .container-fluid .row .product--card{
                 height: 61vh;
                 }

@@ -51,17 +51,38 @@ rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/
     </header>
 
     <main>
-        <div class="shop-section shop-section-sol container-fluid">
-            <h1 class="w-100">Tienda Anteojos de Sol</h1>
-            <div class="panel-group shop-btn-marcas">
-                <div class="panel panel-default">
-                    <div class="panel-heading">
-                        <h4 class="panel-title">
-                            <a data-toggle="collapse" href="#collapse1">Filtrar por marca <i class="fa fa-caret-down"></i></a>
-                        </h4>
+        <section class="shop-section shop-section-sol container-fluid">
+            <div class="wave" style="height: 20vh; overflow: hidden;" ><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%; margin:0; border:none; background-color: rgba(255, 255, 255, 0);"><path d="M0.00,49.98 C149.99,150.00 271.49,-49.98 500.00,49.98 L500.00,0.00 L0.00,0.00 Z" style="stroke: none; fill: rgb(255, 254, 240);"></path></svg></div>
+            <div class="shop-section-content">
+                <h1 class="w-100">Tienda Anteojos de Sol</h1>
+                <div class="panel-group shop-btn-marcas">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                <a data-toggle="collapse" href="#collapse1">Filtrar por marca <i class="fa fa-caret-down"></i></a>
+                            </h4>
+                        </div>
+                        <div id="collapse1" class="panel-collapse collapse">
+                            <div class="panel-body">
+                                <li class="nav-item"> <input type="radio" class="input--option" name="marca"> Nombre de la marca</li>
+                                <li class="nav-item"> <input type="radio" class="input--option" name="marca"> Nombre de la marca</li>
+                                <li class="nav-item"> <input type="radio" class="input--option" name="marca"> Nombre de la marca</li>
+                                <li class="nav-item"> <input type="radio" class="input--option" name="marca"> Nombre de la marca</li>
+                                <li class="nav-item"> <input type="radio" class="input--option" name="marca"> Nombre de la marca</li>
+                                <li class="nav-item"> <input type="radio" class="input--option" name="marca"> Nombre de la marca</li>
+                                <li class="nav-item"> <input type="radio" class="input--option" name="marca"> Nombre de la marca</li>
+                                <li class="nav-item"> <input type="radio" class="input--option" name="marca"> Nombre de la marca</li>
+                                <li class="nav-item"> <input type="radio" class="input--option" name="marca"> Nombre de la marca</li>
+                                <li class="nav-item"> <input type="radio" class="input--option" name="marca"> Nombre de la marca</li>
+                                <li class="nav-item"> <input type="radio" class="input--option" name="marca"> Nombre de la marca</li>
+                            </div>
+                        </div>
                     </div>
-                    <div id="collapse1" class="panel-collapse collapse">
-                        <div class="panel-body">
+                </div>
+                <div class="row">
+                    <div class="col-xl-3 col-lg-3 col-md-4 col-sm-0 col-0 shop-section-marcas">
+                        <span>Marcas</span>
+                        <ul class="nav nav-pills flex-column">
                             <li class="nav-item"> <input type="radio" class="input--option" name="marca"> Nombre de la marca</li>
                             <li class="nav-item"> <input type="radio" class="input--option" name="marca"> Nombre de la marca</li>
                             <li class="nav-item"> <input type="radio" class="input--option" name="marca"> Nombre de la marca</li>
@@ -73,116 +94,98 @@ rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/
                             <li class="nav-item"> <input type="radio" class="input--option" name="marca"> Nombre de la marca</li>
                             <li class="nav-item"> <input type="radio" class="input--option" name="marca"> Nombre de la marca</li>
                             <li class="nav-item"> <input type="radio" class="input--option" name="marca"> Nombre de la marca</li>
+                            <li class="nav-item"> <input type="radio" class="input--option" name="marca"> Nombre de la marca</li>
+                        </ul>
+                    </div>
+                    <div class="col-xl-9 col-lg-9 col-md-8 col-sm-12 col-12 shop-section-product">
+                        <div class="container-fluid col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 justify-content-center ">
+                            <div class="row">
+                                <div class="card product--card col-xl-3 col-lg-4 col-md-5 col-sm-4 col-10" style="width:400px">
+                                    <img class="card-img-bottom" src="/gallery/card_sol.png" alt="Card image" style="width:100%">
+                                    <div class="card-body">
+                                        <h4 class="card-title">$00.000</h4>
+                                        <p class="card-text">marca nn</p>
+                                        <a href="#" class="btn card-btn btn-primary">Comprar<i class="fa-solid fa-bag-shopping"></i></a>
+                                    </div>
+                                </div>
+                                <div class="card product--card col-xl-3 col-lg-4 col-md-5 col-sm-4 col-10" style="width:400px">
+                                    <img class="card-img-bottom" src="/gallery/card_sol2.png" alt="Card image" style="width:100%">
+                                    <div class="card-body">
+                                        <h4 class="card-title">$00.000</h4>
+                                        <p class="card-text">marca nn</p>
+                                        <a href="#" class="btn card-btn btn-primary">Comprar<i class="fa-solid fa-bag-shopping"></i></a>
+                                    </div>
+                                </div>
+                                <div class="card product--card col-xl-3 col-lg-4 col-md-5 col-sm-4 col-10" style="width:400px">
+                                    <img class="card-img-bottom" src="/gallery/card_sol3.jpg" alt="Card image" style="width:100%">
+                                    <div class="card-body">
+                                        <h4 class="card-title">$00.000</h4>
+                                        <p class="card-text">marca nn</p>
+                                        <a href="#" class="btn card-btn btn-primary">Comprar<i class="fa-solid fa-bag-shopping"></i></a>
+                                    </div>
+                                </div>
+                                <div class="card product--card col-xl-3 col-lg-4 col-md-5 col-sm-4 col-10" style="width:400px">
+                                    <img class="card-img-bottom" src="/gallery/card_sol4.jpg" alt="Card image" style="width:100%">
+                                    <div class="card-body">
+                                        <h4 class="card-title">$00.000</h4>
+                                        <p class="card-text">marca nn</p>
+                                        <a href="#" class="btn card-btn btn-primary">Comprar<i class="fa-solid fa-bag-shopping"></i></a>
+                                    </div>
+                                </div>
+                                <div class="card product--card col-xl-3 col-lg-4 col-md-5 col-sm-4 col-10" style="width:400px">
+                                    <img class="card-img-bottom" src="/gallery/card_sol5.jpg" alt="Card image" style="width:100%">
+                                    <div class="card-body">
+                                        <h4 class="card-title">$00.000</h4>
+                                        <p class="card-text">marca nn</p>
+                                        <a href="#" class="btn card-btn btn-primary">Comprar<i class="fa-solid fa-bag-shopping"></i></a>
+                                    </div>
+                                </div>
+                                <div class="card product--card col-xl-3 col-lg-4 col-md-5 col-sm-4 col-10" style="width:400px">
+                                    <img class="card-img-bottom" src="/gallery/card_sol.png" alt="Card image" style="width:100%">
+                                    <div class="card-body">
+                                        <h4 class="card-title">$00.000</h4>
+                                        <p class="card-text">marca nn</p>
+                                        <a href="#" class="btn card-btn btn-primary">Comprar<i class="fa-solid fa-bag-shopping"></i></a>
+                                    </div>
+                                </div>
+                                <div class="card product--card col-xl-3 col-lg-4 col-md-5 col-sm-4 col-10" style="width:400px">
+                                    <img class="card-img-bottom" src="/gallery/card_sol2.png" alt="Card image" style="width:100%">
+                                    <div class="card-body">
+                                        <h4 class="card-title">$00.000</h4>
+                                        <p class="card-text">marca nn</p>
+                                        <a href="#" class="btn card-btn btn-primary">Comprar<i class="fa-solid fa-bag-shopping"></i></a>
+                                    </div>
+                                </div>
+                                <div class="card product--card col-xl-3 col-lg-4 col-md-5 col-sm-4 col-10" style="width:400px">
+                                    <img class="card-img-bottom" src="/gallery/card_sol3.jpg" alt="Card image" style="width:100%">
+                                    <div class="card-body">
+                                        <h4 class="card-title">$00.000</h4>
+                                        <p class="card-text">marca nn</p>
+                                        <a href="#" class="btn card-btn btn-primary">Comprar<i class="fa-solid fa-bag-shopping"></i></a>
+                                    </div>
+                                </div>
+                                <div class="card product--card col-xl-3 col-lg-4 col-md-5 col-sm-4 col-10" style="width:400px">
+                                    <img class="card-img-bottom" src="/gallery/card_sol4.jpg" alt="Card image" style="width:100%">
+                                    <div class="card-body">
+                                        <h4 class="card-title">$00.000</h4>
+                                        <p class="card-text">marca nn</p>
+                                        <a href="#" class="btn card-btn btn-primary">Comprar<i class="fa-solid fa-bag-shopping"></i></a>
+                                    </div>
+                                </div>
+                                <div class="card product--card col-xl-3 col-lg-4 col-md-5 col-sm-4 col-10" style="width:400px">
+                                    <img class="card-img-bottom" src="/gallery/card_sol5.jpg" alt="Card image" style="width:100%">
+                                    <div class="card-body">
+                                        <h4 class="card-title">$00.000</h4>
+                                        <p class="card-text">marca nn</p>
+                                        <a href="#" class="btn card-btn btn-primary">Comprar<i class="fa-solid fa-bag-shopping"></i></a>
+                                    </div>
+                                </div>                            
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-xl-3 col-lg-3 col-md-4 col-sm-0 col-0 shop-section-marcas">
-                    <span>Marcas</span>
-                    <ul class="nav nav-pills flex-column">
-                        <li class="nav-item"> <input type="radio" class="input--option" name="marca"> Nombre de la marca</li>
-                        <li class="nav-item"> <input type="radio" class="input--option" name="marca"> Nombre de la marca</li>
-                        <li class="nav-item"> <input type="radio" class="input--option" name="marca"> Nombre de la marca</li>
-                        <li class="nav-item"> <input type="radio" class="input--option" name="marca"> Nombre de la marca</li>
-                        <li class="nav-item"> <input type="radio" class="input--option" name="marca"> Nombre de la marca</li>
-                        <li class="nav-item"> <input type="radio" class="input--option" name="marca"> Nombre de la marca</li>
-                        <li class="nav-item"> <input type="radio" class="input--option" name="marca"> Nombre de la marca</li>
-                        <li class="nav-item"> <input type="radio" class="input--option" name="marca"> Nombre de la marca</li>
-                        <li class="nav-item"> <input type="radio" class="input--option" name="marca"> Nombre de la marca</li>
-                        <li class="nav-item"> <input type="radio" class="input--option" name="marca"> Nombre de la marca</li>
-                        <li class="nav-item"> <input type="radio" class="input--option" name="marca"> Nombre de la marca</li>
-                        <li class="nav-item"> <input type="radio" class="input--option" name="marca"> Nombre de la marca</li>
-                    </ul>
-                </div>
-                <div class="col-xl-9 col-lg-9 col-md-8 col-sm-12 col-12 shop-section-product">
-                    <div class="container-fluid col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 justify-content-center ">
-                        <div class="row">
-                            <div class="card product--card col-xl-3 col-lg-4 col-md-5 col-sm-4 col-10" style="width:400px">
-                                <img class="card-img-bottom" src="/gallery/card_sol.png" alt="Card image" style="width:100%">
-                                <div class="card-body">
-                                    <h4 class="card-title">$00.000</h4>
-                                    <p class="card-text">marca nn</p>
-                                    <a href="#" class="btn card-btn btn-primary">Comprar<i class="fa-solid fa-bag-shopping"></i></a>
-                                </div>
-                            </div>
-                            <div class="card product--card col-xl-3 col-lg-4 col-md-5 col-sm-4 col-10" style="width:400px">
-                                <img class="card-img-bottom" src="/gallery/card_sol2.png" alt="Card image" style="width:100%">
-                                <div class="card-body">
-                                    <h4 class="card-title">$00.000</h4>
-                                    <p class="card-text">marca nn</p>
-                                    <a href="#" class="btn card-btn btn-primary">Comprar<i class="fa-solid fa-bag-shopping"></i></a>
-                                </div>
-                            </div>
-                            <div class="card product--card col-xl-3 col-lg-4 col-md-5 col-sm-4 col-10" style="width:400px">
-                                <img class="card-img-bottom" src="/gallery/card_sol3.jpg" alt="Card image" style="width:100%">
-                                <div class="card-body">
-                                    <h4 class="card-title">$00.000</h4>
-                                    <p class="card-text">marca nn</p>
-                                    <a href="#" class="btn card-btn btn-primary">Comprar<i class="fa-solid fa-bag-shopping"></i></a>
-                                </div>
-                            </div>
-                            <div class="card product--card col-xl-3 col-lg-4 col-md-5 col-sm-4 col-10" style="width:400px">
-                                <img class="card-img-bottom" src="/gallery/card_sol4.jpg" alt="Card image" style="width:100%">
-                                <div class="card-body">
-                                    <h4 class="card-title">$00.000</h4>
-                                    <p class="card-text">marca nn</p>
-                                    <a href="#" class="btn card-btn btn-primary">Comprar<i class="fa-solid fa-bag-shopping"></i></a>
-                                </div>
-                            </div>
-                            <div class="card product--card col-xl-3 col-lg-4 col-md-5 col-sm-4 col-10" style="width:400px">
-                                <img class="card-img-bottom" src="/gallery/card_sol5.jpg" alt="Card image" style="width:100%">
-                                <div class="card-body">
-                                    <h4 class="card-title">$00.000</h4>
-                                    <p class="card-text">marca nn</p>
-                                    <a href="#" class="btn card-btn btn-primary">Comprar<i class="fa-solid fa-bag-shopping"></i></a>
-                                </div>
-                            </div>
-                            <div class="card product--card col-xl-3 col-lg-4 col-md-5 col-sm-4 col-10" style="width:400px">
-                                <img class="card-img-bottom" src="/gallery/card_sol.png" alt="Card image" style="width:100%">
-                                <div class="card-body">
-                                    <h4 class="card-title">$00.000</h4>
-                                    <p class="card-text">marca nn</p>
-                                    <a href="#" class="btn card-btn btn-primary">Comprar<i class="fa-solid fa-bag-shopping"></i></a>
-                                </div>
-                            </div>
-                            <div class="card product--card col-xl-3 col-lg-4 col-md-5 col-sm-4 col-10" style="width:400px">
-                                <img class="card-img-bottom" src="/gallery/card_sol2.png" alt="Card image" style="width:100%">
-                                <div class="card-body">
-                                    <h4 class="card-title">$00.000</h4>
-                                    <p class="card-text">marca nn</p>
-                                    <a href="#" class="btn card-btn btn-primary">Comprar<i class="fa-solid fa-bag-shopping"></i></a>
-                                </div>
-                            </div>
-                            <div class="card product--card col-xl-3 col-lg-4 col-md-5 col-sm-4 col-10" style="width:400px">
-                                <img class="card-img-bottom" src="/gallery/card_sol3.jpg" alt="Card image" style="width:100%">
-                                <div class="card-body">
-                                    <h4 class="card-title">$00.000</h4>
-                                    <p class="card-text">marca nn</p>
-                                    <a href="#" class="btn card-btn btn-primary">Comprar<i class="fa-solid fa-bag-shopping"></i></a>
-                                </div>
-                            </div>
-                            <div class="card product--card col-xl-3 col-lg-4 col-md-5 col-sm-4 col-10" style="width:400px">
-                                <img class="card-img-bottom" src="/gallery/card_sol4.jpg" alt="Card image" style="width:100%">
-                                <div class="card-body">
-                                    <h4 class="card-title">$00.000</h4>
-                                    <p class="card-text">marca nn</p>
-                                    <a href="#" class="btn card-btn btn-primary">Comprar<i class="fa-solid fa-bag-shopping"></i></a>
-                                </div>
-                            </div>
-                            <div class="card product--card col-xl-3 col-lg-4 col-md-5 col-sm-4 col-10" style="width:400px">
-                                <img class="card-img-bottom" src="/gallery/card_sol5.jpg" alt="Card image" style="width:100%">
-                                <div class="card-body">
-                                    <h4 class="card-title">$00.000</h4>
-                                    <p class="card-text">marca nn</p>
-                                    <a href="#" class="btn card-btn btn-primary">Comprar<i class="fa-solid fa-bag-shopping"></i></a>
-                                </div>
-                            </div>                            
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+        </section>
     </main>
 
     <footer>
