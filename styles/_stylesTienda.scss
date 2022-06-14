@@ -142,98 +142,104 @@
 
 .shop-section-recetados{
     background-image: linear-gradient(-225deg, rgba(167, 190, 241, 0.664)0%, rgba(243, 222, 253, 0.76) 48%, rgba(167, 190, 241, 0.664) 100%);
-    padding: 50px;
-    h1{
-        font-weight: 800;
-        display: block;
-        width: 100%;
-        color: $sombra;
-        margin-bottom: 20px;
-    }
-    .shop-section-marcas{
-        color: $sombra;
-        span{
-        font-size: 35px;
-        font-weight: 600;
+    padding: 0;
+    margin: 0;
+    .shop-section-content{
+        padding: 50px;
+        h1{
+            font-weight: 800;
+            display: block;
+            width: 100%;
+            color: $sombra;
+            margin-bottom: 20px;
         }
-        li{
-            padding: 5px;
-            font-size: 18px;
-            font-weight: 500;
-            .input--option{
-                margin-right: 15px;
+        .shop-section-marcas{
+            color: $sombra;
+            span{
+            font-size: 35px;
+            font-weight: 600;
+            }
+            li{
+                padding: 5px;
+                font-size: 18px;
+                font-weight: 500;
+                .input--option{
+                    margin-right: 15px;
+                }
             }
         }
-    }
-    .shop-section-product .container-fluid .row{
-        display: flex;
-        justify-content: space-around;
-        flex-wrap: wrap;
-        .product--card{
-            @extend .novedades__home--card;
-            margin: 1rem;
-            text-align: left;
-            border-radius: 10px;
-            height: 40vh;
-            box-shadow: rgb(211, 212, 211) 0.5px 0.5px 5px;
-            .card-body{
-                padding: 0;
-                color: $sombra;
-                .card-title{
+        .shop-section-product .container-fluid .row{
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            .product--card{
+                @extend .novedades__home--card;
+                margin: 1rem;
+                text-align: left;
+                border-radius: 10px;
+                height: 40vh;
+                box-shadow: rgb(211, 212, 211) 0.5px 0.5px 5px;
+                .card-body{
                     padding: 0;
-                    margin-top: 1rem;
-                }
-                .card-text{
-                    padding: 0;
-                    margin-bottom: 0px;
-                    margin: 0;
-                }
-                .card-btn{
-                    padding: 0.7rem 1rem;
-                    font-family: 'Poppins', sans-serif;
                     color: $sombra;
-                    font-weight: 600;
-                    font-size: 1rem;
-                    position: absolute;
-                    bottom: 0;
-                    margin: 0 0 10px 0;
-                    border-radius: 15px;
-                    background-image: linear-gradient(to bottom, #8af5f5 5%, #7cd4b2 95%);
-                    border: none;
-                    i{
-                        margin-left: 18px;
+                    .card-title{
                         padding: 0;
-                        font-size: 18px;
+                        margin-top: 1rem;
+                    }
+                    .card-text{
+                        padding: 0;
+                        margin-bottom: 0px;
+                        margin: 0;
+                    }
+                    .card-btn{
+                        padding: 0.7rem 1rem;
+                        font-family: 'Poppins', sans-serif;
                         color: $sombra;
+                        font-weight: 600;
+                        font-size: 1rem;
+                        position: absolute;
+                        bottom: 0;
+                        margin: 0 0 10px 0;
+                        border-radius: 15px;
+                        background-image: linear-gradient(to bottom, #8af5f5 5%, #7cd4b2 95%);
+                        border: none;
+                        i{
+                            margin-left: 18px;
+                            padding: 0;
+                            font-size: 18px;
+                            color: $sombra;
+                        }
+                    }
+                    .card-btn:hover{
+                        transform: scale(1.1);
                     }
                 }
-                .card-btn:hover{
-                    transform: scale(1.1);
-                }
             }
         }
-    }
-    .shop-btn-marcas{
-        display: none;
+        .shop-btn-marcas{
+            display: none;
+        }
     }
 }
 
 @media (min-width: 992px) and (max-width: 1999px){
     .shop-section-recetados{
-        .shop-section-marcas{
-            span{
-            font-size: 35px;
-            }
-            li{
-                font-size: 15px;
-                .input--option{
-                    margin-right: 10px;
+        .shop-section-content{
+            .shop-section-marcas{
+                span{
+                font-size: 35px;
+                }
+                li{
+                    font-size: 15px;
+                    .input--option{
+                        margin-right: 10px;
+                    }
                 }
             }
-        }
-        .shop-section-product .container-fluid .row{
-            .product--card{
-                height: 55vh;
+            .shop-section-product .container-fluid .row{
+                .product--card{
+                    height: 55vh;
+                }
             }
         }
     }
@@ -241,23 +247,25 @@
 
 @media (min-width: 767px) and (max-width: 991px){
     .shop-section-recetados{
-        .shop-section-marcas{
-            span{
-            font-size: 35px;
-            }
-            li{
-                font-size: 15px;
-                .input--option{
-                    margin-right: 5px;
+        .shop-section-content{
+            .shop-section-marcas{
+                span{
+                font-size: 35px;
+                }
+                li{
+                    font-size: 15px;
+                    .input--option{
+                        margin-right: 5px;
+                    }
                 }
             }
-        }
-        .shop-section-product{
-            .container-fluid .row .product--card  {
-                height: 60vh;
-                .card-body{
-                    .card-btn{
-                        font-size: 0.8rem;
+            .shop-section-product{
+                .container-fluid .row .product--card  {
+                    height: 60vh;
+                    .card-body{
+                        .card-btn{
+                            font-size: 0.8rem;
+                        }
                     }
                 }
             }
@@ -267,28 +275,30 @@
 
 @media (max-width: 767px){
     .shop-section-recetados{
-        .shop-section-marcas{
-            display: none;
-        }
-        .shop-btn-marcas{
-            display: block;
-            .panel-heading a{
-                color: $sombra ;
-                text-decoration: none;
-                font-size: 30px;
+        .shop-section-content{
+            .shop-section-marcas{
+                display: none;
             }
-            .panel-body li{
-                list-style-type: none;
-                font-size: 18px ;
-                padding: 5px;
+            .shop-btn-marcas{
+                display: block;
+                .panel-heading a{
+                    color: $sombra ;
+                    text-decoration: none;
+                    font-size: 30px;
+                }
+                .panel-body li{
+                    list-style-type: none;
+                    font-size: 18px ;
+                    padding: 5px;
+                }
             }
-        }
-        .shop-section-product{
-            .container-fluid .row .product--card{
-                height: 55vh;
-                .card-body{
-                    .card-btn{
-                        font-size: 0.8rem;
+            .shop-section-product{
+                .container-fluid .row .product--card{
+                    height: 55vh;
+                    .card-body{
+                        .card-btn{
+                            font-size: 0.8rem;
+                        }
                     }
                 }
             }
@@ -298,16 +308,18 @@
 
 @media (max-width: 575px){
     .shop-section-recetados{
-        padding: 20px;
-        h1{
-            font-size: 40px;
-        }
-        .shop-section-product{
-            .container-fluid .row .product--card{
-                height: 86vh;
-                .card-body{
-                    .card-btn{
-                        font-size: 0.8rem;
+        .shop-section-content{
+            padding: 20px;
+            h1{
+                font-size: 40px;
+            }
+            .shop-section-product{
+                .container-fluid .row .product--card{
+                    height: 86vh;
+                    .card-body{
+                        .card-btn{
+                            font-size: 0.8rem;
+                        }
                     }
                 }
             }
