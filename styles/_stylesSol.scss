@@ -3,12 +3,147 @@
 .laddingSol .carousel{
     .carousel-inner{
         .carousel-item{
-            a h3{
+            a{
                 color: aliceblue;
             }
             .img {
                 width: 100%;
                 height: 100%;
+            }
+        }
+    }
+    .carousel-inner:hover .carousel-item{
+        transform: scale(1.05);
+    }
+}
+
+.infoSOL{
+    background-color: rgb(255, 254, 240);
+    padding: 5rem;
+    color: $blueB;
+    .ttl-infoSOL{
+        font-size: 3rem;
+        font-weight: 700;
+        padding-right: 2rem;
+        h2{
+            text-align: right;
+        }
+    .txt.infoSOL{
+        p{
+            font-size: 1rem;
+        }
+    }
+    }
+}
+
+@media (max-width: 991px) {
+    .infoSOL{
+        .ttl-infoSOL{
+            padding-right: 0rem;
+            padding-bottom: 1rem;
+            h2{
+                text-align: left;
+            }
+        }
+    }
+}
+
+.promocionesSOL{
+    padding: 5rem 2rem;
+    background-color: rgb(255, 254, 240);
+    h1{
+        font-size: 3rem;
+        color: $blueB;
+        font-weight: 700;
+        margin: 0 1rem 2rem 2rem;
+        text-align: center;
+    }
+    .promoSOL{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        .imgPromoSOL{
+            height: 25rem;
+            width: 20rem;
+        }
+        .imgPromoSOL:hover{
+            transform: scale(1.08);
+        }
+        .imgPromoSOL1{
+            background-image: url(../gallery/promoPapa.png);
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+        .imgPromoSOL2{
+            background-image: url(../gallery/promoTarjeta.png);
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+        .imgPromoSOL3{
+            background-image: url(../gallery/promoGiftCard.png);
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+    }
+}
+
+@media (max-width:400px){
+    .infoSOL{
+        background-color: rgb(255, 254, 240);
+        padding: 5rem;
+        color: $blueB;
+        .ttl-infoSOL{
+            font-size: 3rem;
+            font-weight: 700;
+            padding-right: 2rem;
+            h2{
+                text-align: right;
+            }
+        .txt.infoSOL{
+            p{
+                font-size: 1rem;
+            }
+        }
+        }
+    }
+}
+    @media (max-width: 991px) {
+        .infoSOL{
+            .ttl-infoSOL{
+                padding-right: 0rem;
+                padding-bottom: 1rem;
+                h2{
+                    text-align: left;
+                }
+            }
+        }
+    
+    .promocionesSOL{
+        .promoSOL{
+            .imgPromoSOL{
+                height: 18rem;
+                width: 14rem;
+            }
+        }
+    }
+}
+
+@media (max-width: 700px){
+    .promocionesSOL{
+        h1{
+            font-size: 2rem;
+        }
+        .promoSOL{
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            .imgPromoSOL{
+                height: 25rem;
+                width: 20rem;
+                margin-bottom: 2rem;
             }
         }
     }
