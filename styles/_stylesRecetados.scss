@@ -3,7 +3,9 @@
 @import "stylesSol";
 
 
-
+.container-fluid{
+    padding: 0;
+}
 
 .scrollspy-example {
     position: relative;
@@ -234,6 +236,7 @@
         }
     }
 }
+
 @media (max-width: 550px){
     .articuloKids{
         h1{

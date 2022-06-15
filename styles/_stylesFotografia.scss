@@ -1,11 +1,168 @@
 @import "variables";
 
 @import "stylesMain";
+@import "stylesAudifonos";
+
+.ladingFotog{
+    @extend  .laddingAudif;
+    background-color: #fff;
+    .jumbotron{
+        margin: 0 2rem;
+        background-image: url(../gallery/kiosko-small.jpg);
+        .jumbotron-text{
+            text-align: left;
+            width: 50%;
+        }
+    }
+}
+
+.fichasFotografia{
+    @extend .fichasAudifonos;
+    justify-content: space-between;
+    padding: 2rem 0;
+    background-color: #fff;
+    .fichaFotog{
+        @extend .fichaAu;
+        margin-top: 5rem;
+        .irA{
+            background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
+            padding: 0.5rem 2rem;
+        }
+        .downloadBtn{
+            padding: 0.3rem 2rem;
+            font-size: 1rem;
+            i{
+                font-size: 1rem;
+                padding-right: 1rem;
+            }
+        }
+        .downloadBtniOs{
+            bottom: 3rem;
+            padding-right: 4.8rem;
+        }
+    }
+    .fichaFotog1, .fichaFotog2{
+        @extend .fichaAu1;
+    }
+}
+
+@media (max-width: 1200px){
+    .fichasFotografia{
+        .fichaFotog{
+            .downloadBtn{
+                padding: 0.3rem 1rem;
+                font-size: 0.8rem;
+                i{
+                    font-size: 1rem;
+                    padding-right: 0.3rem;
+                }
+            }
+            .downloadBtniOs{
+                bottom: 3rem;
+                padding-right: 3rem;
+            }
+        }
+        .fichaFotog1, .fichaFotog2{
+            @extend .fichaAu1;
+        }
+    }
+}
+
+
+@media (max-width: 991px){
+    .fichasFotografia{
+        padding: 2rem;
+        .fichaFotog{
+            color: $blueB;
+            padding: 2rem 0 3rem 0;
+            height: auto;
+            border-bottom: solid $blueB 1px;
+            .irA{
+                bottom: 1rem;
+                text-decoration: 0;
+            }
+        }
+        .fichaFotog1{
+            h3{
+                margin-bottom: 7rem;
+            }
+            .downloadBtniOs{
+                bottom: 5rem;
+            }
+        }
+        .fichaFotog1 , .fichaFotog2{
+            border-right:none;
+        }
+        .fichaFotog3{
+            border:none;
+        }
+}
+}
+
+@media (max-width: 935px){
+    .ladingFotog{
+        @extend  .laddingAudif;
+        .jumbotron{
+            padding-top: 3.5rem;
+            margin: 0 1rem;
+            font-size: 1rem;
+            .jumbotron-text{
+                width: 40%;
+            }
+        }
+    }
+}
+
+@media (max-width: 730px){
+    .ladingFotog{
+        background-color: #fff;
+        .jumbotron{
+            background-position: center;
+            padding-top: 35rem;
+            margin-bottom: 5rem;
+            .jumbotron-text{
+                text-align: center;
+                width: 100%;
+            }
+        }
+    }
+}
+
+@media (max-width: 400px){
+
+    .fichasFotografia{
+        .fichaFotog1{
+            h3{
+                margin-bottom: 8rem;
+            }
+            .downloadBtn{
+                padding-right: 1rem;
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: center;
+                text-align: center;
+                font-size: 0.7rem;
+            }
+            .downloadBtniOs{
+                bottom: 6rem;
+                padding-right: 3rem;
+            }
+        }
+    }
+}
+
+
+
+
+
 
 .formulario-fotografia{
     @extend .formulario-contacto;
-    padding: 2% 0;
-    background-image: linear-gradient(to right, #43e97b 0%, #38f9d7 100%);
+    padding: 5rem 0;
+    // background-image: linear-gradient(to right, #43e97b 0%, #38f9d7 100%);
+    background-image:  linear-gradient(to top, #46484e6e 0%, #eef1f567 100%), url(../gallery/urbanAfiche.jpg);
+    background-size: contain;
     input[type="file"] {
         display: none;
     }
