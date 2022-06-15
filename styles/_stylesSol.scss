@@ -6,10 +6,23 @@
             a{
                 color: aliceblue;
             }
-            .img {
+            .img{
                 width: 100%;
-                height: 100%;
+                height: 70vh;
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
             }
+            .img1{
+                background-image: url(../gallery/dadSunglasses.jpg);
+            }
+            .img2{
+                background-image: url(../gallery/sunCovering.jpg);
+            }
+            .img3{
+                background-image: url(../gallery/girlSunglasses.jpg);
+            }
+
         }
     }
     .carousel-inner:hover .carousel-item{
@@ -37,6 +50,20 @@
 }
 
 @media (max-width: 991px) {
+
+    .laddingSol .carousel{
+        .carousel-inner{
+            .carousel-item{
+                a{
+                    color: aliceblue;
+                }
+                .img{
+                    height: 80vh;
+                }
+            }
+        }
+    }
+
     .infoSOL{
         .ttl-infoSOL{
             padding-right: 0rem;
