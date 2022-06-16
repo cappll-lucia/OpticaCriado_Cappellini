@@ -749,9 +749,12 @@ body {
   border-right: solid #1a217c 1px;
 }
 
-.modelosAudifono {
+#modelosA {
   padding: 0 4rem 4rem 4rem;
-  margin-top: 3rem;
+}
+
+.modelosAudifono {
+  margin: 3rem 0;
 }
 .modelosAudifono h1 {
   text-align: center;
@@ -768,7 +771,7 @@ body {
 }
 .modelosAudifono .product--card .btn {
   background-image: linear-gradient(15deg, #1780bd 0%, #4fc0b3 100%);
-  padding: 0.5rem 2rem;
+  padding: 0.5rem 3rem;
   border-radius: 2rem;
   position: absolute;
   bottom: 0;
@@ -861,11 +864,12 @@ body {
 .formulario-turnos {
   background-image: none;
   background-color: #fff;
-  margin-top: 5rem;
+  margin: 5rem 0;
 }
 
-.form-squareAudif {
+.form-square-turnos {
   background-image: linear-gradient(-225deg, rgba(129, 169, 228, 0.5254901961) 0%, rgba(184, 220, 255, 0.5568627451) 48%, rgba(147, 169, 189, 0.4745098039) 100%);
+  padding: 3rem 0;
 }
 
 .form-square-img {
@@ -2123,9 +2127,12 @@ body {
   border-right: solid #1a217c 1px;
 }
 
-.modelosAudifono {
+#modelosA {
   padding: 0 4rem 4rem 4rem;
-  margin-top: 3rem;
+}
+
+.modelosAudifono {
+  margin: 3rem 0;
 }
 .modelosAudifono h1 {
   text-align: center;
@@ -2142,7 +2149,7 @@ body {
 }
 .modelosAudifono .product--card .btn {
   background-image: linear-gradient(15deg, #1780bd 0%, #4fc0b3 100%);
-  padding: 0.5rem 2rem;
+  padding: 0.5rem 3rem;
   border-radius: 2rem;
   position: absolute;
   bottom: 0;
@@ -2235,11 +2242,12 @@ body {
 .formulario-turnos {
   background-image: none;
   background-color: #fff;
-  margin-top: 5rem;
+  margin: 5rem 0;
 }
 
-.form-squareAudif {
+.form-square-turnos {
   background-image: linear-gradient(-225deg, rgba(129, 169, 228, 0.5254901961) 0%, rgba(184, 220, 255, 0.5568627451) 48%, rgba(147, 169, 189, 0.4745098039) 100%);
+  padding: 3rem 0;
 }
 
 .form-square-img {
@@ -2852,6 +2860,7 @@ footer .atribuciones a {
 }
 .cuidadosLC {
   padding: 0 50px 50px 50px;
+  width: 100%;
   height: auto;
   display: flex;
 }
