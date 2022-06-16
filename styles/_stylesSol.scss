@@ -36,8 +36,10 @@
 
 .infoSOL{
     background-color: rgb(255, 254, 240);
-    padding: 5rem;
     color: $blueB;
+    .row{
+        padding: 10rem 3rem;
+    }
     .ttl-infoSOL{
         font-size: 3rem;
         font-weight: 700;
@@ -80,13 +82,14 @@
 }
 
 .promocionesSOL{
-    padding: 5rem 2rem;
+    padding: 10rem 2rem;
     background-color: rgb(255, 254, 240);
     h1{
         font-size: 3rem;
         color: $blueB;
         font-weight: 700;
         margin: 0 1rem 2rem 2rem;
+        padding-top: 8rem;
         text-align: center;
     }
     .promoSOL{
